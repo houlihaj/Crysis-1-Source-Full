@@ -1,0 +1,18 @@
+STRUCT_INFO_BEGIN(AABBnodeV0_PS3)
+	STRUCT_VAR_INFO(minx7_maxx7_miny7_maxy7, TYPE_INFO(unsigned int))
+	STRUCT_VAR_INFO(minz7_maxz7_ichild15, TYPE_INFO(unsigned int))
+	STRUCT_VAR_INFO(ntris6_bSingleColl1, TYPE_INFO(unsigned int))
+STRUCT_INFO_END(AABBnodeV0_PS3)
+
+STRUCT_INFO_BEGIN(AABBnodeV0_PC)
+	STRUCT_BITFIELD_INFO(minx, unsigned int, 7)
+	STRUCT_BITFIELD_INFO(maxx, unsigned int, 7)
+	STRUCT_BITFIELD_INFO(miny, unsigned int, 7)
+	STRUCT_BITFIELD_INFO(maxy, unsigned int, 7)
+	STRUCT_BITFIELD_INFO(minz, unsigned int, 7)
+	STRUCT_BITFIELD_INFO(maxz, unsigned int, 7)
+	STRUCT_BITFIELD_INFO(ichild, unsigned int, 15)
+	STRUCT_BITFIELD_INFO(ntris, unsigned int, 6)
+	STRUCT_BITFIELD_INFO(bSingleColl, unsigned int, 1)
+STRUCT_INFO_END(AABBnodeV0_PC)
+

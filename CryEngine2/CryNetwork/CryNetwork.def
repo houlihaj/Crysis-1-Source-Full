@@ -1,0 +1,3 @@
+EXPORTS
+	CreateNetwork          @1
+	CryModuleGetMemoryInfo @8

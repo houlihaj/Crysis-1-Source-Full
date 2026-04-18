@@ -1,0 +1,86 @@
+////////////////////////////////////////////////////////////////////////////
+//
+//  Crytek Engine Source File.
+//  Copyright (C), Crytek Studios, 2001-2004.
+// -------------------------------------------------------------------------
+//  File name:   ScriptBinding.cpp
+//  Version:     v1.00
+//  Created:     9/7/2004 by Timur.
+//  Compilers:   Visual Studio.NET 2003
+//  Description: 
+// -------------------------------------------------------------------------
+//  History:
+//
+////////////////////////////////////////////////////////////////////////////
+
+#include "StdAfx.h"
+#include "ScriptBinding.h"
+
+#include "ScriptBind_System.h"
+#include "ScriptBind_Particle.h"
+#include "ScriptBind_Sound.h"
+#include "ScriptBind_Movie.h"
+#include "ScriptBind_Script.h"
+#include "ScriptBind_Physics.h"
+
+#include "SurfaceTypes.h"
+
+#include <IScriptSystem.h>
+
+CScriptBindings::CScriptBindings()
+{
+	m_pScriptSurfaceTypes = 0;
+}
+
+CScriptBindings::~CScriptBindings()
+{
+	Done();
+}
+
+//////////////////////////////////////////////////////////////////////////
+void CScriptBindings::Init( ISystem *pSystem,IScriptSystem *pSS )
+{
+	m_binds.push_back( new CScriptBind_System(pSS,pSystem) );
+	m_binds.push_back( new CScriptBind_Particle(pSS,pSystem) );
+	m_binds.push_back( new CScriptBind_Sound(pSS,pSystem) );
+	m_binds.push_back( new CScriptBind_Movie(pSS,pSystem) );
+	m_binds.push_back( new CScriptBind_Script(pSS,pSystem) );
+	m_binds.push_back( new CScriptBind_Physics(pSS,pSystem) );
+
+	
+	//////////////////////////////////////////////////////////////////////////
+	// Enumerate script surface types.
+	//////////////////////////////////////////////////////////////////////////
+	m_pScriptSurfaceTypes = new CScriptSurfaceTypesLoader;
+}
+
+//////////////////////////////////////////////////////////////////////////
+void CScriptBindings::Done()
+{
+	if (m_pScriptSurfaceTypes)
+		delete m_pScriptSurfaceTypes;
+	m_pScriptSurfaceTypes = NULL;
+
+	// Done script bindings.
+	for (unsigned int i = 0; i < m_binds.size(); i++)
+	{
+		delete m_binds[i];
+	}
+	m_binds.clear();
+}
+
+//////////////////////////////////////////////////////////////////////////
+void CScriptBindings::LoadScriptedSurfaceTypes( const char *sFolder,bool bReload )
+{
+	m_pScriptSurfaceTypes->LoadSurfaceTypes( sFolder,bReload );
+}
+
+//////////////////////////////////////////////////////////////////////////
+void CScriptBindings::GetMemoryStatistics(ICrySizer *pSizer)
+{
+	pSizer->Add(this);
+	for (int i = 0; i < m_binds.size(); i++)
+	{
+		m_binds[i]->GetMemoryStatistics(pSizer);
+	}
+}

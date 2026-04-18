@@ -1,0 +1,3 @@
+EXPORTS
+	CreateCryFontInterface @1
+	CryModuleGetMemoryInfo @8

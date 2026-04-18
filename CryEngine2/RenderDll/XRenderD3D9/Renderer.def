@@ -1,0 +1,3 @@
+EXPORTS
+	PackageRenderConstructor @1
+	CryModuleGetMemoryInfo   @8

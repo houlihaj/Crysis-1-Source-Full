@@ -1,0 +1,19 @@
+//////////////////////////////////////////////////////////////////////
+//
+//  CryEngine Source code
+//	
+//	File:voxmanrender.cpp
+//  voxel tecnology researh
+//
+//	History:
+//	-:Created by Vladimir Kajalin
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "StdAfx.h"
+
+#include "VoxMan.h"
+#include "IndexedMesh.h"
+#include "3dEngine.h"
+#include "StatObj.h"
+

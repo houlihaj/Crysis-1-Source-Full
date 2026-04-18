@@ -1,0 +1,8 @@
+========================================================================
+       AI system console variables related to debug output 
+========================================================================
+
+ai_drawnode	player/all/"guy's name" - draws graph node of specifyed AI object. Empty string - none
+ai_drawpath	all/"guy's name"	- draws last found path of specifyed AI object. Empty string - none
+ai_drawmodifyers 0/1			- draws navigation modifyers
+ai_draw_type	-1/AIObjType	- draws all AI objects of specifyed type. To replace ai_draw_anchors

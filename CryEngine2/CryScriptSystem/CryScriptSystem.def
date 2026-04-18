@@ -1,0 +1,3 @@
+EXPORTS
+	CreateScriptSystem     @1
+	CryModuleGetMemoryInfo @8

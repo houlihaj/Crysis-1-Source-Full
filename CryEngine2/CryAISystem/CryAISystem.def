@@ -1,0 +1,3 @@
+EXPORTS
+	CreateAISystem         @1
+	CryModuleGetMemoryInfo @8

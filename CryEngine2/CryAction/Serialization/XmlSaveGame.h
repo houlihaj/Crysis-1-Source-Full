@@ -1,0 +1,41 @@
+// xml save game - primarily for debug purposes
+
+#ifndef __XMLSAVEGAME_H__
+#define __XMLSAVEGAME_H__
+
+#pragma once
+
+#include "ISaveGame.h"
+
+class CXmlSaveGame : public ISaveGame
+{
+public:
+	CXmlSaveGame();
+	virtual ~CXmlSaveGame();
+
+	// ISaveGame
+	virtual bool Init( const char * name );
+	virtual void AddMetadata( const char * tag, const char * value );
+	virtual void AddMetadata( const char * tag, int value );
+	virtual void AddConsoleVariable( ICVar * pVar );
+	virtual uint8* SetThumbnail(const uint8* imageData, int width, int height, int depth);
+	virtual bool SetThumbnailFromBMP(const char* filename);
+	virtual TSerialize AddSection( const char * section );
+	virtual bool Complete( bool successfulSoFar );
+	virtual const char* GetFileName() const;
+	virtual void SetSaveGameReason(ESaveGameReason reason) { m_eReason = reason; }
+	virtual ESaveGameReason GetSaveGameReason() const { return m_eReason; }
+	// ~ISaveGame
+
+protected:
+	virtual bool Write( const char * filename, XmlNodeRef data );
+
+private:
+	class CSerializeCtx;
+	struct Impl;
+	std::auto_ptr<Impl> m_pImpl;
+	ESaveGameReason	m_eReason;
+
+};
+
+#endif

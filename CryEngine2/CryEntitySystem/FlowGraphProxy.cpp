@@ -1,0 +1,190 @@
+////////////////////////////////////////////////////////////////////////////
+//
+//  Crytek Engine Source File.
+//  Copyright (C), Crytek Studios, 2001-2005.
+// -------------------------------------------------------------------------
+//  File name:   FlowGraphProxy.h
+//  Version:     v1.00
+//  Created:     6/6/2005 by Timur.
+//  Compilers:   Visual Studio.NET 2003
+//  Description: 
+// -------------------------------------------------------------------------
+//  History:
+//
+////////////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "FlowGraphProxy.h"
+#include "Entity.h"
+#include <IFlowSystem.h>
+#include "ISerialize.h"
+
+//////////////////////////////////////////////////////////////////////////
+CFlowGraphProxy::CFlowGraphProxy( CEntity *pEntity )
+{
+	m_pEntity = pEntity;
+	m_pFlowGraph = 0;
+}
+
+//////////////////////////////////////////////////////////////////////////
+void CFlowGraphProxy::Done()
+{
+	if (m_pFlowGraph)
+		m_pFlowGraph->Release();
+	m_pFlowGraph = 0;
+};
+
+//////////////////////////////////////////////////////////////////////////
+void CFlowGraphProxy::SetFlowGraph( IFlowGraph *pFlowGraph )
+{
+	if (m_pFlowGraph)
+		m_pFlowGraph->Release();
+	m_pFlowGraph = pFlowGraph;
+	if (m_pFlowGraph)
+		m_pFlowGraph->AddRef();
+}
+
+//////////////////////////////////////////////////////////////////////////
+IFlowGraph* CFlowGraphProxy::GetFlowGraph()
+{
+	return m_pFlowGraph;
+}
+
+//////////////////////////////////////////////////////////////////////////
+void CFlowGraphProxy::ProcessEvent( SEntityEvent &event )
+{
+	// Assumes only 1 current listener can be deleted as a result of the event.
+	Listeners::iterator next;
+	Listeners::iterator it = m_listeners.begin();
+	while (it != m_listeners.end())
+	{
+		next = it;
+		next++;
+		(*it)->OnEntityEvent( m_pEntity,event );
+		it = next;
+	}
+	// respond to entity activation/deactivation. enable/disable flowgraph
+	switch (event.event)
+	{
+	case ENTITY_EVENT_INIT:
+	case ENTITY_EVENT_DONE:
+		{
+			if (m_pFlowGraph)
+			{
+				const bool bActive = (event.event == ENTITY_EVENT_INIT) ? true : false;
+				const bool bIsActive = m_pFlowGraph->IsActive();
+				if (bActive != bIsActive)
+					m_pFlowGraph->SetActive(bActive);
+			}
+		}
+		break;
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////
+void CFlowGraphProxy::AddEventListener( IEntityEventListener *pListener )
+{
+	// Does not check uniquiness due to performance reasons.
+	m_listeners.push_back(pListener);
+}
+
+void CFlowGraphProxy::RemoveEventListener( IEntityEventListener *pListener )
+{
+	stl::find_and_erase(m_listeners,pListener);
+}
+
+void CFlowGraphProxy::Update( SEntityUpdateContext &ctx )
+{
+//	if (m_pFlowGraph)
+//		m_pFlowGraph->Update();
+}
+
+void CFlowGraphProxy::SerializeXML( XmlNodeRef &entityNode,bool bLoading )
+{
+	// don't serialize flowgraphs from the editor
+	// (editor needs more information, so it saves them specially)
+	if (GetISystem()->IsEditor())
+		return;
+
+	bool bSerialize = true;
+
+	XmlNodeRef flowGraphNode;
+	if (bLoading)
+	{
+		flowGraphNode = entityNode->findChild("FlowGraph");
+		if (!flowGraphNode)
+			return;
+
+		// prevents loading of disabled flowgraphs for optimization
+		// only in game mode, of course
+#if 1
+		bool bEnabled = true;
+		if (flowGraphNode->getAttr("enabled", bEnabled) && bEnabled == false)
+		{
+			EntityWarning("[FlowGraphProxy] Skipped loading of FG for Entity %d '%s'. FG was disabled on export.", m_pEntity->GetId(), m_pEntity->GetName());
+			return;
+		}
+#endif
+
+		enum EMultiPlayerType 
+		{
+			eMPT_ServerOnly = 0,
+			eMPT_ClientOnly,
+			eMPT_ClientServer
+		};
+
+		EMultiPlayerType mpType = eMPT_ServerOnly;
+		const char* mpTypeAttr = flowGraphNode->getAttr("MultiPlayer");
+
+		if (mpTypeAttr)
+		{
+			if (strcmp("ClientOnly", mpTypeAttr) == 0)
+				mpType = eMPT_ClientOnly;
+			else if (strcmp("ClientServer", mpTypeAttr) == 0)
+				mpType = eMPT_ClientServer;
+		}
+
+		const bool bIsServer = gEnv->bServer;
+		const bool bIsClient = gEnv->bClient;
+
+		if (mpType == eMPT_ServerOnly && !bIsServer)
+			return;
+		else if (mpType == eMPT_ClientOnly && !bIsClient)
+			return;
+
+		SetFlowGraph( GetISystem()->GetIFlowSystem()->CreateFlowGraph() );
+	}
+	else
+	{
+		flowGraphNode = entityNode->createNode("FlowGraph");
+		entityNode->addChild(flowGraphNode);
+	}
+	assert(!!flowGraphNode);
+	m_pFlowGraph->SetGraphEntity( m_pEntity->GetId() );
+	m_pFlowGraph->SerializeXML( flowGraphNode, bLoading );
+}
+
+//////////////////////////////////////////////////////////////////////////
+bool CFlowGraphProxy::NeedSerialize()
+{
+	return m_pFlowGraph != 0;
+};
+
+//////////////////////////////////////////////////////////////////////////
+void CFlowGraphProxy::Serialize( TSerialize ser )
+{
+	bool hasFlowGraph = m_pFlowGraph != 0;
+	if (ser.BeginOptionalGroup( "FlowGraph", hasFlowGraph ))
+	{
+		if (ser.IsReading() && m_pFlowGraph == 0)
+		{
+			EntityWarning("Unable to reload flowgraph here");
+			return;
+		}
+
+		if (m_pFlowGraph)
+			m_pFlowGraph->Serialize( ser );
+
+		ser.EndGroup();
+	}
+}

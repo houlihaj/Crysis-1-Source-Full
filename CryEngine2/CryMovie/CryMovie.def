@@ -1,0 +1,3 @@
+EXPORTS
+	CreateMovieSystem      @1
+	CryModuleGetMemoryInfo @8

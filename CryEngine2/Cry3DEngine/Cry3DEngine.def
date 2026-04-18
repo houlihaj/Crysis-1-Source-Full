@@ -1,0 +1,3 @@
+EXPORTS
+	CreateCry3DEngine @1
+	CryModuleGetMemoryInfo @8

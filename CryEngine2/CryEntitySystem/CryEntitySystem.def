@@ -1,0 +1,3 @@
+EXPORTS
+	CreateEntitySystem     @1
+	CryModuleGetMemoryInfo @8

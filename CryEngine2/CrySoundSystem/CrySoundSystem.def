@@ -1,0 +1,3 @@
+EXPORTS
+	CreateSoundSystem      @1
+	CryModuleGetMemoryInfo @8
