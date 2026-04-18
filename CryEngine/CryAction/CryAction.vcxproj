@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="CRYSIS_BETA|Win32">
+      <Configuration>CRYSIS_BETA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="CRYSIS_BETA|x64">
+      <Configuration>CRYSIS_BETA</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPS3|Win32">
+      <Configuration>DebugPS3</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugPS3|x64">
+      <Configuration>DebugPS3</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ProfilePS3|Win32">
+      <Configuration>ProfilePS3</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ProfilePS3|x64">
+      <Configuration>ProfilePS3</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SP_DEMO|Win32">
+      <Configuration>SP_DEMO</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SP_DEMO|x64">
+      <Configuration>SP_DEMO</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{498187B3-E46F-45FA-A202-992AE9FDA01A}</ProjectGuid>
+    <RootNamespace>CryAction</RootNamespace>
+    <SccProjectName>Perforce Project</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ProfilePS3|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPS3|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ProfilePS3|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPS3|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ProfilePS3|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugPS3|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ProfilePS3|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugPS3|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.37203.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin64\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin64\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin64\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPS3|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine>$(SolutionDir)/../Tools/Make/Tools/build.bat $(SolutionDir)/../.. $(ProjectDir) $(ProjectName) PS3-debug</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)/../Tools/Make/Tools/rebuild.bat $(SolutionDir)/../.. $(ProjectDir) $(ProjectName) PS3-debug</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(SolutionDir)/../Tools/Make/Tools/clean.bat $(SolutionDir)/../.. $(ProjectDir) $(ProjectName) PS3-debug</NMakeCleanCommandLine>
+    <NMakeOutput />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugPS3|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine>$(SolutionDir)/../../BinPS3/makewrapper.exe --basedir "$(SolutionDir)/../.." alldebug -f Makefile</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)/../../BinPS3/makewrapper.exe --basedir "$(SolutionDir)/../.." allcleandebug -f Makefile</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(SolutionDir)/../../BinPS3/makewrapper.exe --basedir "$(SolutionDir)/../.." cleandebug -f Makefile</NMakeCleanCommandLine>
+    <NMakeOutput />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ProfilePS3|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine>$(SolutionDir)/../Tools/Make/Tools/build.bat $(SolutionDir)/../.. $(ProjectDir) $(ProjectName) PS3-profile</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)/../Tools/Make/Tools/rebuild.bat $(SolutionDir)/../.. $(ProjectDir) $(ProjectName) PS3-profile</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(SolutionDir)/../Tools/Make/Tools/clean.bat $(SolutionDir)/../.. $(ProjectDir) $(ProjectName) PS3-profile</NMakeCleanCommandLine>
+    <NMakeOutput />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ProfilePS3|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine>$(SolutionDir)/../../BinPS3/makewrapper.exe --basedir "$(SolutionDir)/../.." allrelease -f Makefile</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>$(SolutionDir)/../../BinPS3/makewrapper.exe --basedir "$(SolutionDir)/../.." allcleanrelease -f Makefile </NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine>$(SolutionDir)/../../BinPS3/makewrapper.exe --basedir "$(SolutionDir)/../.." cleanrelease -f Makefile</NMakeCleanCommandLine>
+    <NMakeOutput />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin64\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling />
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)CryAction.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <ImportLibrary>$(OutDir)CryAction.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)CryAction.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)CryAction.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ImportLibrary>$(OutDir)CryAction.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ImportLibrary>$(OutDir)CryAction.lib</ImportLibrary>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS; $(CUSTOM_DEFINES);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x30500000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS; $(CUSTOM_DEFINES);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x30500000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;SP_DEMO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x30500000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;SP_DEMO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x30500000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS; CRYSIS_BETA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x30500000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>..\CryCommon;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x30500000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionFilter.cpp" />
+    <ClCompile Include="ActionGame.cpp" />
+    <ClCompile Include="ActionMap.cpp" />
+    <ClCompile Include="ActionMapManager.cpp" />
+    <ClCompile Include="ActorSystem.cpp" />
+    <ClCompile Include="AIFaceManager.cpp" />
+    <ClCompile Include="AIHandler.cpp" />
+    <ClCompile Include="AIProxy.cpp" />
+    <ClCompile Include="AIReadabilityManager.cpp" />
+    <ClCompile Include="Analyst.cpp" />
+    <ClCompile Include="AnimationGraph\AGAnimation.cpp" />
+    <ClCompile Include="AnimationGraph\AGAttachmentEffect.cpp" />
+    <ClCompile Include="AnimationGraph\AGColliderMode.cpp" />
+    <ClCompile Include="AnimationGraph\AGFacial.cpp" />
+    <ClCompile Include="AnimationGraph\AGForceStartImmediately.cpp" />
+    <ClCompile Include="AnimationGraph\AGLookIkOverride.cpp" />
+    <ClCompile Include="AnimationGraph\AGMovementControlMethod.cpp" />
+    <ClCompile Include="AnimationGraph\AGOutput.cpp" />
+    <ClCompile Include="AnimationGraph\AGParams.cpp" />
+    <ClCompile Include="AnimationGraph\AGSetInput.cpp" />
+    <ClCompile Include="AnimationGraph\AGSound.cpp" />
+    <ClCompile Include="AnimationGraph\AGTransitionParams.cpp" />
+    <ClCompile Include="AnimationGraph\AGWaitForUBAllowed.cpp" />
+    <ClCompile Include="AnimationGraph\AnimatedCharacter.cpp" />
+    <ClCompile Include="AnimationGraph\AnimatedCharacterPPS.cpp" />
+    <ClCompile Include="AnimationGraph\AnimatedCharacterPPS_Common.cpp" />
+    <ClCompile Include="AnimationGraph\AnimatedCharacterPPS_Debug.cpp" />
+    <ClCompile Include="AnimationGraph\AnimatedCharacterPPS_ParamCalculation.cpp" />
+    <ClCompile Include="AnimationGraph\AnimatedCharacterPPS_StateSelection.cpp" />
+    <ClCompile Include="AnimationGraph\AnimationGraph.cpp" />
+    <ClCompile Include="AnimationGraph\AnimationGraphCVars.cpp" />
+    <ClCompile Include="AnimationGraph\AnimationGraphManager.cpp" />
+    <ClCompile Include="AnimationGraph\AnimationGraphManager_RegisterFactories.cpp" />
+    <ClCompile Include="AnimationGraph\AnimationGraphState.cpp" />
+    <ClCompile Include="AnimationGraph\AnimationGraphStates.cpp" />
+    <ClCompile Include="AnimationGraph\AnimationGraphTemplate.cpp" />
+    <ClCompile Include="AnimationGraph\AnimationTrigger.cpp" />
+    <ClCompile Include="AnimationGraph\AnimEvent.cpp" />
+    <ClCompile Include="AnimationGraph\AnimPhysicsNodes.cpp" />
+    <ClCompile Include="AnimationGraph\DebugHistory.cpp" />
+    <ClCompile Include="AnimationGraph\ExactPositioning.cpp" />
+    <ClCompile Include="AnimationGraph\HumanBlending.cpp" />
+    <ClCompile Include="AnimationGraph\MGDelayEntering.cpp" />
+    <ClCompile Include="AnimationGraph\MGDelayLeaving.cpp" />
+    <ClCompile Include="AnimationGraph\MGEndMusic.cpp" />
+    <ClCompile Include="AnimationGraph\MGMood.cpp" />
+    <ClCompile Include="AnimationGraph\MGStinger.cpp" />
+    <ClCompile Include="AnimationGraph\MGTheme.cpp" />
+    <ClCompile Include="AnimationGraph\PreprocessLinksAndStates.cpp" />
+    <ClCompile Include="AnimationGraph\RangeMerger.cpp" />
+    <ClCompile Include="AnimationGraph\StateIndex.cpp" />
+    <ClCompile Include="BreakablePlane.cpp" />
+    <ClCompile Include="CallbackTimer.cpp" />
+    <ClCompile Include="CryAction.cpp">
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <ClCompile Include="CryActionCVars.cpp" />
+    <ClCompile Include="DebrisMgr\DebrisMgr.cpp" />
+    <ClCompile Include="DevMode.cpp" />
+    <ClCompile Include="DialogSystem\DialogActorContext.cpp" />
+    <ClCompile Include="DialogSystem\DialogLoader.cpp" />
+    <ClCompile Include="DialogSystem\DialogLoaderMK2.cpp" />
+    <ClCompile Include="DialogSystem\DialogScript.cpp" />
+    <ClCompile Include="DialogSystem\DialogSession.cpp" />
+    <ClCompile Include="DialogSystem\DialogSystem.cpp" />
+    <ClCompile Include="DialogSystem\FlowDialogNode.cpp" />
+    <ClCompile Include="DialogSystem\ScriptBind_DialogSystem.cpp" />
+    <ClCompile Include="EffectSystem\BloodSplats.cpp" />
+    <ClCompile Include="EffectSystem\Effect.cpp" />
+    <ClCompile Include="EffectSystem\EffectSystem.cpp" />
+    <ClCompile Include="EffectSystem\GroundEffect.cpp" />
+    <ClCompile Include="EquipmentManager.cpp" />
+    <ClCompile Include="FlowSystem\FlowData.cpp" />
+    <ClCompile Include="FlowSystem\FlowGraph.cpp">
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">AssemblyAndSourceCode</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">AssemblyAndSourceCode</AssemblerOutput>
+    </ClCompile>
+    <ClCompile Include="FlowSystem\FlowSerialize.cpp" />
+    <ClCompile Include="FlowSystem\FlowSystem.cpp" />
+    <ClCompile Include="FlowSystem\FlowSystemCVars.cpp" />
+    <ClCompile Include="FlowSystem\Inspectors\FlowFilters.cpp" />
+    <ClCompile Include="FlowSystem\Inspectors\FlowInspectorDefault.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\AngularInterpolatorNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\ComputeLightingNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\EntitiesInRangeNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowCameraNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowCompositeNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowConditionNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowCVarsNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowDelayNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowEngineEffectsNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowEngineNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowEntityNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowEnvironmentNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowFlashInvokeNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowGameNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowHUDNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowInputNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowInterpolNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowInventoryNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowLogicNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowLogInput.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowLogNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowMathNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowMissionNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowMovieNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowMusicLogicControlNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowNodeAI.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowNodeAIAction.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowNode_ColliderMode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowNoiseNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowPhysicsNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowPlotNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowSaveGameNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowScriptedNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowSoundDialog.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowSoundMoodNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowSoundVolumeNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowStartNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowStatsNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowStringNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowTimeNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowVideoPlayerNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\FlowWeaponNodes.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\GameTokenNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\IndexerNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\LinearInterpolatorNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\MultiplexerNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\OwnerAngularInterpolatorNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\OwnerAngularRotationNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\OwnerLinearInterpolatorNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\PlayCGANode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\PlaySequenceNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\PlaySoundNode.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleAttachment.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleBase.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleDamage.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleHorn.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleLights.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleMoveActionMult.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleMovement.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehiclePassenger.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleSeat.cpp" />
+    <ClCompile Include="FlowSystem\Nodes\Vehicle\FlowVehicleTurret.cpp" />
+    <ClCompile Include="GameObjects\CameraSource.cpp" />
+    <ClCompile Include="GameObjects\GameObject.cpp" />
+    <ClCompile Include="GameObjects\GameObjectDispatch.cpp" />
+    <ClCompile Include="GameObjects\GameObjectSystem.cpp" />
+    <ClCompile Include="GameObjects\GameObjectSystem_FactoryRegistration.cpp" />
+    <ClCompile Include="GameObjects\Interactor.cpp" />
+    <ClCompile Include="GameObjects\WorldQuery.cpp" />
+    <ClCompile Include="GameplayRecorder\GameplayRecorder.cpp" />
+    <ClCompile Include="GameRulesSystem.cpp" />
+    <ClCompile Include="GameTokens\GameToken.cpp" />
+    <ClCompile Include="GameTokens\GameTokenSystem.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="ItemParams.cpp" />
+    <ClCompile Include="ItemSystem.cpp" />
+    <ClCompile Include="Level.cpp" />
+    <ClCompile Include="LevelSystem.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MaterialEffects\IMFXEffect.cpp" />
+    <ClCompile Include="MaterialEffects\MaterialEffects.cpp" />
+    <ClCompile Include="MaterialEffects\MaterialEffectsCVars.cpp" />
+    <ClCompile Include="materialeffects\MaterialFGManager.cpp" />
+    <ClCompile Include="materialeffects\MaterialHUDFXNodes.cpp" />
+    <ClCompile Include="MaterialEffects\MFXDecalEffect.cpp" />
+    <ClCompile Include="MaterialEffects\MFXEffect.cpp" />
+    <ClCompile Include="materialeffects\MFXFlowGraphEffect.cpp" />
+    <ClCompile Include="MaterialEffects\MFXParticleEffect.cpp" />
+    <ClCompile Include="MaterialEffects\MFXRandomEffect.cpp" />
+    <ClCompile Include="MaterialEffects\MFXSoundEffect.cpp" />
+    <ClCompile Include="MaterialEffects\ScriptBind_MaterialEffects.cpp" />
+    <ClCompile Include="MetadataRecorder\MetadataRecorder.cpp" />
+    <ClCompile Include="ModManager\ModManager.cpp" />
+    <ClCompile Include="MusicLogic\MusicLogic.cpp" />
+    <ClCompile Include="MusicLogic\ScriptBind_MusicLogic.cpp" />
+    <ClCompile Include="Network\BreakReplicator.cpp" />
+    <ClCompile Include="Network\CET_ActionMap.cpp" />
+    <ClCompile Include="Network\CET_ClassRegistry.cpp" />
+    <ClCompile Include="Network\CET_CVars.cpp" />
+    <ClCompile Include="Network\CET_DemoMode.cpp" />
+    <ClCompile Include="Network\CET_EntitySystem.cpp" />
+    <ClCompile Include="Network\CET_GameRules.cpp" />
+    <ClCompile Include="Network\CET_LevelLoading.cpp" />
+    <ClCompile Include="Network\CET_NetConfig.cpp" />
+    <ClCompile Include="Network\CET_View.cpp" />
+    <ClCompile Include="Network\ClassRegistryReplicator.cpp" />
+    <ClCompile Include="Network\CVarListProcessor.cpp" />
+    <ClCompile Include="Network\DeformingBreak.cpp" />
+    <ClCompile Include="Network\ExplosiveObjectState.cpp" />
+    <ClCompile Include="Network\GameChannel.cpp" />
+    <ClCompile Include="Network\GameClientChannel.cpp" />
+    <ClCompile Include="Network\GameClientNub.cpp" />
+    <ClCompile Include="Network\GameContext.cpp" />
+    <ClCompile Include="Network\GameContext_RegisterExtensions.cpp" />
+    <ClCompile Include="Network\GameQueryListener.cpp" />
+    <ClCompile Include="Network\GameServerChannel.cpp" />
+    <ClCompile Include="Network\GameServerNub.cpp" />
+    <ClCompile Include="Network\GameStats.cpp" />
+    <ClCompile Include="Network\GameStatsConfig.cpp" />
+    <ClCompile Include="Network\GenericPlaybackListener.cpp" />
+    <ClCompile Include="Network\GenericRecordingListener.cpp" />
+    <ClCompile Include="Network\JointBreak.cpp" />
+    <ClCompile Include="Network\NetworkCVars.cpp" />
+    <ClCompile Include="Network\ObjectSelector.cpp" />
+    <ClCompile Include="Network\PhysicsSync.cpp" />
+    <ClCompile Include="Network\PlaneBreak.cpp" />
+    <ClCompile Include="Network\ProceduralBreak.cpp" />
+    <ClCompile Include="Network\ProceduralBreakingBaseListener.cpp" />
+    <ClCompile Include="Network\ProceduralBreakingPlaybackListener.cpp" />
+    <ClCompile Include="Network\ProceduralBreakingRecordingListener.cpp" />
+    <ClCompile Include="Network\ScriptBind_Network.cpp" />
+    <ClCompile Include="Network\ScriptRMI.cpp" />
+    <ClCompile Include="Network\ScriptSerialize.cpp" />
+    <ClCompile Include="Network\ServerTimer.cpp" />
+    <ClCompile Include="Network\SimulateRemoveEntityParts.cpp" />
+    <ClCompile Include="Network\VoiceController.cpp" />
+    <ClCompile Include="Network\VoiceListener.cpp" />
+    <ClCompile Include="PersistantDebug.cpp" />
+    <ClCompile Include="PlayerProfiles\BMPHelper.cpp" />
+    <ClCompile Include="PlayerProfiles\PlayerProfile.cpp" />
+    <ClCompile Include="PlayerProfiles\PlayerProfileImplFS.cpp" />
+    <ClCompile Include="PlayerProfiles\PlayerProfileImplRSFHelper.cpp" />
+    <ClCompile Include="PlayerProfiles\PlayerProfileManager.cpp" />
+    <ClCompile Include="RemoteControl\RConClientListener.cpp" />
+    <ClCompile Include="RemoteControl\RConServerListener.cpp" />
+    <ClCompile Include="ScriptBind_Action.cpp" />
+    <ClCompile Include="ScriptBind_ActionMapManager.cpp" />
+    <ClCompile Include="ScriptBind_ActorSystem.cpp" />
+    <ClCompile Include="ScriptBind_AI.cpp" />
+    <ClCompile Include="ScriptBind_Inventory.cpp" />
+    <ClCompile Include="ScriptBind_ItemSystem.cpp" />
+    <ClCompile Include="ScriptBind_UI.cpp" />
+    <ClCompile Include="ScriptBind_VehicleSystem.cpp" />
+    <ClCompile Include="Serialization\BinarySaveGame.cpp" />
+    <ClCompile Include="Serialization\GameSerialize.cpp" />
+    <ClCompile Include="Serialization\GameSerialize_FactoryRegistration.cpp" />
+    <ClCompile Include="Serialization\SerializeScriptTableReader.cpp" />
+    <ClCompile Include="Serialization\SerializeScriptTableWriter.cpp" />
+    <ClCompile Include="Serialization\ViewNoteSaveGame.cpp" />
+    <ClCompile Include="Serialization\XmlLoadGame.cpp" />
+    <ClCompile Include="Serialization\XmlSaveGame.cpp" />
+    <ClCompile Include="Serialization\XMLScriptLoader.cpp" />
+    <ClCompile Include="SimpleHttpServer\SimpleHttpServerListener.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SubtitleManager.cpp" />
+    <ClCompile Include="TimeDemo\TimeDemoRecorder.cpp" />
+    <ClCompile Include="TimeOfDayScheduler.cpp" />
+    <ClCompile Include="UIDraw\UIDraw.cpp" />
+    <ClCompile Include="UISystem.cpp" />
+    <ClCompile Include="VehicleSystem.cpp" />
+    <ClCompile Include="VehicleSystem\ScriptBind_Vehicle.cpp" />
+    <ClCompile Include="VehicleSystem\ScriptBind_VehicleSeat.cpp" />
+    <ClCompile Include="VehicleSystem\Vehicle.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleAnimation.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleComponent.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleCVars.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorAISignal.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorDestroy.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorDestroyTread.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorDetachPart.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorEffect.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorGroup.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorHitPassenger.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorImpulse.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorIndicator.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorMovementNotification.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorSink.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamageBehaviorSpawnDebris.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamages.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamagesGroup.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleDamagesTemplateRegistry.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleHelper.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartAnimated.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartAnimatedJoint.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartAttachment.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartBase.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartDetachedEntity.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartEntity.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartLight.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartMassBox.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartStatic.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartSubPart.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartSubPartWheel.cpp" />
+    <ClCompile Include="VehicleSystem\VehiclePartTread.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeat.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatActionAnimation.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatActionLights.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatActionMovement.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatActionPassengerIK.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatActionRotateTurret.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatActionSound.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatActionSteeringWheel.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatActionWeapons.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatGroup.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSeatSerializer.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleSystem_FactoryRegistration.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleUsableActionEnter.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleUtils.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleViewActionThirdPerson.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleViewBase.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleViewFirstPerson.cpp" />
+    <ClCompile Include="VehicleSystem\VehicleViewThirdPerson.cpp" />
+    <ClCompile Include="ViewSystem\View.cpp" />
+    <ClCompile Include="ViewSystem\ViewSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionFilter.h" />
+    <ClInclude Include="ActionGame.h" />
+    <ClInclude Include="ActionMap.h" />
+    <ClInclude Include="ActionMapManager.h" />
+    <ClInclude Include="ActorSystem.h" />
+    <ClInclude Include="AIFaceManager.h" />
+    <ClInclude Include="AIHandler.h" />
+    <ClInclude Include="AIProxy.h" />
+    <ClInclude Include="AIReadabilityManager.h" />
+    <ClInclude Include="Analyst.h" />
+    <ClInclude Include="AnimationGraph\AGAnimation.h" />
+    <ClInclude Include="AnimationGraph\AGAttachmentEffect.h" />
+    <ClInclude Include="AnimationGraph\AGColliderMode.h" />
+    <ClInclude Include="AnimationGraph\AGFacial.h" />
+    <ClInclude Include="AnimationGraph\AGForceStartImmediately.h" />
+    <ClInclude Include="AnimationGraph\AGLookIkOverride.h" />
+    <ClInclude Include="AnimationGraph\AGMovementControlMethod.h" />
+    <ClInclude Include="AnimationGraph\AGOutput.h" />
+    <ClInclude Include="AnimationGraph\AGParams.h" />
+    <ClInclude Include="AnimationGraph\AGSetInput.h" />
+    <ClInclude Include="AnimationGraph\AGSound.h" />
+    <ClInclude Include="AnimationGraph\AGTransitionParams.h" />
+    <ClInclude Include="AnimationGraph\AGWaitForUBAllowed.h" />
+    <ClInclude Include="AnimationGraph\AnimatedCharacter.h" />
+    <ClInclude Include="AnimationGraph\AnimationGraph.h" />
+    <ClInclude Include="AnimationGraph\AnimationGraphCVars.h" />
+    <ClInclude Include="AnimationGraph\AnimationGraphManager.h" />
+    <ClInclude Include="AnimationGraph\AnimationGraphState.h" />
+    <ClInclude Include="AnimationGraph\AnimationGraphStates.h" />
+    <ClInclude Include="AnimationGraph\AnimationGraphTemplate.h" />
+    <ClInclude Include="AnimationGraph\AnimationTrigger.h" />
+    <ClInclude Include="AnimationGraph\AnimEvent.h" />
+    <ClInclude Include="AnimationGraph\AnimPhysicsNodes.h" />
+    <ClInclude Include="AnimationGraph\DebugHistory.h" />
+    <ClInclude Include="AnimationGraph\ExactPositioning.h" />
+    <ClInclude Include="AnimationGraph\HumanBlending.h" />
+    <ClInclude Include="AnimationGraph\MGDelayEntering.h" />
+    <ClInclude Include="AnimationGraph\MGDelayLeaving.h" />
+    <ClInclude Include="AnimationGraph\MGEndMusic.h" />
+    <ClInclude Include="AnimationGraph\MGMood.h" />
+    <ClInclude Include="AnimationGraph\MGStinger.h" />
+    <ClInclude Include="AnimationGraph\MGTheme.h" />
+    <ClInclude Include="AnimationGraph\PreprocessLinksAndStates.h" />
+    <ClInclude Include="AnimationGraph\RangeMerger.h" />
+    <ClInclude Include="AnimationGraph\StateIndex.h" />
+    <ClInclude Include="AnimationGraph\StateIndex_info.h" />
+    <ClInclude Include="BreakablePlane.h" />
+    <ClInclude Include="CallbackTimer.h" />
+    <ClInclude Include="CompositeData.h" />
+    <ClInclude Include="CryAction.h" />
+    <ClInclude Include="CryActionCVars.h" />
+    <ClInclude Include="DebrisMgr\DebrisMgr.h" />
+    <ClInclude Include="DevMode.h" />
+    <ClInclude Include="DialogSystem\DialogActorContext.h" />
+    <ClInclude Include="DialogSystem\DialogCommon.h" />
+    <ClInclude Include="DialogSystem\DialogLoader.h" />
+    <ClInclude Include="DialogSystem\DialogLoaderMK2.h" />
+    <ClInclude Include="DialogSystem\DialogScript.h" />
+    <ClInclude Include="DialogSystem\DialogSession.h" />
+    <ClInclude Include="DialogSystem\DialogSystem.h" />
+    <ClInclude Include="DialogSystem\ScriptBind_DialogSystem.h" />
+    <ClInclude Include="EffectSystem\BloodSplats.h" />
+    <ClInclude Include="EffectSystem\Effect.h" />
+    <ClInclude Include="EffectSystem\EffectSystem.h" />
+    <ClInclude Include="EffectSystem\GroundEffect.h" />
+    <ClInclude Include="EquipmentManager.h" />
+    <ClInclude Include="FlowSystem\FlowData.h" />
+    <ClInclude Include="FlowSystem\FlowGraph.h" />
+    <ClInclude Include="FlowSystem\FlowSerialize.h" />
+    <ClInclude Include="FlowSystem\FlowSystem.h" />
+    <ClInclude Include="FlowSystem\FlowSystemCVars.h" />
+    <ClInclude Include="FlowSystem\Inspectors\FlowFilters.h" />
+    <ClInclude Include="FlowSystem\Inspectors\FlowInspectorDefault.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowBaseNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowCompositeNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowConditionNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowDelayNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowEntityNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowLogNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowNodeAIAction.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowNoiseNodes.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowScriptedNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowStartNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\FlowTimeNode.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehicleAttachment.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehicleBase.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehicleDamage.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehicleLights.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehicleMoveActionMult.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehicleMovement.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehiclePassenger.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehicleSeat.h" />
+    <ClInclude Include="FlowSystem\Nodes\Vehicle\FlowVehicleTurret.h" />
+    <ClInclude Include="GameObjects\CameraSource.h" />
+    <ClInclude Include="GameObjects\GameObject.h" />
+    <ClInclude Include="GameObjects\GameObjectDispatch.h" />
+    <ClInclude Include="GameObjects\GameObjectSystem.h" />
+    <ClInclude Include="GameObjects\Interactor.h" />
+    <ClInclude Include="GameObjects\WorldQuery.h" />
+    <ClInclude Include="GameplayRecorder\GameplayRecorder.h" />
+    <ClInclude Include="GameRulesSystem.h" />
+    <ClInclude Include="GameTokens\GameToken.h" />
+    <ClInclude Include="GameTokens\GameTokenSystem.h" />
+    <ClInclude Include="IActionMapManager.h" />
+    <ClInclude Include="IActorSystem.h" />
+    <ClInclude Include="IAnimatedCharacter.h" />
+    <ClInclude Include="IAnimationGraph.h" />
+    <ClInclude Include="IAnimationGraph_info.h" />
+    <ClInclude Include="IAnimationStateNode.h" />
+    <ClInclude Include="IDebrisMgr.h" />
+    <ClInclude Include="IEffectSystem.h" />
+    <ClInclude Include="IGameObject.h" />
+    <ClInclude Include="IGameObjectSystem.h" />
+    <ClInclude Include="IGameplayRecorder.h" />
+    <ClInclude Include="IGameRulesSystem.h" />
+    <ClInclude Include="IInteractor.h" />
+    <ClInclude Include="IItem.h" />
+    <ClInclude Include="IItemSystem.h" />
+    <ClInclude Include="ILevelSystem.h" />
+    <ClInclude Include="ILoadGame.h" />
+    <ClInclude Include="IMetadataRecorder.h" />
+    <ClInclude Include="IMovementController.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="IPlayerProfiles.h" />
+    <ClInclude Include="ISaveGame.h" />
+    <ClInclude Include="ISubtitleManager.h" />
+    <ClInclude Include="ItemParams.h" />
+    <ClInclude Include="ItemSystem.h" />
+    <ClInclude Include="IUIDraw.h" />
+    <ClInclude Include="IVehicleSystem.h" />
+    <ClInclude Include="IViewSystem.h" />
+    <ClInclude Include="IWeapon.h" />
+    <ClInclude Include="IWorldQuery.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LevelSystem.h" />
+    <ClInclude Include="MaterialEffects\IMFXEffect.h" />
+    <ClInclude Include="MaterialEffects\MaterialEffects.h" />
+    <ClInclude Include="MaterialEffects\MaterialEffectsCVars.h" />
+    <ClInclude Include="MaterialEffects\MFXDecalEffect.h" />
+    <ClInclude Include="MaterialEffects\MFXEffect.h" />
+    <ClInclude Include="materialeffects\MFXFlowGraphEffect.h" />
+    <ClInclude Include="MaterialEffects\MFXParticleEffect.h" />
+    <ClInclude Include="MaterialEffects\MFXRandomEffect.h" />
+    <ClInclude Include="MaterialEffects\MFXSoundEffect.h" />
+    <ClInclude Include="MaterialEffects\ScriptBind_MaterialEffects.h" />
+    <ClInclude Include="MaterialFGManager.h" />
+    <ClInclude Include="ModManager\ModManager.h" />
+    <ClInclude Include="MusicLogic\MusicLogic.h" />
+    <ClInclude Include="MusicLogic\ScriptBind_MusicLogic.h" />
+    <ClInclude Include="Network\BreakReplicator.h" />
+    <ClInclude Include="Network\CET_ActionMap.h" />
+    <ClInclude Include="Network\CET_ClassRegistry.h" />
+    <ClInclude Include="Network\CET_CVars.h" />
+    <ClInclude Include="Network\CET_DemoMode.h" />
+    <ClInclude Include="Network\CET_EntitySystem.h" />
+    <ClInclude Include="Network\CET_GameRules.h" />
+    <ClInclude Include="Network\CET_LevelLoading.h" />
+    <ClInclude Include="Network\CET_NetConfig.h" />
+    <ClInclude Include="Network\CET_View.h" />
+    <ClInclude Include="Network\ClassRegistryReplicator.h" />
+    <ClInclude Include="Network\CVarListProcessor.h" />
+    <ClInclude Include="Network\DeformingBreak.h" />
+    <ClInclude Include="Network\ExplosiveObjectState.h" />
+    <ClInclude Include="Network\GameChannel.h" />
+    <ClInclude Include="Network\GameClientChannel.h" />
+    <ClInclude Include="Network\GameClientNub.h" />
+    <ClInclude Include="Network\GameContext.h" />
+    <ClInclude Include="Network\GameQueryListener.h" />
+    <ClInclude Include="Network\GameServerChannel.h" />
+    <ClInclude Include="Network\GameServerNub.h" />
+    <ClInclude Include="Network\GameStats.h" />
+    <ClInclude Include="Network\GameStatsConfig.h" />
+    <ClInclude Include="Network\GenericPlaybackListener.h" />
+    <ClInclude Include="Network\GenericRecordingListener.h" />
+    <ClInclude Include="Network\IBreakPlaybackStream.h" />
+    <ClInclude Include="Network\IBreakReplicatorListener.h" />
+    <ClInclude Include="Network\IContextEstablishTask.h" />
+    <ClInclude Include="Network\IProceduralBreakType.h" />
+    <ClInclude Include="Network\JointBreak.h" />
+    <ClInclude Include="Network\NetActionSync.h" />
+    <ClInclude Include="Network\NetworkCVars.h" />
+    <ClInclude Include="Network\NullListener.h" />
+    <ClInclude Include="Network\NullStream.h" />
+    <ClInclude Include="Network\ObjectSelector.h" />
+    <ClInclude Include="Network\PhysicsSync.h" />
+    <ClInclude Include="Network\PlaneBreak.h" />
+    <ClInclude Include="Network\ProceduralBreak.h" />
+    <ClInclude Include="Network\ProceduralBreakingBaseListener.h" />
+    <ClInclude Include="Network\ProceduralBreakingPlaybackListener.h" />
+    <ClInclude Include="Network\ProceduralBreakingRecordingListener.h" />
+    <ClInclude Include="Network\ScriptBind_Network.h" />
+    <ClInclude Include="Network\ScriptRMI.h" />
+    <ClInclude Include="Network\ScriptSerialize.h" />
+    <ClInclude Include="Network\SensedInclusionSet.h" />
+    <ClInclude Include="Network\ServerTimer.h" />
+    <ClInclude Include="Network\SimulateCreateEntityPart.h" />
+    <ClInclude Include="Network\SimulateRemoveEntityParts.h" />
+    <ClInclude Include="Network\VoiceController.h" />
+    <ClInclude Include="Network\VoiceListener.h" />
+    <ClInclude Include="PersistantDebug.h" />
+    <ClInclude Include="PlayerProfiles\BMPHelper.h" />
+    <ClInclude Include="PlayerProfiles\PlayerProfile.h" />
+    <ClInclude Include="PlayerProfiles\PlayerProfileImplFS.h" />
+    <ClInclude Include="PlayerProfiles\PlayerProfileImplRSFHelper.h" />
+    <ClInclude Include="PlayerProfiles\PlayerProfileManager.h" />
+    <ClInclude Include="PlayerProfiles\RichSaveGameTypes.h" />
+    <ClInclude Include="PlayerProfiles\RichSaveGameTypes_info.h" />
+    <ClInclude Include="RemoteControl\RConClientListener.h" />
+    <ClInclude Include="RemoteControl\RConServerListener.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ScriptBind_Action.h" />
+    <ClInclude Include="ScriptBind_ActionMapManager.h" />
+    <ClInclude Include="ScriptBind_ActorSystem.h" />
+    <ClInclude Include="ScriptBind_AI.h" />
+    <ClInclude Include="ScriptBind_Inventory.h" />
+    <ClInclude Include="ScriptBind_ItemSystem.h" />
+    <ClInclude Include="ScriptBind_UI.h" />
+    <ClInclude Include="ScriptBind_VehicleSystem.h" />
+    <ClInclude Include="Serialization\BinarySaveGame.h" />
+    <ClInclude Include="Serialization\GameSerialize.h" />
+    <ClInclude Include="Serialization\SerializeScriptTableReader.h" />
+    <ClInclude Include="Serialization\SerializeScriptTableWriter.h" />
+    <ClInclude Include="Serialization\ViewNoteSaveGame.h" />
+    <ClInclude Include="Serialization\XmlLoadGame.h" />
+    <ClInclude Include="Serialization\XmlSaveGame.h" />
+    <ClInclude Include="Serialization\XMLScriptLoader.h" />
+    <ClInclude Include="SimpleHttpServer\SimpleHttpServerListener.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SubtitleManager.h" />
+    <ClInclude Include="TimeDemo\TimeDemoRecorder.h" />
+    <ClInclude Include="TimeOfDayScheduler.h" />
+    <ClInclude Include="UIDraw\UIDraw.h" />
+    <ClInclude Include="UISystem.h" />
+    <ClInclude Include="VehicleSystem.h" />
+    <ClInclude Include="VehicleSystem\ScriptBind_Vehicle.h" />
+    <ClInclude Include="VehicleSystem\ScriptBind_VehicleSeat.h" />
+    <ClInclude Include="VehicleSystem\Vehicle.h" />
+    <ClInclude Include="VehicleSystem\VehicleAnimation.h" />
+    <ClInclude Include="VehicleSystem\VehicleComponent.h" />
+    <ClInclude Include="VehicleSystem\VehicleCVars.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorAISignal.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorDestroy.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorDestroyTread.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorDetachPart.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorEffect.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorGroup.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorHitPassenger.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorImpulse.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorIndicator.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorMovementNotification.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorSink.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamageBehaviorSpawnDebris.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamages.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamagesGroup.h" />
+    <ClInclude Include="VehicleSystem\VehicleDamagesTemplateRegistry.h" />
+    <ClInclude Include="VehicleSystem\VehicleHelper.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartAnimated.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartAnimatedJoint.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartAttachment.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartBase.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartDetachedEntity.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartEntity.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartLight.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartMassBox.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartStatic.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartSubPart.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartSubPartWheel.h" />
+    <ClInclude Include="VehicleSystem\VehiclePartTread.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeat.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatActionAnimation.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatActionLights.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatActionMovement.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatActionPassengerIK.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatActionRotateTurret.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatActionSound.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatActionSteeringWheel.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatActionWeapons.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatGroup.h" />
+    <ClInclude Include="VehicleSystem\VehicleSeatSerializer.h" />
+    <ClInclude Include="VehicleSystem\VehicleUsableActionEnter.h" />
+    <ClInclude Include="VehicleSystem\VehicleUtils.h" />
+    <ClInclude Include="VehicleSystem\VehicleViewActionThirdPerson.h" />
+    <ClInclude Include="VehicleSystem\VehicleViewBase.h" />
+    <ClInclude Include="VehicleSystem\VehicleViewFirstPerson.h" />
+    <ClInclude Include="VehicleSystem\VehicleViewThirdPerson.h" />
+    <ClInclude Include="ViewNote.h" />
+    <ClInclude Include="ViewSystem\View.h" />
+    <ClInclude Include="ViewSystem\ViewSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CryAction.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

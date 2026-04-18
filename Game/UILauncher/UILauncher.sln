@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UILauncher", "UILauncher\UILauncher.vcproj", "{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CryCommon", "..\..\CryEngine\CryCommon\CryCommon.vcproj", "{AEB958D4-45CA-478B-BA8E-D0E897CE974B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CryAction", "..\..\CryEngine\CryAction\CryAction.vcproj", "{498187B3-E46F-45FA-A202-992AE9FDA01A}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = ..\\..\\CryEngine\\CryCommon\\CryCommon.vcproj
+		SccProjectName0 = Perforce\u0020Project
+		SccLocalPath0 = ..\\..\\CryEngine\\CryCommon
+		SccProvider0 = MSSCCI:Perforce\u0020SCM
+		SccProjectUniqueName1 = UILauncher\\UILauncher.vcproj
+		SccProjectName1 = Perforce\u0020Project
+		SccLocalPath1 = UILauncher
+		SccProvider1 = MSSCCI:Perforce\u0020SCM
+		SccProjectUniqueName2 = ..\\..\\CryEngine\\CryAction\\CryAction.vcproj
+		SccProjectName2 = Perforce\u0020Project
+		SccLocalPath2 = ..\\..\\CryEngine\\CryAction
+		SccProvider2 = MSSCCI:Perforce\u0020SCM
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Profile|Win32 = Profile|Win32
+		Profile|x64 = Profile|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}.Debug|Win32.Build.0 = Debug|Win32
+		{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}.Debug|x64.ActiveCfg = Debug|x64
+		{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}.Debug|x64.Build.0 = Debug|x64
+		{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}.Profile|Win32.ActiveCfg = Profile|Win32
+		{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}.Profile|Win32.Build.0 = Profile|Win32
+		{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}.Profile|x64.ActiveCfg = Profile|x64
+		{5F79130B-3F8D-4B44-BDB4-7D194A45E5BC}.Profile|x64.Build.0 = Profile|x64
+		{AEB958D4-45CA-478B-BA8E-D0E897CE974B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AEB958D4-45CA-478B-BA8E-D0E897CE974B}.Debug|x64.ActiveCfg = Debug|x64
+		{AEB958D4-45CA-478B-BA8E-D0E897CE974B}.Profile|Win32.ActiveCfg = Profile|Win32
+		{AEB958D4-45CA-478B-BA8E-D0E897CE974B}.Profile|x64.ActiveCfg = Profile|x64
+		{498187B3-E46F-45FA-A202-992AE9FDA01A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{498187B3-E46F-45FA-A202-992AE9FDA01A}.Debug|Win32.Build.0 = Debug|Win32
+		{498187B3-E46F-45FA-A202-992AE9FDA01A}.Debug|x64.ActiveCfg = Debug|x64
+		{498187B3-E46F-45FA-A202-992AE9FDA01A}.Debug|x64.Build.0 = Debug|x64
+		{498187B3-E46F-45FA-A202-992AE9FDA01A}.Profile|Win32.ActiveCfg = Profile|Win32
+		{498187B3-E46F-45FA-A202-992AE9FDA01A}.Profile|Win32.Build.0 = Profile|Win32
+		{498187B3-E46F-45FA-A202-992AE9FDA01A}.Profile|x64.ActiveCfg = Profile|x64
+		{498187B3-E46F-45FA-A202-992AE9FDA01A}.Profile|x64.Build.0 = Profile|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

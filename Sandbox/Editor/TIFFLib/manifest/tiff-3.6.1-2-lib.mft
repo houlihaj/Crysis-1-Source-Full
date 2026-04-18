@@ -1,0 +1,11 @@
+include/tiff.h
+include/tiffconf.h
+include/tiffio.h
+include/tiffvers.h
+lib/libtiff-bcc.lib
+lib/libtiff.a
+lib/libtiff.dll.a
+lib/libtiff.lib
+lib/libtiff3.def
+manifest/tiff-3.6.1-2-lib.mft
+manifest/tiff-3.6.1-2-lib.ver

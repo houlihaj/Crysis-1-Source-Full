@@ -1,0 +1,48 @@
+The development version of the PS3Launcher can be configured through the
+configuration file 'launcher.cfg' in the working directory. The file has the
+following format
+
+  <key1> = <value1>
+	<key2> = <value2>
+	...
+
+Empty lines and lines starting with a hash mark (#) are ignored.
+
+The following keys are recognized:
+
+cgserver_host
+	The IP address of the Cg compile server. The server must be specified by its
+	IP number in standard dotted notation (host name lookup is not supported).
+cgserver_port
+	The port number of the Cg compile server. The default value is 4455.
+cnfs_host
+  The hostname of the CNFS server providing the work directory. If this option
+	is empty or omitted, then the PSEUDOFS interface is used for loading the
+	game.
+cnfs_port
+  The port number of CNFS server. The default is 22239.
+cnfs_export
+  The exported name of the work direcory. The default is "work" (without the
+	quotes).
+autoload
+  If not empty, then this parameters specifies the name of a level to be
+	loaded automatically on startup.
+stacksize
+	The size of the execution stack of the main thread. The default value should
+	be OK.
+trace_fopen
+  Flag indicating if calls to fopen()/fclose() should be traced.
+		0: disable fopen() tracing.
+		1: compact logging of fopen() calls.
+		2: verbose logging of fopen() and fclose() calls.
+	The fopen trace messages are written to the standard output.
+report_ignore
+  A comma separated list of message types to be ignored by the PSGL reporting
+	function.
+	Possible values are:
+		UNKNOWN, VERSION, DEBUG, ASSERT, GL_ERROR, MISSING_STATE,
+		VERTEX_SLOW_PATH, VERTEX_DATA_WARNING, COPY_TEXTURE_SLOW_PATH,
+		COPY_TEXTURE_WARNING, TEXTURE_COPY_BACK, TEXTURE_REALLOC, FP32_FILTERING,
+		TEXTURE_INCOMPLETE, FRAMEBUFFER_INCOMPLETE, FRAMEBUFFER_UNSUPPORTED,
+		CG_ERROR
+

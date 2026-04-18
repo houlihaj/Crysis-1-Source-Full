@@ -1,0 +1,2492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="CRYSIS_BETA|Win32">
+      <Configuration>CRYSIS_BETA</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="CRYSIS_BETA|x64">
+      <Configuration>CRYSIS_BETA</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Win32">
+      <Configuration>Profile</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SP_DEMO|Win32">
+      <Configuration>SP_DEMO</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="SP_DEMO|x64">
+      <Configuration>SP_DEMO</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{8E62D4F9-2AD9-45E3-B911-3D0BE2C60189}</ProjectGuid>
+    <RootNamespace>Editor</RootNamespace>
+    <SccProjectName>Perforce Project</SccProjectName>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+    <Import Project="..\..\Solutions\UserDebugSettings.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.37203.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin64\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin64\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin64\</OutDir>
+    <IntDir>$(SolutionDir)..\..\BinTemp\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+    <OutDir>$(SolutionDir)..\..\Bin32\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+    <OutDir>$(SolutionDir)..\..\Bin64\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>c:\MasterCD/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>$(SolutionDir)..\..\..\Tools\PRT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>c:\MasterCD/Editor.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>c:\MasterCD/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>$(SolutionDir)\..\..\..\Tools\PRT_RT_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>c:\MasterCD/Editor.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/FIXED:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\Tools\PRT_DEBUG.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>.\Debug/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\Tools\PRT_DEBUG_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>c:\MasterCD/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\Tools\PRT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x37000000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>c:\MasterCD/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\Tools\PRT_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x37000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>c:\MasterCD/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SP_DEMO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\Tools\PRT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x37000000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>c:\MasterCD/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SP_DEMO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\Tools\PRT_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x37000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>c:\MasterCD/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>CRYSIS_BETA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\Tools\PRT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x37000000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>X64</TargetEnvironment>
+      <TypeLibraryName>c:\MasterCD/Editor.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>/Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>.\;..\;..\..\CryEngine\CryCommon;..\..\SDKs\XT\Include;Include;..\..\CryEngine\CryAction;..\..\Tools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>..\..\SDKs\XT\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>..\..\..\Tools\PRT_x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>..\..\SDKs\XT\Lib_vc8;Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>10000000</StackReserveSize>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <BaseAddress>0x37000000</BaseAddress>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="2DViewport.cpp" />
+    <ClCompile Include="AIAnchorsDialog.cpp" />
+    <ClCompile Include="AICharactersDialog.cpp" />
+    <ClCompile Include="AIDialog.cpp" />
+    <ClCompile Include="AIPointPanel.cpp" />
+    <ClCompile Include="AI\AiBehavior.cpp" />
+    <ClCompile Include="AI\AiBehaviorLibrary.cpp" />
+    <ClCompile Include="AI\AIDebugger.cpp" />
+    <ClCompile Include="AI\AIDebuggerView.cpp" />
+    <ClCompile Include="AI\AiGoal.cpp" />
+    <ClCompile Include="AI\AiGoalLibrary.cpp" />
+    <ClCompile Include="AI\AIManager.cpp" />
+    <ClCompile Include="AI\AI_DebugTool.cpp" />
+    <ClCompile Include="Ai\GenerateSpawners.cpp" />
+    <ClCompile Include="AlignTool.cpp" />
+    <ClCompile Include="AnimationContext.cpp" />
+    <ClCompile Include="AnimationSerializer.cpp" />
+    <ClCompile Include="AnimUtils.cpp" />
+    <ClCompile Include="arcball.cpp" />
+    <ClCompile Include="BaseLibrary.cpp" />
+    <ClCompile Include="BaseLibraryDialog.cpp" />
+    <ClCompile Include="BaseLibraryItem.cpp" />
+    <ClCompile Include="BaseLibraryManager.cpp" />
+    <ClCompile Include="Brush\Brush.cpp" />
+    <ClCompile Include="Brush\BrushClipTool.cpp" />
+    <ClCompile Include="Brush\BrushClipToolPanel.cpp" />
+    <ClCompile Include="Brush\BrushExporter.cpp" />
+    <ClCompile Include="Brush\BrushFace.cpp" />
+    <ClCompile Include="Brush\BrushMtl.cpp" />
+    <ClCompile Include="Brush\BrushMtlLib.cpp" />
+    <ClCompile Include="Brush\BrushPanel.cpp" />
+    <ClCompile Include="Brush\BrushPlane.cpp" />
+    <ClCompile Include="Brush\BrushPoly.cpp" />
+    <ClCompile Include="Brush\BrushTextureTool.cpp" />
+    <ClCompile Include="Brush\BrushTool.cpp" />
+    <ClCompile Include="Brush\SolidBrushCreatePanel.cpp" />
+    <ClCompile Include="Brush\SolidBrushObject.cpp" />
+    <ClCompile Include="Brush\SolidBrushSubObjPanel.cpp" />
+    <ClCompile Include="CharacterEditor\AnimationInfoLoader.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventControlView.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventDoc.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventDocVisitors.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventEditor.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventEngineView.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventJobs.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventListView.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventSelectParameterButtonView.cpp" />
+    <ClCompile Include="CharacterEditor\AnimEventEditor\AnimEventXMLStore.cpp" />
+    <ClCompile Include="CharacterEditor\CharacterEditor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="CharacterEditor\CharPanel_Animation.cpp" />
+    <ClCompile Include="CharacterEditor\CharPanel_AnimationControl.cpp" />
+    <ClCompile Include="CharacterEditor\CharPanel_Attachments.cpp" />
+    <ClCompile Include="CharacterEditor\CharPanel_BAttach.cpp" />
+    <ClCompile Include="CharacterEditor\CharPanel_Character.cpp" />
+    <ClCompile Include="CharacterEditor\CharPanel_Morphing.cpp" />
+    <ClCompile Include="CharacterEditor\CharPanel_Preset.cpp" />
+    <ClCompile Include="CharacterEditor\ModelViewportCE.cpp" />
+    <ClCompile Include="CharacterEditor\ProgressSlider.cpp" />
+    <ClCompile Include="CheckOutDialog.cpp" />
+    <ClCompile Include="Clipboard.cpp" />
+    <ClCompile Include="Clouds.cpp" />
+    <ClCompile Include="Cloud\CloudGroupPanel.cpp" />
+    <ClCompile Include="Commands\Command.cpp" />
+    <ClCompile Include="Commands\CommandManager.cpp" />
+    <ClCompile Include="ConsoleDialog.cpp" />
+    <ClCompile Include="Controls\AnimationToolBar.cpp" />
+    <ClCompile Include="Controls\AnimSequences.cpp" />
+    <ClCompile Include="Controls\BitmapToolTip.cpp" />
+    <ClCompile Include="Controls\ColorButton.cpp" />
+    <ClCompile Include="Controls\ColorCheckBox.cpp" />
+    <ClCompile Include="Controls\ColorGradientCtrl.cpp" />
+    <ClCompile Include="Controls\ColorPickerButton.cpp" />
+    <ClCompile Include="Controls\ConsoleSCB.cpp" />
+    <ClCompile Include="Controls\DLGBARS.CPP" />
+    <ClCompile Include="Controls\EditModeToolBar.cpp" />
+    <ClCompile Include="Controls\FileTree.cpp" />
+    <ClCompile Include="Controls\FillSliderCtrl.cpp" />
+    <ClCompile Include="Controls\HeaderCtrlEx.cpp" />
+    <ClCompile Include="Controls\ImageListCtrl.cpp" />
+    <ClCompile Include="Controls\InPlaceButton.cpp" />
+    <ClCompile Include="Controls\InPlaceComboBox.cpp" />
+    <ClCompile Include="Controls\InPlaceEdit.cpp" />
+    <ClCompile Include="Controls\JoystickCtrl.cpp" />
+    <ClCompile Include="Controls\LayersListBox.cpp" />
+    <ClCompile Include="Controls\ListCtrlEx.cpp" />
+    <ClCompile Include="Controls\MltiTree.cpp" />
+    <ClCompile Include="Controls\NumberCtrl.cpp" />
+    <ClCompile Include="Controls\NumberCtrlEdit.cpp" />
+    <ClCompile Include="Controls\ObjectListCtrl.cpp" />
+    <ClCompile Include="Controls\PickObjectButton.cpp" />
+    <ClCompile Include="Controls\PreviewModelCtrl.cpp" />
+    <ClCompile Include="Controls\PropertyCtrl.cpp" />
+    <ClCompile Include="Controls\PropertyCtrlEx.cpp" />
+    <ClCompile Include="Controls\PropertyItem.cpp" />
+    <ClCompile Include="Controls\RollupBar.cpp" />
+    <ClCompile Include="Controls\RollupCtrl.cpp" />
+    <ClCompile Include="Controls\ScrollableWindow.cpp" />
+    <ClCompile Include="Controls\SelectionCombo.cpp" />
+    <ClCompile Include="Controls\SliderCtrlEx.cpp" />
+    <ClCompile Include="Controls\SplineCtrl.cpp" />
+    <ClCompile Include="Controls\SplineCtrlEx.cpp" />
+    <ClCompile Include="Controls\SplitterWndEx.cpp" />
+    <ClCompile Include="Controls\SubeditListCtrl.cpp" />
+    <ClCompile Include="Controls\SyntaxColorizer.cpp" />
+    <ClCompile Include="Controls\TabCtrlEx.cpp" />
+    <ClCompile Include="Controls\TextEditorCtrl.cpp" />
+    <ClCompile Include="Controls\TimelineCtrl.cpp" />
+    <ClCompile Include="Controls\ToolBarContainer.cpp" />
+    <ClCompile Include="Controls\ToolBarTab.cpp" />
+    <ClCompile Include="Controls\ToolButton.cpp" />
+    <ClCompile Include="Controls\TreeCtrlEx.cpp" />
+    <ClCompile Include="CrtDebug.cpp" />
+    <ClCompile Include="CryEdit.cpp" />
+    <ClCompile Include="CryEditDoc.cpp" />
+    <ClCompile Include="CustomColorDialog.cpp" />
+    <ClCompile Include="CustomFileDialog.cpp" />
+    <ClCompile Include="DataBaseDialog.cpp" />
+    <ClCompile Include="DecalObjectPanel.cpp" />
+    <ClCompile Include="DialogEditor\DialogEditorDialog.cpp" />
+    <ClCompile Include="DialogEditor\DialogManager.cpp" />
+    <ClCompile Include="DialogEditor\DialogScriptRecord.cpp" />
+    <ClCompile Include="DialogEditor\DialogScriptView.cpp" />
+    <ClCompile Include="Dialogs\BaseFrameWnd.cpp" />
+    <ClCompile Include="Dialogs\LicenseKeyDialog.cpp" />
+    <ClCompile Include="Dialogs\VersionUpdateDialog.cpp" />
+    <ClCompile Include="DimensionsDialog.cpp" />
+    <ClCompile Include="DisplaySettings.cpp" />
+    <ClCompile Include="DrawWnd.cpp" />
+    <ClCompile Include="DynamicHelpDialog.cpp" />
+    <ClCompile Include="EAXPresetMgr.cpp" />
+    <ClCompile Include="EAXPresetsDlg.cpp" />
+    <ClCompile Include="EditMode\ObjectMode.cpp" />
+    <ClCompile Include="EditMode\SubObjDisplayPanel.cpp" />
+    <ClCompile Include="EditMode\SubObjectSelectionReferenceFrameCalculator.cpp" />
+    <ClCompile Include="EditMode\SubObjSelectionPanel.cpp" />
+    <ClCompile Include="EditMode\SubObjSelectionTypePanel.cpp" />
+    <ClCompile Include="EditMode\VertexMode.cpp" />
+    <ClCompile Include="EditTool.cpp" />
+    <ClCompile Include="EntityLinksPanel.cpp" />
+    <ClCompile Include="EntityPanel.cpp" />
+    <ClCompile Include="EntityProtLibDialog.cpp" />
+    <ClCompile Include="EntityPrototype.cpp" />
+    <ClCompile Include="EntityPrototypeLibrary.cpp" />
+    <ClCompile Include="EntityPrototypeManager.cpp" />
+    <ClCompile Include="EntityScriptDialog.cpp" />
+    <ClCompile Include="EnvironmentPanel.cpp" />
+    <ClCompile Include="EnvironmentTool.cpp" />
+    <ClCompile Include="EquipPack.cpp" />
+    <ClCompile Include="EquipPackDialog.cpp" />
+    <ClCompile Include="EquipPackLib.cpp" />
+    <ClCompile Include="ErrorReport.cpp" />
+    <ClCompile Include="ErrorReportDialog.cpp" />
+    <ClCompile Include="ExportObjects.cpp" />
+    <ClCompile Include="ExternalTools.cpp" />
+    <ClCompile Include="FacialEditor\Audio\WaveFile.cpp" />
+    <ClCompile Include="FacialEditor\Audio\WaveFileReader.cpp" />
+    <ClCompile Include="FacialEditor\Audio\WaveGraphCtrl.cpp" />
+    <ClCompile Include="FacialEditor\EffectorInfoWnd.cpp" />
+    <ClCompile Include="FacialEditor\FacialEdContext.cpp" />
+    <ClCompile Include="FacialEditor\FacialEditorDialog.cpp" />
+    <ClCompile Include="FacialEditor\FacialEditorDialogC3DSolver.cpp" />
+    <ClCompile Include="FacialEditor\FacialExpressionsDialog.cpp" />
+    <ClCompile Include="FacialEditor\FacialExpressionUtils.cpp" />
+    <ClCompile Include="FacialEditor\FacialJoystickDialog.cpp" />
+    <ClCompile Include="FacialEditor\FacialPreviewDialog.cpp" />
+    <ClCompile Include="FacialEditor\FacialPreviewOptionsDialog.cpp" />
+    <ClCompile Include="FacialEditor\FacialSequenceDialog.cpp" />
+    <ClCompile Include="FacialEditor\FacialSlidersCtrl.cpp" />
+    <ClCompile Include="FacialEditor\FacialSlidersDialog.cpp" />
+    <ClCompile Include="FacialEditor\FacialVideoFrameDialog.cpp" />
+    <ClCompile Include="FacialEditor\JoystickPropertiesDlg.cpp" />
+    <ClCompile Include="FacialEditor\PhonemeAnalyzer.cpp" />
+    <ClCompile Include="FacialEditor\PhonemesCtrl.cpp" />
+    <ClCompile Include="FileTypeUtils.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="GameExporter.cpp" />
+    <ClCompile Include="GameResourcesExporter.cpp" />
+    <ClCompile Include="GameTokens\GameTokenDialog.cpp" />
+    <ClCompile Include="GameTokens\GameTokenItem.cpp" />
+    <ClCompile Include="GameTokens\GameTokenLibrary.cpp" />
+    <ClCompile Include="GameTokens\GameTokenManager.cpp" />
+    <ClCompile Include="GenerationParam.cpp" />
+    <ClCompile Include="GenericSelectItemDialog.cpp" />
+    <ClCompile Include="Geometry\EdGeometry.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="Geometry\EdMesh.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="Geometry\TriMesh.cpp" />
+    <ClCompile Include="GotoPositionDlg.cpp" />
+    <ClCompile Include="GravityVolumePanel.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="GridSettingsDialog.cpp" />
+    <ClCompile Include="Heightmap.cpp" />
+    <ClCompile Include="HyperGraph\AnimationGraph.cpp" />
+    <ClCompile Include="HyperGraph\AnimationGraphDialog.cpp" />
+    <ClCompile Include="HyperGraph\AnimationGraphPreviewDialog.cpp" />
+    <ClCompile Include="HyperGraph\AnimationGraphPreviewManager.cpp" />
+    <ClCompile Include="HyperGraph\AnimationGraphStateEditor.cpp" />
+    <ClCompile Include="HyperGraph\AnimationGraphStateQuery.cpp" />
+    <ClCompile Include="HyperGraph\AnimationGraphTester.cpp" />
+    <ClCompile Include="HyperGraph\AnimationGraphUnitTester.cpp" />
+    <ClCompile Include="HyperGraph\AnimationImageGenerator.cpp" />
+    <ClCompile Include="HyperGraph\AnimationImageManager.cpp" />
+    <ClCompile Include="HyperGraph\CommentNode.cpp" />
+    <ClCompile Include="HyperGraph\FlowFilters.cpp" />
+    <ClCompile Include="HyperGraph\FlowGraph.cpp" />
+    <ClCompile Include="HyperGraph\FlowGraphHelpers.cpp" />
+    <ClCompile Include="HyperGraph\FlowGraphManager.cpp" />
+    <ClCompile Include="HyperGraph\FlowGraphMigrationHelper.cpp" />
+    <ClCompile Include="HyperGraph\FlowGraphNode.cpp" />
+    <ClCompile Include="HyperGraph\FlowGraphProperties.cpp" />
+    <ClCompile Include="HyperGraph\FlowGraphSearchCtrl.cpp" />
+    <ClCompile Include="HyperGraph\FlowGraphVariables.cpp" />
+    <ClCompile Include="HyperGraph\HyperGraph.cpp" />
+    <ClCompile Include="HyperGraph\HyperGraphDialog.cpp" />
+    <ClCompile Include="HyperGraph\HyperGraphManager.cpp" />
+    <ClCompile Include="HyperGraph\HyperGraphNode.cpp" />
+    <ClCompile Include="HyperGraph\HyperGraphView.cpp" />
+    <ClCompile Include="HyperGraph\HyperNodePainter_Comment.cpp" />
+    <ClCompile Include="HyperGraph\HyperNodePainter_Default.cpp" />
+    <ClCompile Include="HyperGraph\HyperNodePainter_MultiIOBox.cpp" />
+    <ClCompile Include="HyperGraph\IslandDetection.cpp" />
+    <ClCompile Include="HyperGraph\SpeedReport.cpp" />
+    <ClCompile Include="HyperGraph\TransitionReport.cpp" />
+    <ClCompile Include="IconManager.cpp" />
+    <ClCompile Include="IEditorImpl.cpp" />
+    <ClCompile Include="IKeyDlg.cpp" />
+    <ClCompile Include="IndirectLighting\Raster.cpp" />
+    <ClCompile Include="IndirectLighting\RasterMPMan.cpp" />
+    <ClCompile Include="IndirectLighting\SHHeightmapAccessibility.cpp" />
+    <ClCompile Include="IndirectLighting\TerrainGIGen.cpp" />
+    <ClCompile Include="IndirectLighting\TerrainObjectMan.cpp" />
+    <ClCompile Include="InfoBar.cpp" />
+    <ClCompile Include="InfoBarHolder.cpp" />
+    <ClCompile Include="InfoProgressBar.cpp" />
+    <ClCompile Include="ItemDescriptionDlg.cpp" />
+    <ClCompile Include="JoystickUtils.cpp" />
+    <ClCompile Include="Layer.cpp" />
+    <ClCompile Include="LayersSelectDialog.cpp" />
+    <ClCompile Include="LayoutConfigDialog.cpp" />
+    <ClCompile Include="LayoutWnd.cpp" />
+    <ClCompile Include="LevelInfo.cpp" />
+    <ClCompile Include="LightmapCompiler\3DSamplerCompiler.cpp" />
+    <ClCompile Include="LightmapCompiler\AmbientOcclusionIntegrator.cpp" />
+    <ClCompile Include="LightmapCompiler\AreaLight.cpp" />
+    <ClCompile Include="LightmapCompiler\CryOctree.cpp" />
+    <ClCompile Include="LightmapCompiler\DirectIlluminance.cpp" />
+    <ClCompile Include="LightmapCompiler\FreeSpaceSpanBuffer.cpp" />
+    <ClCompile Include="LightmapCompiler\GeomCore.cpp" />
+    <ClCompile Include="LightmapCompiler\GeomMesh.cpp" />
+    <ClCompile Include="LightmapCompiler\GeomPrimitives.cpp" />
+    <ClCompile Include="LightmapCompiler\IllumHandler.cpp" />
+    <ClCompile Include="LightmapCompiler\IndirectIlluminance.cpp" />
+    <ClCompile Include="LightmapCompiler\IntersectionCacheCluster.cpp" />
+    <ClCompile Include="LightmapCompiler\LightmapCompilerDialog.cpp" />
+    <ClCompile Include="LightmapCompiler\OcclusionIntegrator.cpp" />
+    <ClCompile Include="LightmapCompiler\PhotonMap.cpp" />
+    <ClCompile Include="LightmapCompiler\PhotonTrace.cpp" />
+    <ClCompile Include="LightmapCompiler\RayMap.cpp" />
+    <ClCompile Include="LightmapCompiler\RayMap_DimensionArray.cpp" />
+    <ClCompile Include="LightmapCompiler\RayMap_Tracer.cpp" />
+    <ClCompile Include="LightmapCompiler\RenderLight.cpp" />
+    <ClCompile Include="LightmapCompiler\RLMesh.cpp" />
+    <ClCompile Include="LightmapCompiler\RLSurface.cpp" />
+    <ClCompile Include="LightmapCompiler\RLUnwrapGroup.cpp" />
+    <ClCompile Include="LightmapCompiler\SceneContext.cpp" />
+    <ClCompile Include="LightmapCompiler\SimpleTriangleRasterizer.cpp" />
+    <ClCompile Include="LightmapCompiler\SpanBuffer.cpp" />
+    <ClCompile Include="LightmapCompiler\SunDirectIlluminance.cpp" />
+    <ClCompile Include="LightmapGen.cpp" />
+    <ClCompile Include="LinkTool.cpp" />
+    <ClCompile Include="LMCompDialog.cpp" />
+    <ClCompile Include="LoadingDialog.cpp" />
+    <ClCompile Include="LoadingScreen.cpp" />
+    <ClCompile Include="LogFile.cpp" />
+    <ClCompile Include="Mailer.cpp" />
+    <ClCompile Include="MainFrm.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MainTools.cpp" />
+    <ClCompile Include="MatEditMainDlg.cpp" />
+    <ClCompile Include="MatEditPreviewDlg.cpp" />
+    <ClCompile Include="MaterialEnum.cpp" />
+    <ClCompile Include="MaterialSelectorDialog.cpp" />
+    <ClCompile Include="Material\Material.cpp" />
+    <ClCompile Include="Material\MaterialBrowser.cpp" />
+    <ClCompile Include="Material\MaterialDialog.cpp" />
+    <ClCompile Include="Material\MaterialFileTree.cpp" />
+    <ClCompile Include="Material\MaterialImageListCtrl.cpp" />
+    <ClCompile Include="Material\MaterialLibrary.cpp" />
+    <ClCompile Include="Material\MaterialManager.cpp" />
+    <ClCompile Include="Material\MaterialPickTool.cpp" />
+    <ClCompile Include="Mission.cpp" />
+    <ClCompile Include="MissionProps.cpp" />
+    <ClCompile Include="MissionScript.cpp" />
+    <ClCompile Include="MissionSelectDialog.cpp" />
+    <ClCompile Include="Modelling\ModellingMode.cpp" />
+    <ClCompile Include="Modelling\ModellingToolsPanel.cpp" />
+    <ClCompile Include="Modelling\PolygonTool.cpp" />
+    <ClCompile Include="ModelViewport.cpp" />
+    <ClCompile Include="ModelViewportDC.cpp" />
+    <ClCompile Include="MusicInfoDlg.cpp" />
+    <ClCompile Include="Music\MusicEditorDialog.cpp" />
+    <ClCompile Include="Music\MusicManager.cpp" />
+    <ClCompile Include="Music\MusicThemeLibItem.cpp" />
+    <ClCompile Include="Music\MusicThemeLibrary.cpp" />
+    <ClCompile Include="NewLevelDialog.cpp" />
+    <ClCompile Include="Noise.cpp" />
+    <ClCompile Include="NumberDlg.cpp" />
+    <ClCompile Include="ObjectBrowserDialog.cpp" />
+    <ClCompile Include="ObjectCloneTool.cpp" />
+    <ClCompile Include="ObjectCreateTool.cpp" />
+    <ClCompile Include="ObjectLayerPropsDialog.cpp" />
+    <ClCompile Include="ObjectPanel.cpp" />
+    <ClCompile Include="Objects\AIAnchor.cpp" />
+    <ClCompile Include="Objects\AiPoint.cpp" />
+    <ClCompile Include="Objects\AIReinforcementSpot.cpp" />
+    <ClCompile Include="Objects\AreaBox.cpp" />
+    <ClCompile Include="Objects\AreaSphere.cpp" />
+    <ClCompile Include="Objects\AutoCubemapObject.cpp" />
+    <ClCompile Include="Objects\AxisGizmo.cpp" />
+    <ClCompile Include="Objects\BaseObject.cpp" />
+    <ClCompile Include="Objects\BrushObject.cpp" />
+    <ClCompile Include="Objects\CameraObject.cpp" />
+    <ClCompile Include="Objects\CharAttachHelper.cpp" />
+    <ClCompile Include="Objects\ClassDesc.cpp" />
+    <ClCompile Include="Objects\CloudGroup.cpp" />
+    <ClCompile Include="Objects\CloudObject.cpp" />
+    <ClCompile Include="Objects\DecalObject.cpp" />
+    <ClCompile Include="Objects\DisplayContext.cpp" />
+    <ClCompile Include="Objects\DistanceCloudObject.cpp" />
+    <ClCompile Include="Objects\Entity.cpp" />
+    <ClCompile Include="Objects\EntityScript.cpp" />
+    <ClCompile Include="Objects\Gizmo.cpp" />
+    <ClCompile Include="Objects\GizmoManager.cpp" />
+    <ClCompile Include="Objects\GravityVolumeObject.cpp" />
+    <ClCompile Include="Objects\Group.cpp" />
+    <ClCompile Include="Objects\LineGizmo.cpp" />
+    <ClCompile Include="Objects\MeshObject.cpp" />
+    <ClCompile Include="Objects\ObjectLayer.cpp" />
+    <ClCompile Include="Objects\ObjectLayerManager.cpp" />
+    <ClCompile Include="Objects\ObjectLoader.cpp" />
+    <ClCompile Include="Objects\ObjectManager.cpp" />
+    <ClCompile Include="Objects\ObjectPhysicsManager.cpp" />
+    <ClCompile Include="Objects\PrefabObject.cpp" />
+    <ClCompile Include="Objects\ProtEntityObject.cpp" />
+    <ClCompile Include="Objects\RiverObject.cpp" />
+    <ClCompile Include="Objects\RoadObject.cpp" />
+    <ClCompile Include="Objects\RopeObject.cpp" />
+    <ClCompile Include="Objects\SafeObjectsArray.cpp" />
+    <ClCompile Include="Objects\SelectionGroup.cpp" />
+    <ClCompile Include="Objects\SequenceObject.cpp" />
+    <ClCompile Include="Objects\ShapeObject.cpp" />
+    <ClCompile Include="Objects\SmartObject.cpp" />
+    <ClCompile Include="Objects\SoundObject.cpp" />
+    <ClCompile Include="Objects\SubObjSelection.cpp" />
+    <ClCompile Include="Objects\TagComment.cpp" />
+    <ClCompile Include="Objects\TagPoint.cpp" />
+    <ClCompile Include="Objects\TrackGizmo.cpp" />
+    <ClCompile Include="Objects\VisAreaShapeObject.cpp" />
+    <ClCompile Include="Objects\Volume.cpp" />
+    <ClCompile Include="Objects\VoxelObject.cpp" />
+    <ClCompile Include="Objects\WaterShapeObject.cpp" />
+    <ClCompile Include="Objects\WaterWaveObject.cpp" />
+    <ClCompile Include="ObjectTypeBrowser.cpp" />
+    <ClCompile Include="OBJExporter1.cpp" />
+    <ClCompile Include="OverwriteConfirmDialog.cpp" />
+    <ClCompile Include="PanelDisplayHide.cpp" />
+    <ClCompile Include="PanelDisplayLayer.cpp" />
+    <ClCompile Include="PanelDisplayRender.cpp" />
+    <ClCompile Include="PanelPreview.cpp" />
+    <ClCompile Include="PanelTreeBrowser.cpp" />
+    <ClCompile Include="ParticleExporter.cpp" />
+    <ClCompile Include="Particles\ParticleDialog.cpp" />
+    <ClCompile Include="Particles\ParticleItem.cpp" />
+    <ClCompile Include="Particles\ParticleLibrary.cpp" />
+    <ClCompile Include="Particles\ParticleManager.cpp" />
+    <ClCompile Include="PhotonTool.cpp" />
+    <ClCompile Include="PhotonViewTool.cpp" />
+    <ClCompile Include="PickEntitiesPanel.cpp" />
+    <ClCompile Include="PickObjectTool.cpp" />
+    <ClCompile Include="Plugin.cpp" />
+    <ClCompile Include="PluginManager.cpp" />
+    <ClCompile Include="PrefabPanel.cpp" />
+    <ClCompile Include="Prefabs\PrefabDialog.cpp" />
+    <ClCompile Include="Prefabs\PrefabItem.cpp" />
+    <ClCompile Include="Prefabs\PrefabLibrary.cpp" />
+    <ClCompile Include="Prefabs\PrefabManager.cpp" />
+    <ClCompile Include="PreferencesDialog.cpp" />
+    <ClCompile Include="PreferencesPropertyPage.cpp" />
+    <ClCompile Include="PreferencesStdPages.cpp" />
+    <ClCompile Include="ProcessInfo.cpp" />
+    <ClCompile Include="PropertiesDialog.cpp" />
+    <ClCompile Include="PropertiesPanel.cpp" />
+    <ClCompile Include="RenderHelpers\AxisHelper.cpp" />
+    <ClCompile Include="RenderViewport.cpp" />
+    <ClCompile Include="ReportDialog.cpp" />
+    <ClCompile Include="ResizeResolutionDialog.cpp" />
+    <ClCompile Include="RGBLayer.cpp" />
+    <ClCompile Include="RoadPanel.cpp" />
+    <ClCompile Include="SelectAnimationDialog.cpp" />
+    <ClCompile Include="SelectEAXPresetDlg.cpp" />
+    <ClCompile Include="SelectEntityClsDialog.cpp" />
+    <ClCompile Include="SelectGameTokenDialog.cpp" />
+    <ClCompile Include="SelectMissionObjectiveDialog.cpp" />
+    <ClCompile Include="SelectObjectDlg.cpp" />
+    <ClCompile Include="SelectSequenceDialog.cpp" />
+    <ClCompile Include="SetHeightDlg.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="ShaderCache.cpp" />
+    <ClCompile Include="ShaderEnum.cpp" />
+    <ClCompile Include="ShadersDialog.cpp" />
+    <ClCompile Include="ShaderTemplatePanel.cpp" />
+    <ClCompile Include="ShaderTemplateTool.cpp" />
+    <ClCompile Include="ShapePanel.cpp" />
+    <ClCompile Include="SizeDialog.cpp" />
+    <ClCompile Include="SkyDialog.cpp" />
+    <ClCompile Include="SmartObjectActionDialog.cpp" />
+    <ClCompile Include="SmartObjectClassDialog.cpp" />
+    <ClCompile Include="SmartObjectEventDialog.cpp" />
+    <ClCompile Include="SmartObjectHelperDialog.cpp" />
+    <ClCompile Include="SmartObjectHelperObject.cpp" />
+    <ClCompile Include="SmartObjectPatternDialog.cpp" />
+    <ClCompile Include="SmartObjectStateDialog.cpp" />
+    <ClCompile Include="SmartObjects\SmartObjectsEditorDialog.cpp" />
+    <ClCompile Include="SmartObjectTemplateDialog.cpp" />
+    <ClCompile Include="SolidBrushPanel.cpp" />
+    <ClCompile Include="SoundBrowserDialog.cpp" />
+    <ClCompile Include="SoundMoods\SoundMoodDlg.cpp" />
+    <ClCompile Include="SoundMoods\SoundMoodMgr.cpp" />
+    <ClCompile Include="SoundObjectPanel.cpp" />
+    <ClCompile Include="SourceControlDescDlg.cpp" />
+    <ClCompile Include="SrcSafeSettingsDialog.cpp" />
+    <ClCompile Include="StartupDialog.cpp" />
+    <ClCompile Include="StartupLogoDialog.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="StringDlg.cpp" />
+    <ClCompile Include="SurfaceType.cpp" />
+    <ClCompile Include="SurfaceTypesDialog.cpp" />
+    <ClCompile Include="SurfaceTypeValidator.cpp" />
+    <ClCompile Include="TaskPanel.cpp" />
+    <ClCompile Include="TcbKeyDialog.cpp" />
+    <ClCompile Include="TcbPreviewCtrl.cpp" />
+    <ClCompile Include="TerrainBeachGen.cpp" />
+    <ClCompile Include="TerrainDialog.cpp" />
+    <ClCompile Include="TerrainFormulaDlg.cpp" />
+    <ClCompile Include="TerrainGrid.cpp" />
+    <ClCompile Include="TerrainHolePanel.cpp" />
+    <ClCompile Include="TerrainHoleTool.cpp" />
+    <ClCompile Include="TerrainLayerTexGen.cpp" />
+    <ClCompile Include="TerrainLightGen.cpp" />
+    <ClCompile Include="TerrainLighting.cpp" />
+    <ClCompile Include="TerrainMiniMapTool.cpp" />
+    <ClCompile Include="TerrainModifyPanel.cpp" />
+    <ClCompile Include="TerrainModifyTool.cpp" />
+    <ClCompile Include="TerrainMoveTool.cpp" />
+    <ClCompile Include="TerrainMoveToolPanel.cpp" />
+    <ClCompile Include="TerrainPainterPanel.cpp" />
+    <ClCompile Include="TerrainPanel.cpp" />
+    <ClCompile Include="TerrainTexGen.cpp" />
+    <ClCompile Include="TerrainTexture.cpp" />
+    <ClCompile Include="TerrainTextureExport.cpp" />
+    <ClCompile Include="TerrainTexturePainter.cpp" />
+    <ClCompile Include="TerrainViewport.cpp" />
+    <ClCompile Include="TerrainVoxelPanel.cpp" />
+    <ClCompile Include="TerrainVoxelTool.cpp" />
+    <ClCompile Include="TestDialog.cpp" />
+    <ClCompile Include="TextureCompression.cpp" />
+    <ClCompile Include="TexturePanel.cpp" />
+    <ClCompile Include="TextureTool.cpp" />
+    <ClCompile Include="ThumbnailGenerator.cpp" />
+    <ClCompile Include="TimeOfDayDialog.cpp" />
+    <ClCompile Include="TipDlg.cpp" />
+    <ClCompile Include="ToolbarDialog.cpp" />
+    <ClCompile Include="ToolBoxBar.cpp" />
+    <ClCompile Include="ToolsConfigPage.cpp" />
+    <ClCompile Include="TopRendererWnd.cpp" />
+    <ClCompile Include="TrackViewDialog.cpp" />
+    <ClCompile Include="TrackViewGraph.cpp" />
+    <ClCompile Include="TrackViewKeyList.cpp" />
+    <ClCompile Include="TrackViewKeys.cpp" />
+    <ClCompile Include="TrackViewNodes.cpp" />
+    <ClCompile Include="TrackViewSpline.cpp" />
+    <ClCompile Include="TrackViewSplitter.cpp" />
+    <ClCompile Include="TrackViewTimeBar.cpp" />
+    <ClCompile Include="TrackViewUndo.cpp" />
+    <ClCompile Include="TVCharacterKeyDialog.cpp" />
+    <ClCompile Include="TVConsoleKeyDialog.cpp" />
+    <ClCompile Include="TVEventKeyDialog.cpp" />
+    <ClCompile Include="TVExprKeyDialog.cpp" />
+    <ClCompile Include="TVFaceSeqKeyDialog.cpp" />
+    <ClCompile Include="TVLookAtKeyDialog.cpp" />
+    <ClCompile Include="TVMusicKeyDialog.cpp" />
+    <ClCompile Include="TVSelectKeyDialog.cpp" />
+    <ClCompile Include="TVSequenceKeyDialog.cpp" />
+    <ClCompile Include="TVSequenceProps.cpp" />
+    <ClCompile Include="TVShakeKeyDialog.cpp" />
+    <ClCompile Include="TVSoundKeyDialog.cpp" />
+    <ClCompile Include="TVTrackPropsDialog.cpp" />
+    <ClCompile Include="UIEnumsDatabase.cpp" />
+    <ClCompile Include="UIPanels\TabPanel.cpp" />
+    <ClCompile Include="UndoDropDown.cpp" />
+    <ClCompile Include="Undo\Undo.cpp" />
+    <ClCompile Include="UnitTest_AnimPreview.cpp" />
+    <ClCompile Include="UnitTest_Idle2Move.cpp" />
+    <ClCompile Include="UnitTest_IdleStep.cpp" />
+    <ClCompile Include="UnitTest_PathFollowing.cpp" />
+    <ClCompile Include="UnitTest_PlayerControl.cpp" />
+    <ClCompile Include="UnlinkTool.cpp" />
+    <ClCompile Include="unzip.cpp" />
+    <ClCompile Include="UsedResources.cpp" />
+    <ClCompile Include="Util\AffineParts.cpp" />
+    <ClCompile Include="Util\AVIGenerator.cpp" />
+    <ClCompile Include="Util\AVI_Writer.cpp" />
+    <ClCompile Include="Util\BBox.cpp" />
+    <ClCompile Include="Util\ChunkFile.cpp" />
+    <ClCompile Include="Util\DynamicArray2D.cpp" />
+    <ClCompile Include="Util\EditorUtils.cpp" />
+    <ClCompile Include="Util\FileChangeMonitor.cpp" />
+    <ClCompile Include="Util\FileEnum.cpp" />
+    <ClCompile Include="Util\FileUtil.cpp" />
+    <ClCompile Include="Util\GuidUtil.cpp" />
+    <ClCompile Include="Util\Image.cpp" />
+    <ClCompile Include="Util\ImageGif.cpp" />
+    <ClCompile Include="Util\ImagePainter.cpp" />
+    <ClCompile Include="Util\ImageTIF.cpp" />
+    <ClCompile Include="Util\ImageUtil.cpp" />
+    <ClCompile Include="Util\Image_DXTC.cpp" />
+    <ClCompile Include="Util\Mailer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="Util\MemoryBlock.cpp" />
+    <ClCompile Include="Util\NamedData.cpp" />
+    <ClCompile Include="Util\PakFile.cpp" />
+    <ClCompile Include="Util\PathUtil.cpp" />
+    <ClCompile Include="Util\SourceControlInterface.cpp" />
+    <ClCompile Include="Util\Thread.cpp" />
+    <ClCompile Include="Util\Triangulate.cpp" />
+    <ClCompile Include="Util\Variable.cpp" />
+    <ClCompile Include="Util\XmlArchive.cpp" />
+    <ClCompile Include="Util\XmlTemplate.cpp" />
+    <ClCompile Include="VegetationBrush.cpp" />
+    <ClCompile Include="VegetationDataBasePage.cpp" />
+    <ClCompile Include="VegetationMap.cpp" />
+    <ClCompile Include="VegetationObject.cpp" />
+    <ClCompile Include="VegetationPanel.cpp" />
+    <ClCompile Include="VegetationTool.cpp" />
+    <ClCompile Include="Vehicles\PropertyCtrlExt.cpp" />
+    <ClCompile Include="Vehicles\VehicleComp.cpp" />
+    <ClCompile Include="Vehicles\VehicleData.cpp" />
+    <ClCompile Include="Vehicles\VehicleDialogComponent.cpp" />
+    <ClCompile Include="Vehicles\VehicleEditorDialog.cpp" />
+    <ClCompile Include="Vehicles\VehicleFXPanel.cpp" />
+    <ClCompile Include="Vehicles\VehicleHelperObject.cpp" />
+    <ClCompile Include="Vehicles\VehicleMovementPanel.cpp" />
+    <ClCompile Include="Vehicles\VehiclePart.cpp" />
+    <ClCompile Include="Vehicles\VehiclePartsPanel.cpp" />
+    <ClCompile Include="Vehicles\VehiclePrototype.cpp" />
+    <ClCompile Include="Vehicles\VehicleSeat.cpp" />
+    <ClCompile Include="Vehicles\VehicleWeapon.cpp" />
+    <ClCompile Include="Vehicles\VehicleXMLLoader.cpp" />
+    <ClCompile Include="Vehicles\VehicleXMLSaver.cpp" />
+    <ClCompile Include="ViewManager.cpp" />
+    <ClCompile Include="ViewPane.cpp" />
+    <ClCompile Include="Viewport.cpp" />
+    <ClCompile Include="ViewportTitleDlg.cpp" />
+    <ClCompile Include="VolumePanel.cpp" />
+    <ClCompile Include="VoxelAligningTool.cpp" />
+    <ClCompile Include="VoxelObjectPanel.cpp" />
+    <ClCompile Include="WaitProgress.cpp" />
+    <ClCompile Include="WeaponProps.cpp" />
+    <ClCompile Include="zlib\adler32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\gzio.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\infblock.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\infcodes.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\inflate.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\infutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ZViewport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CryEdit.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2DViewport.h" />
+    <ClInclude Include="AIAnchorsDialog.h" />
+    <ClInclude Include="AICharactersDialog.h" />
+    <ClInclude Include="AIDialog.h" />
+    <ClInclude Include="AIPointPanel.h" />
+    <ClInclude Include="AI\AiBehavior.h" />
+    <ClInclude Include="AI\AiBehaviorLibrary.h" />
+    <ClInclude Include="AI\AIDebugger.h" />
+    <ClInclude Include="AI\AIDebuggerView.h" />
+    <ClInclude Include="AI\AiGoal.h" />
+    <ClInclude Include="AI\AiGoalLibrary.h" />
+    <ClInclude Include="AI\AIManager.h" />
+    <ClInclude Include="AI\AI_DebugTool.h" />
+    <ClInclude Include="Ai\GenerateSpawners.h" />
+    <ClInclude Include="AlignTool.h" />
+    <ClInclude Include="AnimationContext.h" />
+    <ClInclude Include="AnimationSerializer.h" />
+    <ClInclude Include="AnimUtils.h" />
+    <ClInclude Include="arcball.h" />
+    <ClInclude Include="BaseLibrary.h" />
+    <ClInclude Include="BaseLibraryDialog.h" />
+    <ClInclude Include="BaseLibraryItem.h" />
+    <ClInclude Include="BaseLibraryManager.h" />
+    <ClInclude Include="Brush\Brush.h" />
+    <ClInclude Include="Brush\BrushClipTool.h" />
+    <ClInclude Include="Brush\BrushClipToolPanel.h" />
+    <ClInclude Include="Brush\BrushExporter.h" />
+    <ClInclude Include="Brush\BrushFace.h" />
+    <ClInclude Include="Brush\BrushMtl.h" />
+    <ClInclude Include="Brush\BrushMtlLib.h" />
+    <ClInclude Include="Brush\BrushPanel.h" />
+    <ClInclude Include="Brush\BrushPlane.h" />
+    <ClInclude Include="Brush\BrushPoly.h" />
+    <ClInclude Include="Brush\BrushTextureTool.h" />
+    <ClInclude Include="Brush\BrushTool.h" />
+    <ClInclude Include="Brush\SolidBrushCreatePanel.h" />
+    <ClInclude Include="Brush\SolidBrushObject.h" />
+    <ClInclude Include="Brush\SolidBrushSubObjPanel.h" />
+    <ClInclude Include="CharacterEditor\AnimationInfoLoader.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventControlView.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventDoc.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventDocVisitors.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventEditor.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventEngineView.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventJobs.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventListView.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventSelectParameterButtonView.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\AnimEventXMLStore.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventData.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventDoc.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventDocChangeDescription.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventDocChangeTarget.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventDocJob.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventDocListener.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventDocVisitor.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventStore.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventView.h" />
+    <ClInclude Include="CharacterEditor\AnimEventEditor\IAnimEventVisitable.h" />
+    <ClInclude Include="CharacterEditor\CharacterEditor.h" />
+    <ClInclude Include="CharacterEditor\CharPanel_Animation.h" />
+    <ClInclude Include="CharacterEditor\CharPanel_AnimationControl.h" />
+    <ClInclude Include="CharacterEditor\CharPanel_Attachments.h" />
+    <ClInclude Include="CharacterEditor\CharPanel_BAttach.h" />
+    <ClInclude Include="CharacterEditor\CharPanel_Character.h" />
+    <ClInclude Include="CharacterEditor\CharPanel_Morphing.h" />
+    <ClInclude Include="CharacterEditor\CharPanel_Preset.h" />
+    <ClInclude Include="CharacterEditor\ModelViewportCE.h" />
+    <ClInclude Include="CharacterEditor\ProgressSlider.h" />
+    <ClInclude Include="CheckOutDialog.h" />
+    <ClInclude Include="Clipboard.h" />
+    <ClInclude Include="Clouds.h" />
+    <ClInclude Include="Cloud\CloudGroupPanel.h" />
+    <ClInclude Include="Commands\Command.h" />
+    <ClInclude Include="Commands\CommandManager.h" />
+    <ClInclude Include="ConsoleDialog.h" />
+    <ClInclude Include="Controls\AnimationToolBar.h" />
+    <ClInclude Include="Controls\AnimSequences.h" />
+    <ClInclude Include="Controls\BitmapToolTip.h" />
+    <ClInclude Include="Controls\ColorButton.h" />
+    <ClInclude Include="Controls\ColorCheckBox.h" />
+    <ClInclude Include="Controls\ColorCtrl.h" />
+    <ClInclude Include="Controls\ColorGradientCtrl.h" />
+    <ClInclude Include="Controls\ColorPickerButton.h" />
+    <ClInclude Include="Controls\ConsoleSCB.h" />
+    <ClInclude Include="Controls\CustomComboBoxEx.h" />
+    <ClInclude Include="Controls\DLGBARS.H" />
+    <ClInclude Include="Controls\EditModeToolBar.h" />
+    <ClInclude Include="Controls\FileTree.h" />
+    <ClInclude Include="Controls\FillSliderCtrl.h" />
+    <ClInclude Include="Controls\HeaderCtrlEx.h" />
+    <ClInclude Include="Controls\ImageListCtrl.h" />
+    <ClInclude Include="Controls\InPlaceButton.h" />
+    <ClInclude Include="Controls\InPlaceComboBox.h" />
+    <ClInclude Include="Controls\InPlaceEdit.h" />
+    <ClInclude Include="Controls\JoystickCtrl.h" />
+    <ClInclude Include="Controls\LayersListBox.h" />
+    <ClInclude Include="Controls\ListCtrlEx.h" />
+    <ClInclude Include="Controls\MemDC.h" />
+    <ClInclude Include="Controls\MltiTree.h" />
+    <ClInclude Include="Controls\NumberCtrl.h" />
+    <ClInclude Include="Controls\NumberCtrlEdit.h" />
+    <ClInclude Include="Controls\ObjectListCtrl.h" />
+    <ClInclude Include="Controls\PickObjectButton.h" />
+    <ClInclude Include="Controls\PreviewModelCtrl.h" />
+    <ClInclude Include="Controls\PropertyCtrl.h" />
+    <ClInclude Include="Controls\PropertyCtrlEx.h" />
+    <ClInclude Include="Controls\PropertyItem.h" />
+    <ClInclude Include="Controls\RollupBar.h" />
+    <ClInclude Include="Controls\RollupCtrl.h" />
+    <ClInclude Include="Controls\ScrollableWindow.h" />
+    <ClInclude Include="Controls\SelectionCombo.h" />
+    <ClInclude Include="Controls\SliderCtrlEx.h" />
+    <ClInclude Include="Controls\SplineCtrl.h" />
+    <ClInclude Include="Controls\SplineCtrlEx.h" />
+    <ClInclude Include="Controls\SplitterWndEx.h" />
+    <ClInclude Include="Controls\SubeditListCtrl.h" />
+    <ClInclude Include="Controls\SyntaxColorizer.h" />
+    <ClInclude Include="Controls\TabCtrlEx.h" />
+    <ClInclude Include="Controls\TemplDef.h" />
+    <ClInclude Include="Controls\TextEditorCtrl.h" />
+    <ClInclude Include="Controls\TimelineCtrl.h" />
+    <ClInclude Include="Controls\ToolBarContainer.h" />
+    <ClInclude Include="Controls\ToolBarTab.h" />
+    <ClInclude Include="Controls\ToolButton.h" />
+    <ClInclude Include="Controls\TreeCtrlEx.h" />
+    <ClInclude Include="Controls\TreeCtrlUtils.h" />
+    <ClInclude Include="Controls\WndGridHelper.h" />
+    <ClInclude Include="CryEdit.h" />
+    <ClInclude Include="CryEditDoc.h" />
+    <ClInclude Include="CustomColorDialog.h" />
+    <ClInclude Include="CustomFileDialog.h" />
+    <ClInclude Include="DataBaseDialog.h" />
+    <ClInclude Include="DecalObjectPanel.h" />
+    <ClInclude Include="DialogEditor\DialogEditorDialog.h" />
+    <ClInclude Include="DialogEditor\DialogManager.h" />
+    <ClInclude Include="DialogEditor\DialogScriptRecord.h" />
+    <ClInclude Include="DialogEditor\DialogScriptView.h" />
+    <ClInclude Include="Dialogs\BaseFrameWnd.h" />
+    <ClInclude Include="Dialogs\LicenseKeyDialog.h" />
+    <ClInclude Include="Dialogs\VersionUpdateDialog.h" />
+    <ClInclude Include="DimensionsDialog.h" />
+    <ClInclude Include="DisplaySettings.h" />
+    <ClInclude Include="DrawWnd.h" />
+    <ClInclude Include="DynamicHelpDialog.h" />
+    <ClInclude Include="EAXPresetMgr.h" />
+    <ClInclude Include="EAXPresetsDlg.h" />
+    <ClInclude Include="EditMode\ObjectMode.h" />
+    <ClInclude Include="EditMode\SubObjDisplayPanel.h" />
+    <ClInclude Include="EditMode\SubObjectSelectionReferenceFrameCalculator.h" />
+    <ClInclude Include="EditMode\SubObjSelectionPanel.h" />
+    <ClInclude Include="EditMode\SubObjSelectionTypePanel.h" />
+    <ClInclude Include="EditMode\VertexMode.h" />
+    <ClInclude Include="EditorDefs.h" />
+    <ClInclude Include="EditTool.h" />
+    <ClInclude Include="EntityLinksPanel.h" />
+    <ClInclude Include="EntityPanel.h" />
+    <ClInclude Include="EntityProtLibDialog.h" />
+    <ClInclude Include="EntityPrototype.h" />
+    <ClInclude Include="EntityPrototypeLibrary.h" />
+    <ClInclude Include="EntityPrototypeManager.h" />
+    <ClInclude Include="EntityScriptDialog.h" />
+    <ClInclude Include="EnvironmentPanel.h" />
+    <ClInclude Include="EnvironmentTool.h" />
+    <ClInclude Include="EquipPack.h" />
+    <ClInclude Include="EquipPackDialog.h" />
+    <ClInclude Include="EquipPackLib.h" />
+    <ClInclude Include="ErrorReport.h" />
+    <ClInclude Include="ErrorReportDialog.h" />
+    <ClInclude Include="ExportObjects.h" />
+    <ClInclude Include="ExternalTools.h" />
+    <ClInclude Include="FacialEditor\Audio\WaveFile.h" />
+    <ClInclude Include="FacialEditor\Audio\WaveFileReader.h" />
+    <ClInclude Include="FacialEditor\Audio\WaveGraphCtrl.h" />
+    <ClInclude Include="FacialEditor\EffectorInfoWnd.h" />
+    <ClInclude Include="FacialEditor\FacialEdContext.h" />
+    <ClInclude Include="FacialEditor\FacialEditorDialog.h" />
+    <ClInclude Include="FacialEditor\FacialExpressionsDialog.h" />
+    <ClInclude Include="FacialEditor\FacialExpressionUtils.h" />
+    <ClInclude Include="FacialEditor\FacialJoystickDialog.h" />
+    <ClInclude Include="FacialEditor\FacialPreviewDialog.h" />
+    <ClInclude Include="FacialEditor\FacialPreviewOptionsDialog.h" />
+    <ClInclude Include="FacialEditor\FacialSequenceDialog.h" />
+    <ClInclude Include="FacialEditor\FacialSlidersCtrl.h" />
+    <ClInclude Include="FacialEditor\FacialSlidersDialog.h" />
+    <ClInclude Include="FacialEditor\FacialVideoFrameDialog.h" />
+    <ClInclude Include="FacialEditor\JoystickPropertiesDlg.h" />
+    <ClInclude Include="FacialEditor\PhonemeAnalyzer.h" />
+    <ClInclude Include="FacialEditor\PhonemesCtrl.h" />
+    <ClInclude Include="FileTypeUtils.h" />
+    <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="GameExporter.h" />
+    <ClInclude Include="GameResourcesExporter.h" />
+    <ClInclude Include="GameTokens\GameTokenDialog.h" />
+    <ClInclude Include="GameTokens\GameTokenItem.h" />
+    <ClInclude Include="GameTokens\GameTokenLibrary.h" />
+    <ClInclude Include="GameTokens\GameTokenManager.h" />
+    <ClInclude Include="GenerationParam.h" />
+    <ClInclude Include="GenericSelectItemDialog.h" />
+    <ClInclude Include="Geometry\EdGeometry.h" />
+    <ClInclude Include="Geometry\EdMesh.h" />
+    <ClInclude Include="Geometry\TriMesh.h" />
+    <ClInclude Include="GotoPositionDlg.h" />
+    <ClInclude Include="GravityVolumePanel.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="GridSettingsDialog.h" />
+    <ClInclude Include="GridUtils.h" />
+    <ClInclude Include="Heightmap.h" />
+    <ClInclude Include="HeightmapAccessibility.h" />
+    <ClInclude Include="HorizonTracker.h" />
+    <ClInclude Include="HyperGraph\AnimationGraph.h" />
+    <ClInclude Include="HyperGraph\AnimationGraphDialog.h" />
+    <ClInclude Include="HyperGraph\AnimationGraphPreviewDialog.h" />
+    <ClInclude Include="HyperGraph\AnimationGraphPreviewManager.h" />
+    <ClInclude Include="HyperGraph\AnimationGraphStateEditor.h" />
+    <ClInclude Include="HyperGraph\AnimationGraphStateQuery.h" />
+    <ClInclude Include="HyperGraph\AnimationGraphTester.h" />
+    <ClInclude Include="HyperGraph\AnimationGraphUnitTester.h" />
+    <ClInclude Include="HyperGraph\AnimationImageGenerator.h" />
+    <ClInclude Include="HyperGraph\AnimationImageManager.h" />
+    <ClInclude Include="HyperGraph\CommentNode.h" />
+    <ClInclude Include="HyperGraph\DisplayList.h" />
+    <ClInclude Include="HyperGraph\FlowFilters.h" />
+    <ClInclude Include="HyperGraph\FlowGraph.h" />
+    <ClInclude Include="HyperGraph\FlowGraphHelpers.h" />
+    <ClInclude Include="HyperGraph\FlowGraphManager.h" />
+    <ClInclude Include="HyperGraph\FlowGraphMigrationHelper.h" />
+    <ClInclude Include="HyperGraph\FlowGraphNode.h" />
+    <ClInclude Include="HyperGraph\FlowGraphProperties.h" />
+    <ClInclude Include="HyperGraph\FlowGraphSearchCtrl.h" />
+    <ClInclude Include="HyperGraph\FlowGraphVariables.h" />
+    <ClInclude Include="HyperGraph\HyperGraph.h" />
+    <ClInclude Include="HyperGraph\HyperGraphDialog.h" />
+    <ClInclude Include="HyperGraph\HyperGraphManager.h" />
+    <ClInclude Include="HyperGraph\HyperGraphNode.h" />
+    <ClInclude Include="HyperGraph\HyperGraphView.h" />
+    <ClInclude Include="HyperGraph\HyperNodePainter_Comment.h" />
+    <ClInclude Include="HyperGraph\HyperNodePainter_Default.h" />
+    <ClInclude Include="HyperGraph\HyperNodePainter_MultiIOBox.h" />
+    <ClInclude Include="HyperGraph\IHyperGraph.h" />
+    <ClInclude Include="HyperGraph\IHyperNodePainter.h" />
+    <ClInclude Include="HyperGraph\IslandDetection.h" />
+    <ClInclude Include="HyperGraph\SpeedReport.h" />
+    <ClInclude Include="HyperGraph\TransitionReport.h" />
+    <ClInclude Include="IconManager.h" />
+    <ClInclude Include="IEditor.h" />
+    <ClInclude Include="IEditorImpl.h" />
+    <ClInclude Include="IKeyDlg.h" />
+    <ClInclude Include="Include\HitContext.h" />
+    <ClInclude Include="Include\IDataBaseItem.h" />
+    <ClInclude Include="Include\IDataBaseLibrary.h" />
+    <ClInclude Include="Include\IDataBaseManager.h" />
+    <ClInclude Include="Include\IEditorClassFactory.h" />
+    <ClInclude Include="Include\IFacialEditor.h" />
+    <ClInclude Include="Include\IGizmoManager.h" />
+    <ClInclude Include="Include\IKeyTimeSet.h" />
+    <ClInclude Include="Include\IObjectManager.h" />
+    <ClInclude Include="Include\IPreferencesPage.h" />
+    <ClInclude Include="Include\ISourceControl.h" />
+    <ClInclude Include="Include\ISubObjectSelectionReferenceFrameCalculator.h" />
+    <ClInclude Include="Include\ITransformManipulator.h" />
+    <ClInclude Include="Include\IViewPane.h" />
+    <ClInclude Include="Include\ObjectEvent.h" />
+    <ClInclude Include="IndirectLighting\Raster.h" />
+    <ClInclude Include="IndirectLighting\RasterMPMan.h" />
+    <ClInclude Include="IndirectLighting\SHHeightmapAccessibility.h" />
+    <ClInclude Include="IndirectLighting\TerrainGIGen.h" />
+    <ClInclude Include="IndirectLighting\TerrainObjectMan.h" />
+    <ClInclude Include="InfoBar.h" />
+    <ClInclude Include="InfoBarHolder.h" />
+    <ClInclude Include="InfoProgressBar.h" />
+    <ClInclude Include="ItemDescriptionDlg.h" />
+    <ClInclude Include="JoystickUtils.h" />
+    <ClInclude Include="Layer.h" />
+    <ClInclude Include="LayersSelectDialog.h" />
+    <ClInclude Include="LayoutConfigDialog.h" />
+    <ClInclude Include="LayoutWnd.h" />
+    <ClInclude Include="LevelInfo.h" />
+    <ClInclude Include="LightmapCompiler\3DSamplerCompiler.h" />
+    <ClInclude Include="LightmapCompiler\AmbientOcclusionIntegrator.h" />
+    <ClInclude Include="LightmapCompiler\AreaLight.h" />
+    <ClInclude Include="LightmapCompiler\CryOctree.h" />
+    <ClInclude Include="LightmapCompiler\DirectIlluminance.h" />
+    <ClInclude Include="LightmapCompiler\FreeSpaceSpanBuffer.h" />
+    <ClInclude Include="LightmapCompiler\GeomCore.h" />
+    <ClInclude Include="LightmapCompiler\GeomMesh.h" />
+    <ClInclude Include="LightmapCompiler\GeomPrimitives.h" />
+    <ClInclude Include="LightmapCompiler\IllumHandler.h" />
+    <ClInclude Include="LightmapCompiler\IlluminanceIntegrator.h" />
+    <ClInclude Include="LightmapCompiler\IndirectIlluminance.h" />
+    <ClInclude Include="LightmapCompiler\IntersectionCacheCluster.h" />
+    <ClInclude Include="LightmapCompiler\LightmapCompilerDialog.h" />
+    <ClInclude Include="LightmapCompiler\LMCompCommon.h" />
+    <ClInclude Include="LightmapCompiler\MultiDimMap.h" />
+    <ClInclude Include="LightmapCompiler\OcclusionIntegrator.h" />
+    <ClInclude Include="LightmapCompiler\OneBitBitmapMask.h" />
+    <ClInclude Include="LightmapCompiler\Photon.h" />
+    <ClInclude Include="LightmapCompiler\PhotonMap.h" />
+    <ClInclude Include="LightmapCompiler\PhotonTrace.h" />
+    <ClInclude Include="LightmapCompiler\Ray.h" />
+    <ClInclude Include="LightmapCompiler\RayMap.h" />
+    <ClInclude Include="LightmapCompiler\RayMap_DimensionArray.h" />
+    <ClInclude Include="LightmapCompiler\RayMap_Segment.h" />
+    <ClInclude Include="LightmapCompiler\RayMap_Tracer.h" />
+    <ClInclude Include="LightmapCompiler\RenderLight.h" />
+    <ClInclude Include="LightmapCompiler\RLMesh.h" />
+    <ClInclude Include="LightmapCompiler\RLSingleton.h" />
+    <ClInclude Include="LightmapCompiler\RLSurface.h" />
+    <ClInclude Include="LightmapCompiler\RLUnwrapGroup.h" />
+    <ClInclude Include="LightmapCompiler\RLWaitProgress.h" />
+    <ClInclude Include="LightmapCompiler\SceneContext.h" />
+    <ClInclude Include="LightmapCompiler\SimpleTriangleRasterizer.h" />
+    <ClInclude Include="LightmapCompiler\SpanBuffer.h" />
+    <ClInclude Include="LightmapCompiler\SunDirectIlluminance.h" />
+    <ClInclude Include="LightmapGen.h" />
+    <ClInclude Include="LinkTool.h" />
+    <ClInclude Include="LMCompDialog.h" />
+    <ClInclude Include="LoadingDialog.h" />
+    <ClInclude Include="LoadingScreen.h" />
+    <ClInclude Include="LogFile.h" />
+    <ClInclude Include="Mailer.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MainTools.h" />
+    <ClInclude Include="MatEditMainDlg.h" />
+    <ClInclude Include="MatEditPreviewDlg.h" />
+    <ClInclude Include="MaterialEnum.h" />
+    <ClInclude Include="MaterialSelectorDialog.h" />
+    <ClInclude Include="MaterialSender.h" />
+    <ClInclude Include="Material\Material.h" />
+    <ClInclude Include="Material\MaterialBrowser.h" />
+    <ClInclude Include="Material\MaterialDialog.h" />
+    <ClInclude Include="Material\MaterialFileTree.h" />
+    <ClInclude Include="Material\MaterialImageListCtrl.h" />
+    <ClInclude Include="Material\MaterialLibrary.h" />
+    <ClInclude Include="Material\MaterialManager.h" />
+    <ClInclude Include="Material\MaterialPickTool.h" />
+    <ClInclude Include="MFC_AMD64_Fix.h" />
+    <ClInclude Include="Mission.h" />
+    <ClInclude Include="MissionProps.h" />
+    <ClInclude Include="MissionScript.h" />
+    <ClInclude Include="MissionSelectDialog.h" />
+    <ClInclude Include="Modelling\ModellingMode.h" />
+    <ClInclude Include="Modelling\ModellingToolsPanel.h" />
+    <ClInclude Include="Modelling\PolygonTool.h" />
+    <ClInclude Include="ModelViewport.h" />
+    <ClInclude Include="MusicInfoDlg.h" />
+    <ClInclude Include="Music\MusicEditorDialog.h" />
+    <ClInclude Include="Music\MusicEditorUI.h" />
+    <ClInclude Include="Music\MusicManager.h" />
+    <ClInclude Include="Music\MusicThemeLibItem.h" />
+    <ClInclude Include="Music\MusicThemeLibrary.h" />
+    <ClInclude Include="NewLevelDialog.h" />
+    <ClInclude Include="Noise.h" />
+    <ClInclude Include="NumberDlg.h" />
+    <ClInclude Include="ObjectBrowserDialog.h" />
+    <ClInclude Include="ObjectCloneTool.h" />
+    <ClInclude Include="ObjectCreateTool.h" />
+    <ClInclude Include="ObjectLayerPropsDialog.h" />
+    <ClInclude Include="ObjectPanel.h" />
+    <ClInclude Include="Objects\AIAnchor.h" />
+    <ClInclude Include="Objects\AiPoint.h" />
+    <ClInclude Include="Objects\AIReinforcementSpot.h" />
+    <ClInclude Include="Objects\AreaBox.h" />
+    <ClInclude Include="Objects\AreaSphere.h" />
+    <ClInclude Include="Objects\AutoCubemapObject.h" />
+    <ClInclude Include="Objects\AxisGizmo.h" />
+    <ClInclude Include="Objects\BaseObject.h" />
+    <ClInclude Include="Objects\BrushObject.h" />
+    <ClInclude Include="Objects\CameraObject.h" />
+    <ClInclude Include="Objects\CharAttachHelper.h" />
+    <ClInclude Include="Objects\ClassDesc.h" />
+    <ClInclude Include="Objects\CloudGroup.h" />
+    <ClInclude Include="Objects\CloudObject.h" />
+    <ClInclude Include="Objects\DecalObject.h" />
+    <ClInclude Include="Objects\DisplayContext.h" />
+    <ClInclude Include="Objects\DistanceCloudObject.h" />
+    <ClInclude Include="Objects\Entity.h" />
+    <ClInclude Include="Objects\EntityScript.h" />
+    <ClInclude Include="Objects\Gizmo.h" />
+    <ClInclude Include="Objects\GizmoManager.h" />
+    <ClInclude Include="Objects\GravityVolumeObject.h" />
+    <ClInclude Include="Objects\Group.h" />
+    <ClInclude Include="Objects\LineGizmo.h" />
+    <ClInclude Include="Objects\MeshObject.h" />
+    <ClInclude Include="Objects\ObjectLayer.h" />
+    <ClInclude Include="Objects\ObjectLayerManager.h" />
+    <ClInclude Include="Objects\ObjectLoader.h" />
+    <ClInclude Include="Objects\ObjectManager.h" />
+    <ClInclude Include="Objects\ObjectPhysicsManager.h" />
+    <ClInclude Include="Objects\PrefabObject.h" />
+    <ClInclude Include="Objects\ProtEntityObject.h" />
+    <ClInclude Include="Objects\RiverObject.h" />
+    <ClInclude Include="Objects\RoadObject.h" />
+    <ClInclude Include="Objects\RopeObject.h" />
+    <ClInclude Include="Objects\SafeObjectsArray.h" />
+    <ClInclude Include="Objects\SelectionGroup.h" />
+    <ClInclude Include="Objects\SequenceObject.h" />
+    <ClInclude Include="Objects\ShapeObject.h" />
+    <ClInclude Include="Objects\SmartObject.h" />
+    <ClInclude Include="Objects\SoundObject.h" />
+    <ClInclude Include="Objects\SubObjSelection.h" />
+    <ClInclude Include="Objects\TagComment.h" />
+    <ClInclude Include="Objects\TagPoint.h" />
+    <ClInclude Include="Objects\TrackGizmo.h" />
+    <ClInclude Include="Objects\VisAreaShapeObject.h" />
+    <ClInclude Include="Objects\Volume.h" />
+    <ClInclude Include="Objects\VoxelObject.h" />
+    <ClInclude Include="Objects\WaterShapeObject.h" />
+    <ClInclude Include="Objects\WaterWaveObject.h" />
+    <ClInclude Include="ObjectTypeBrowser.h" />
+    <ClInclude Include="OBJExporter1.h" />
+    <ClInclude Include="OverwriteConfirmDialog.h" />
+    <ClInclude Include="PanelDisplayHide.h" />
+    <ClInclude Include="PanelDisplayLayer.h" />
+    <ClInclude Include="PanelDisplayRender.h" />
+    <ClInclude Include="PanelPreview.h" />
+    <ClInclude Include="PanelTreeBrowser.h" />
+    <ClInclude Include="ParticleExporter.h" />
+    <ClInclude Include="Particles\ParticleDialog.h" />
+    <ClInclude Include="Particles\ParticleItem.h" />
+    <ClInclude Include="Particles\ParticleLibrary.h" />
+    <ClInclude Include="Particles\ParticleManager.h" />
+    <ClInclude Include="PhotonTool.h" />
+    <ClInclude Include="PhotonViewTool.h" />
+    <ClInclude Include="PickEntitiesPanel.h" />
+    <ClInclude Include="PickObjectTool.h" />
+    <ClInclude Include="Plugin.h" />
+    <ClInclude Include="PluginManager.h" />
+    <ClInclude Include="PrefabPanel.h" />
+    <ClInclude Include="Prefabs\PrefabDialog.h" />
+    <ClInclude Include="Prefabs\PrefabItem.h" />
+    <ClInclude Include="Prefabs\PrefabLibrary.h" />
+    <ClInclude Include="Prefabs\PrefabManager.h" />
+    <ClInclude Include="PreferencesDialog.h" />
+    <ClInclude Include="PreferencesPropertyPage.h" />
+    <ClInclude Include="PreferencesStdPages.h" />
+    <ClInclude Include="ProcessInfo.h" />
+    <ClInclude Include="PropertiesDialog.h" />
+    <ClInclude Include="PropertiesPanel.h" />
+    <ClInclude Include="RenderHelpers\AxisHelper.h" />
+    <ClInclude Include="RenderViewport.h" />
+    <ClInclude Include="Report.h" />
+    <ClInclude Include="ReportDialog.h" />
+    <ClInclude Include="ResizeResolutionDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RGBLayer.h" />
+    <ClInclude Include="RoadPanel.h" />
+    <ClInclude Include="SelectAnimationDialog.h" />
+    <ClInclude Include="SelectEAXPresetDlg.h" />
+    <ClInclude Include="SelectEntityClsDialog.h" />
+    <ClInclude Include="SelectGameTokenDialog.h" />
+    <ClInclude Include="SelectMissionObjectiveDialog.h" />
+    <ClInclude Include="SelectObjectDlg.h" />
+    <ClInclude Include="SelectSequenceDialog.h" />
+    <ClInclude Include="SetHeightDlg.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="ShaderCache.h" />
+    <ClInclude Include="ShaderEnum.h" />
+    <ClInclude Include="ShadersDialog.h" />
+    <ClInclude Include="ShaderTemplatePanel.h" />
+    <ClInclude Include="ShaderTemplateTool.h" />
+    <ClInclude Include="ShapePanel.h" />
+    <ClInclude Include="SizeDialog.h" />
+    <ClInclude Include="SkyDialog.h" />
+    <ClInclude Include="SmartObjectActionDialog.h" />
+    <ClInclude Include="SmartObjectClassDialog.h" />
+    <ClInclude Include="SmartObjectEventDialog.h" />
+    <ClInclude Include="SmartObjectHelperDialog.h" />
+    <ClInclude Include="SmartObjectHelperObject.h" />
+    <ClInclude Include="SmartObjectPatternDialog.h" />
+    <ClInclude Include="SmartObjectStateDialog.h" />
+    <ClInclude Include="SmartObjects\SmartObjectsEditorDialog.h" />
+    <ClInclude Include="SmartObjectTemplateDialog.h" />
+    <ClInclude Include="SolidBrushPanel.h" />
+    <ClInclude Include="SoundBrowserDialog.h" />
+    <ClInclude Include="SoundMoods\SoundMoodDlg.h" />
+    <ClInclude Include="SoundMoods\SoundMoodMgr.h" />
+    <ClInclude Include="SoundMoods\SoundMoodUI.h" />
+    <ClInclude Include="SoundObjectPanel.h" />
+    <ClInclude Include="SourceControlDescDlg.h" />
+    <ClInclude Include="SrcSafeSettingsDialog.h" />
+    <ClInclude Include="StartupDialog.h" />
+    <ClInclude Include="StartupLogoDialog.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="StringDlg.h" />
+    <ClInclude Include="SurfaceType.h" />
+    <ClInclude Include="SurfaceTypesDialog.h" />
+    <ClInclude Include="SurfaceTypeValidator.h" />
+    <ClInclude Include="TaskPanel.h" />
+    <ClInclude Include="TcbKeyDialog.h" />
+    <ClInclude Include="TcbPreviewCtrl.h" />
+    <ClInclude Include="TerrainBeachGen.h" />
+    <ClInclude Include="TerrainDialog.h" />
+    <ClInclude Include="TerrainFormulaDlg.h" />
+    <ClInclude Include="TerrainGrid.h" />
+    <ClInclude Include="TerrainHolePanel.h" />
+    <ClInclude Include="TerrainHoleTool.h" />
+    <ClInclude Include="TerrainLayerTexGen.h" />
+    <ClInclude Include="TerrainLightGen.h" />
+    <ClInclude Include="TerrainLighting.h" />
+    <ClInclude Include="TerrainMiniMapTool.h" />
+    <ClInclude Include="TerrainModifyPanel.h" />
+    <ClInclude Include="TerrainModifyTool.h" />
+    <ClInclude Include="TerrainMoveTool.h" />
+    <ClInclude Include="TerrainMoveToolPanel.h" />
+    <ClInclude Include="TerrainPainterPanel.h" />
+    <ClInclude Include="TerrainPanel.h" />
+    <ClInclude Include="TerrainTexGen.h" />
+    <ClInclude Include="TerrainTexture.h" />
+    <ClInclude Include="TerrainTextureExport.h" />
+    <ClInclude Include="TerrainTexturePainter.h" />
+    <ClInclude Include="TerrainViewport.h" />
+    <ClInclude Include="TerrainVoxelPanel.h" />
+    <ClInclude Include="TerrainVoxelTool.h" />
+    <ClInclude Include="TestDialog.h" />
+    <ClInclude Include="TextureCompression.h" />
+    <ClInclude Include="TexturePanel.h" />
+    <ClInclude Include="TextureTool.h" />
+    <ClInclude Include="ThumbnailGenerator.h" />
+    <ClInclude Include="TimeOfDayDialog.h" />
+    <ClInclude Include="TipDlg.h" />
+    <ClInclude Include="ToolbarDialog.h" />
+    <ClInclude Include="ToolBoxBar.h" />
+    <ClInclude Include="ToolsConfigPage.h" />
+    <ClInclude Include="TopRendererWnd.h" />
+    <ClInclude Include="TrackViewDialog.h" />
+    <ClInclude Include="TrackViewGraph.h" />
+    <ClInclude Include="TrackViewKeyList.h" />
+    <ClInclude Include="TrackViewKeys.h" />
+    <ClInclude Include="TrackViewNodes.h" />
+    <ClInclude Include="TrackViewSpline.h" />
+    <ClInclude Include="TrackViewSplitter.h" />
+    <ClInclude Include="TrackViewTimeBar.h" />
+    <ClInclude Include="TrackViewUndo.h" />
+    <ClInclude Include="TVCharacterKeyDialog.h" />
+    <ClInclude Include="TVConsoleKeyDialog.h" />
+    <ClInclude Include="TVEventKeyDialog.h" />
+    <ClInclude Include="TVExprKeyDialog.h" />
+    <ClInclude Include="TVFaceSeqKeyDialog.h" />
+    <ClInclude Include="TVLookAtKeyDialog.h" />
+    <ClInclude Include="TVMusicKeyDialog.h" />
+    <ClInclude Include="TVSelectKeyDialog.h" />
+    <ClInclude Include="TVSequenceKeyDialog.h" />
+    <ClInclude Include="TVSequenceProps.h" />
+    <ClInclude Include="TVShakeKeyDialog.h" />
+    <ClInclude Include="TVSoundKeyDialog.h" />
+    <ClInclude Include="TVTrackPropsDialog.h" />
+    <ClInclude Include="UIEnumsDatabase.h" />
+    <ClInclude Include="UIPanels\TabPanel.h" />
+    <ClInclude Include="UndoDropDown.h" />
+    <ClInclude Include="Undo\IUndoObject.h" />
+    <ClInclude Include="Undo\Undo.h" />
+    <ClInclude Include="UnlinkTool.h" />
+    <ClInclude Include="unzip.h" />
+    <ClInclude Include="UsedResources.h" />
+    <ClInclude Include="Util\AffineParts.h" />
+    <ClInclude Include="Util\AVIGenerator.h" />
+    <ClInclude Include="Util\AVI_Writer.h" />
+    <ClInclude Include="Util\BBox.h" />
+    <ClInclude Include="Util\bitarray.h" />
+    <ClInclude Include="Util\ChunkFile.h" />
+    <ClInclude Include="Util\CryMemFile.h" />
+    <ClInclude Include="Util\dds.h" />
+    <ClInclude Include="Util\DynamicArray2D.h" />
+    <ClInclude Include="Util\EditorUtils.h" />
+    <ClInclude Include="Util\fastlib.h" />
+    <ClInclude Include="Util\FileChangeMonitor.h" />
+    <ClInclude Include="Util\FileEnum.h" />
+    <ClInclude Include="Util\FileUtil.h" />
+    <ClInclude Include="Util\FunctorMulticaster.h" />
+    <ClInclude Include="Util\GuidUtil.h" />
+    <ClInclude Include="Util\Image.h" />
+    <ClInclude Include="Util\ImageGif.h" />
+    <ClInclude Include="Util\ImagePainter.h" />
+    <ClInclude Include="Util\ImageTIF.h" />
+    <ClInclude Include="Util\ImageUtil.h" />
+    <ClInclude Include="Util\Image_DXTC.h" />
+    <ClInclude Include="Util\Mailer.h" />
+    <ClInclude Include="Util\Math.h" />
+    <ClInclude Include="Util\MemoryBlock.h" />
+    <ClInclude Include="Util\NamedData.h" />
+    <ClInclude Include="Util\PakFile.h" />
+    <ClInclude Include="Util\PathUtil.h" />
+    <ClInclude Include="Util\RefCountBase.h" />
+    <ClInclude Include="Util\smartptr.h" />
+    <ClInclude Include="Util\SourceControlInterface.h" />
+    <ClInclude Include="Util\Thread.h" />
+    <ClInclude Include="Util\ThreadWin32.h" />
+    <ClInclude Include="Util\Triangulate.h" />
+    <ClInclude Include="Util\Variable.h" />
+    <ClInclude Include="Util\VariableTypeInfo.h" />
+    <ClInclude Include="Util\XmlArchive.h" />
+    <ClInclude Include="Util\XmlTemplate.h" />
+    <ClInclude Include="VegetationBrush.h" />
+    <ClInclude Include="VegetationDataBasePage.h" />
+    <ClInclude Include="VegetationMap.h" />
+    <ClInclude Include="VegetationObject.h" />
+    <ClInclude Include="VegetationPanel.h" />
+    <ClInclude Include="VegetationTool.h" />
+    <ClInclude Include="Vehicles\PropertyCtrlExt.h" />
+    <ClInclude Include="Vehicles\VehicleComp.h" />
+    <ClInclude Include="Vehicles\VehicleData.h" />
+    <ClInclude Include="Vehicles\VehicleDialogComponent.h" />
+    <ClInclude Include="Vehicles\VehicleEditorDialog.h" />
+    <ClInclude Include="Vehicles\VehicleFXPanel.h" />
+    <ClInclude Include="Vehicles\VehicleHelperObject.h" />
+    <ClInclude Include="Vehicles\VehicleModificationDialog.h" />
+    <ClInclude Include="Vehicles\VehicleMovementPanel.h" />
+    <ClInclude Include="Vehicles\VehiclePart.h" />
+    <ClInclude Include="Vehicles\VehiclePartsPanel.h" />
+    <ClInclude Include="Vehicles\VehiclePrototype.h" />
+    <ClInclude Include="Vehicles\VehicleSeat.h" />
+    <ClInclude Include="Vehicles\VehicleWeapon.h" />
+    <ClInclude Include="Vehicles\VehicleXMLLoader.h" />
+    <ClInclude Include="Vehicles\VehicleXMLSaver.h" />
+    <ClInclude Include="ViewManager.h" />
+    <ClInclude Include="ViewPane.h" />
+    <ClInclude Include="Viewport.h" />
+    <ClInclude Include="ViewportTitleDlg.h" />
+    <ClInclude Include="VolumePanel.h" />
+    <ClInclude Include="VoxelAligningTool.h" />
+    <ClInclude Include="VoxelObjectPanel.h" />
+    <ClInclude Include="WaitProgress.h" />
+    <ClInclude Include="WeaponProps.h" />
+    <ClInclude Include="zlib\deflate.h" />
+    <ClInclude Include="zlib\infblock.h" />
+    <ClInclude Include="zlib\infcodes.h" />
+    <ClInclude Include="zlib\inffast.h" />
+    <ClInclude Include="zlib\inffixed.h" />
+    <ClInclude Include="zlib\inftrees.h" />
+    <ClInclude Include="zlib\infutil.h" />
+    <ClInclude Include="zlib\trees.h" />
+    <ClInclude Include="zlib\zconf.h" />
+    <ClInclude Include="zlib\zlib.h" />
+    <ClInclude Include="zlib\zutil.h" />
+    <ClInclude Include="ZViewport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="res\manifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="TrustInfo.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Lib\libTIFF64.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="TIFFLib\lib\libtiff.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='CRYSIS_BETA|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='SP_DEMO|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="changes.txt" />
+    <Text Include="TODO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\anim.bmp" />
+    <Image Include="res\AnimationGraphToolbar.bmp" />
+    <Image Include="res\animtree.bmp" />
+    <Image Include="res\arhitype_tree.bmp" />
+    <Image Include="res\avi_reco.bmp" />
+    <Image Include="res\AVI_Recorder.bmp" />
+    <Image Include="res\bmp00001.bmp" />
+    <Image Include="res\bmp00005.bmp" />
+    <Image Include="res\bmp00006.bmp" />
+    <Image Include="res\bmp00007.bmp" />
+    <Image Include="res\bmp00008.bmp" />
+    <Image Include="res\bmp00009.bmp" />
+    <Image Include="res\bmp00010.bmp" />
+    <Image Include="res\bmp00011.bmp" />
+    <Image Include="res\bmp00012.bmp" />
+    <Image Include="res\bmp00013.bmp" />
+    <Image Include="res\bmp00014.bmp" />
+    <Image Include="res\bmp00015.bmp" />
+    <Image Include="res\bmp00016.bmp" />
+    <Image Include="res\bmp00017.bmp" />
+    <Image Include="res\bmp00019.bmp" />
+    <Image Include="res\bmp00020.bmp" />
+    <Image Include="res\brush24bpp.bmp" />
+    <Image Include="res\charedit.bmp" />
+    <Image Include="res\clone.ico" />
+    <Image Include="res\CryEdit.ico" />
+    <Image Include="res\CryEditDoc.ico" />
+    <Image Include="res\db_gametoken.bmp" />
+    <Image Include="res\db_library_bar.bmp" />
+    <Image Include="res\db_library_item_bar.bmp" />
+    <Image Include="res\db_mater.bmp" />
+    <Image Include="res\db_music.bmp" />
+    <Image Include="res\db_prefab.bmp" />
+    <Image Include="res\db_standart.bmp" />
+    <Image Include="res\DialogEditorToolbar.bmp" />
+    <Image Include="res\down_arr.ico" />
+    <Image Include="res\down_arrow.ico" />
+    <Image Include="res\dynamichelp.bmp" />
+    <Image Include="res\editor_icon.bmp" />
+    <Image Include="res\editor_icon.ico" />
+    <Image Include="res\editor_icon16.ico" />
+    <Image Include="res\edit_mod.bmp" />
+    <Image Include="res\entitybar.bmp" />
+    <Image Include="res\error_report.bmp" />
+    <Image Include="res\faceit_playbar.bmp" />
+    <Image Include="res\faceit_slidersbar.bmp" />
+    <Image Include="res\faceit_spline_bar.bmp" />
+    <Image Include="res\facejoystickbar.bmp" />
+    <Image Include="res\facesequence_bar.bmp" />
+    <Image Include="res\facialsequence_bar.bmp" />
+    <Image Include="res\filesimage.bmp" />
+    <Image Include="res\filestatus.bmp" />
+    <Image Include="res\file_browse.ico" />
+    <Image Include="res\flowgraph_toolbar.bmp" />
+    <Image Include="res\folder.ico" />
+    <Image Include="res\fopen_back.ico" />
+    <Image Include="res\fopen_up.ico" />
+    <Image Include="res\grid.ico" />
+    <Image Include="res\hypergraph.ico" />
+    <Image Include="res\hypergraphgripper.ico" />
+    <Image Include="res\hypergraphtree.bmp" />
+    <Image Include="res\hypergraph_components.bmp" />
+    <Image Include="res\hypergraph_delete.ico" />
+    <Image Include="res\ico00001.ico" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon_delete.ico" />
+    <Image Include="res\icon_export.ico" />
+    <Image Include="res\icon_import.ico" />
+    <Image Include="res\icon_layers.ico" />
+    <Image Include="res\icon_lock.ico" />
+    <Image Include="res\icon_new.ico" />
+    <Image Include="res\icon_pause.ico" />
+    <Image Include="res\icon_play.ico" />
+    <Image Include="res\icon_question.bmp" />
+    <Image Include="res\icon_question.ico" />
+    <Image Include="res\icon_tcoll.ico" />
+    <Image Include="res\idb_.bmp" />
+    <Image Include="res\layer_buttons.bmp" />
+    <Image Include="res\layouts.bmp" />
+    <Image Include="res\litebulb.bmp" />
+    <Image Include="res\locksele.bmp" />
+    <Image Include="res\lock_sel.bmp" />
+    <Image Include="res\logo.bmp" />
+    <Image Include="res\mainfram.bmp" />
+    <Image Include="res\material.bmp" />
+    <Image Include="res\materialbar.bmp" />
+    <Image Include="res\material_browser.bmp" />
+    <Image Include="res\maximize.ico" />
+    <Image Include="res\minus.ico" />
+    <Image Include="res\mission_.bmp" />
+    <Image Include="res\musictree.bmp" />
+    <Image Include="res\objectsbrowser.bmp" />
+    <Image Include="res\panel_veg.bmp" />
+    <Image Include="res\particlesbar.bmp" />
+    <Image Include="res\particles_tree.bmp" />
+    <Image Include="res\pick.bmp" />
+    <Image Include="res\plus.ico" />
+    <Image Include="res\prefabs_tree.bmp" />
+    <Image Include="res\Preferences.bmp" />
+    <Image Include="res\progslider_end.bmp" />
+    <Image Include="res\progslider_start.bmp" />
+    <Image Include="res\progslider_thumb.bmp" />
+    <Image Include="res\progslider_track.bmp" />
+    <Image Include="res\properties.bmp" />
+    <Image Include="res\rename.ico" />
+    <Image Include="res\replace.ico" />
+    <Image Include="res\sandbox.bmp" />
+    <Image Include="res\selectobj.bmp" />
+    <Image Include="res\sostates.bmp" />
+    <Image Include="res\soundfiles.bmp" />
+    <Image Include="res\soundmood.bmp" />
+    <Image Include="res\soundpre.bmp" />
+    <Image Include="res\splineextrabar.bmp" />
+    <Image Include="res\spline_edit_bar.bmp" />
+    <Image Include="res\status_mem_low1.ico" />
+    <Image Include="res\status_mem_low2.ico" />
+    <Image Include="res\status_mem_ok.ico" />
+    <Image Include="res\stdviews.bmp" />
+    <Image Include="res\subobjseltype.bmp" />
+    <Image Include="res\TabPanel.bmp" />
+    <Image Include="res\timeofday_bar.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\toolbar2.bmp" />
+    <Image Include="res\toolbox.bmp" />
+    <Image Include="res\trackview.bmp" />
+    <Image Include="res\trackview_keys.bmp" />
+    <Image Include="res\trackview_nodes.bmp" />
+    <Image Include="res\TreeView.bmp" />
+    <Image Include="res\tree_vie.bmp" />
+    <Image Include="res\up_arrow.ico" />
+    <Image Include="res\veed_tree.bmp" />
+    <Image Include="res\vegetati.bmp" />
+    <Image Include="res\vegtree.bmp" />
+    <Image Include="res\water.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="arrow.cur" />
+    <None Include="arrowcop.cur" />
+    <None Include="nodrop.cur" />
+    <None Include="pointer_getheight.cur" />
+    <None Include="res\arr_addkey.cur" />
+    <None Include="res\CryEdit.rc2" />
+    <None Include="res\cur00001.cur" />
+    <None Include="res\cur00002.cur" />
+    <None Include="res\cur00003.cur" />
+    <None Include="res\cur00004.cur" />
+    <None Include="res\cur00005.cur" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\Cursor_2.cur" />
+    <None Include="res\hit.cur" />
+    <None Include="res\leftright.cur" />
+    <None Include="res\Mouse.cur" />
+    <None Include="res\object_move.cur" />
+    <None Include="res\object_rotate.cur" />
+    <None Include="res\object_scale.cur" />
+    <None Include="res\pick_cursor.cur" />
+    <None Include="res\pointerHit.cur" />
+    <None Include="res\pointer_.cur" />
+    <None Include="res\pointer_flatten.cur" />
+    <None Include="res\pointer_link.cur" />
+    <None Include="res\pointer_linknow.cur" />
+    <None Include="res\pointer_minus.cur" />
+    <None Include="res\pointer_plus.cur" />
+    <None Include="res\pointer_smooth.cur" />
+    <None Include="res\pointer_so_select.cur" />
+    <None Include="res\pointer_so_sel_plus.cur" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CryEdit.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

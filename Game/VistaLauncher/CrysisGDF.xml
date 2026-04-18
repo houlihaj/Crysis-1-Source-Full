@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameDefinitionFile xmlns:baseTypes="urn:schemas-microsoft-com:GamesExplorerBaseTypes.v1" xmlns="urn:schemas-microsoft-com:GameDescription.v1">
+  <GameDefinition gameID="{CDC82B4A-7540-45A5-B92E-9A7C7033DBF2}">
+    <Name>Crysis</Name>
+    <Description>Stunning Sci-Fi first person shooter in a frozen paradise. Brain sucking aliens are invading earth. They are living in a zero-gravity environment and feed from human bodies that are conserved by a freeze beam.</Description>
+    <ReleaseDate>2007-03-30</ReleaseDate>
+    <Genres>
+      <Genre>Action</Genre>
+    </Genres>
+    <Ratings>
+      <Rating ratingSystemID="{768BD93D-63BE-46A9-8994-0B53C4B5248F}" ratingID="{78D8CC82-372F-44e4-B70C-8944DB7BCC24}">
+        <Descriptor descriptorID="{C4BC3674-E649-470e-8C2B-5EFF5907213E}" />
+        <Descriptor descriptorID="{0CFCF432-3544-4f78-9426-07A36843E6BA}" />
+        <Descriptor descriptorID="{ABE23B46-7F9F-495b-B4A9-87F41743727F}" />
+        <Descriptor descriptorID="{22F2530E-A42D-4351-A7F1-0242CFEFF822}" />
+        <Descriptor descriptorID="{07B4529D-66F1-47e3-BA5E-153BA5785CA2}" />
+        <Descriptor descriptorID="{E04AAEE8-950C-43c4-B75C-D87736A7FAFD}" />
+        <Descriptor descriptorID="{D49A8F0C-B183-4a34-8D86-33F2DC0E2D6C}" />
+        <Descriptor descriptorID="{BE562A5F-2A80-4c28-9752-74C696E2ABAF}" />
+      </Rating>
+      <Rating ratingSystemID="{36798944-B235-48ac-BF21-E25671F597EE}" ratingID="{E2681CD6-318A-4935-8275-AF657045C333}">
+        <Descriptor descriptorID="{609B54E7-6AD5-4a66-AEA4-0FFE84364E26}" />
+        <Descriptor descriptorID="{F6C8131A-897B-4ecf-990E-07B976D1F805}" />
+        <Descriptor descriptorID="{6AB00271-515B-4a4d-8A6E-9E66BF96A437}" />
+        <Descriptor descriptorID="{F110F831-9412-40c9-860A-B489407ED374}" />
+      </Rating>
+    </Ratings>
+    <Version>
+      <VersionNumber versionNumber="1.0.0.1" />
+    </Version>
+    <SavedGames baseKnownFolderID="{F1B32785-6FBA-4FCF-9D55-7B8E7F157091}" path="CrysisSaveGames" />
+    <WindowsSystemPerformanceRating minimum="3" recommended="5" /> 
+    <Developers>
+      <Developer URI="http://www.crytek.de">Crytek GmbH</Developer>
+    </Developers>
+    <Publishers>
+      <Publisher URI="http://www.ea.com">Electronic Arts</Publisher>
+    </Publishers>
+  </GameDefinition>
+</GameDefinitionFile>
