@@ -1,0 +1,106 @@
+/************************************************************************ 
+ * This file is part of PDCurses. PDCurses is public domain software;	*
+ * you may use it for any purpose. This software is provided AS IS with	*
+ * NO WARRANTY whatsoever.						*
+ *									*
+ * If you use PDCurses in an application, an acknowledgement would be	*
+ * appreciated, but is not mandatory. If you make corrections or	*
+ * enhancements to PDCurses, please forward them to the current		*
+ * maintainer for the benefit of other users.				*
+ *									*
+ * No distribution of modified PDCurses code may be made under the name	*
+ * "PDCurses", except by the current maintainer. (Although PDCurses is	*
+ * public domain, the name is a trademark.)				*
+ *									*
+ * See the file maintain.er for details of the current maintainer.	*
+ ************************************************************************/
+
+#define CURSES_LIBRARY 1
+#include <curses.h>
+
+/* undefine any macros for functions defined in this module */
+#undef scr_dump
+#undef scr_init
+#undef scr_restore
+#undef scr_set
+
+RCSID("$Id: scr_dump.c,v 1.14 2006/03/29 20:06:41 wmcbrine Exp $");
+
+/*man-start**************************************************************
+
+  Name:                                                       scr_dump
+
+  Synopsis:
+	int scr_dump(const char *filename);
+	int scr_init(const char *filename);
+	int scr_restore(const char *filename);
+	int scr_set(const char *filename);
+
+  X/Open Description:
+	The scr_dump() function writes the current contents of the 
+	virtual screen to the file named by filename in an unspecified 
+	format.
+
+	The scr_restore() function sets the virtual screen to the 
+	contents of the file named by filename, which must have been 
+	written using scr_dump(). The next refresh operation restores 
+	the screen to the way it looked in the dump file.
+
+	The scr_init() function reads the contents of the file named by 
+	filename and uses them to initialise the Curses data structures 
+	to what the terminal currently has on its screen. The next 
+	refresh operation bases any updates on this information, unless 
+	either of the following conditions is true:
+
+	* The terminal has been written to since the virtual screen was 
+	  dumped to filename
+
+	* The terminfo capabilities rmcup and nrrmc are defined for the 
+	  current terminal.
+
+	The scr_set() function is a combination of scr_restore() and 
+	scr_init(). It tells the program that the information in the 
+	file named by filename is what is currently on the screen, and 
+	also what the program wants on the screen. This can be thought 
+	of as a screen inheritance function.
+
+  PDCurses Description:
+	These functions are not yet meaningfully implemented in 
+	PDCurses. This file is a placeholder.
+
+  X/Open Return Value:
+	On successful completion, these functions return OK. Otherwise, 
+	they return ERR.
+
+  X/Open Errors:
+	No errors are defined. 
+
+**man-end****************************************************************/
+
+int scr_dump(const char *filename)
+{
+	PDC_LOG(("scr_dump() - called: filename %s\n", filename));
+
+	return ERR;
+}
+
+int scr_init(const char *filename)
+{
+	PDC_LOG(("scr_init() - called: filename %s\n", filename));
+
+	return ERR;
+}
+
+int scr_restore(const char *filename)
+{
+	PDC_LOG(("scr_restore() - called: filename %s\n", filename));
+
+	return ERR;
+}
+
+int scr_set(const char *filename)
+{
+	PDC_LOG(("scr_set() - called: filename %s\n", filename));
+
+	return ERR;
+}

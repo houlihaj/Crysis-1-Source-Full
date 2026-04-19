@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sakepspprodg", "sakepspprodg.vcproj", "{962BDE0F-6BDA-4C68-AAB6-9B35F7F9A4E0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		PSP Debug = PSP Debug
+		PSP Debug Opt = PSP Debug Opt
+		PSP Release = PSP Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{962BDE0F-6BDA-4C68-AAB6-9B35F7F9A4E0}.PSP Debug.ActiveCfg = PSP Debug|Win32
+		{962BDE0F-6BDA-4C68-AAB6-9B35F7F9A4E0}.PSP Debug.Build.0 = PSP Debug|Win32
+		{962BDE0F-6BDA-4C68-AAB6-9B35F7F9A4E0}.PSP Debug Opt.ActiveCfg = PSP Debug Opt|Win32
+		{962BDE0F-6BDA-4C68-AAB6-9B35F7F9A4E0}.PSP Debug Opt.Build.0 = PSP Debug Opt|Win32
+		{962BDE0F-6BDA-4C68-AAB6-9B35F7F9A4E0}.PSP Release.ActiveCfg = PSP Release|Win32
+		{962BDE0F-6BDA-4C68-AAB6-9B35F7F9A4E0}.PSP Release.Build.0 = PSP Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

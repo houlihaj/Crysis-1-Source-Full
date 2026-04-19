@@ -1,0 +1,67 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ClientTest", "ClientTest\ClientTest.vcproj", "{E6CF8D9C-138F-4940-B1F2-BE5F369F4034}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerTest", "ServerTest\ServerTest.vcproj", "{D247EC2E-5318-41A4-8EB4-AF9DBC33A017}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServerTestQR2", "ServerTestQR2\ServerTestQR2.vcproj", "{55A76B25-95BD-4F54-9122-8418D2D5F8BD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CdkeyGen", "CdkeyGen\CdkeyGen.vcproj", "{25364C96-DA21-4ED5-AABD-BD3EFAB6357B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {D4C63157-87FF-4957-B791-BF4D18557273}
+		SccProjectUniqueName1 = ClientTest\\ClientTest.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection1 = ClientTest\\
+		SccProjectUniqueName2 = ServerTest\\ServerTest.vcproj
+		SccLocalPath2 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection2 = ServerTest\\
+		SccProjectUniqueName3 = ServerTestQR2\\ServerTestQR2.vcproj
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection3 = ServerTestQR2\\
+		SccProjectUniqueName4 = CdkeyGen\\CdkeyGen.vcproj
+		SccLocalPath4 = .
+		CanCheckoutShared = false
+		SccProjectFilePathRelativizedFromConnection4 = CdkeyGen\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{E6CF8D9C-138F-4940-B1F2-BE5F369F4034}.Debug.ActiveCfg = Debug|Win32
+		{E6CF8D9C-138F-4940-B1F2-BE5F369F4034}.Debug.Build.0 = Debug|Win32
+		{E6CF8D9C-138F-4940-B1F2-BE5F369F4034}.Release.ActiveCfg = Release|Win32
+		{E6CF8D9C-138F-4940-B1F2-BE5F369F4034}.Release.Build.0 = Release|Win32
+		{D247EC2E-5318-41A4-8EB4-AF9DBC33A017}.Debug.ActiveCfg = Debug|Win32
+		{D247EC2E-5318-41A4-8EB4-AF9DBC33A017}.Debug.Build.0 = Debug|Win32
+		{D247EC2E-5318-41A4-8EB4-AF9DBC33A017}.Release.ActiveCfg = Release|Win32
+		{D247EC2E-5318-41A4-8EB4-AF9DBC33A017}.Release.Build.0 = Release|Win32
+		{55A76B25-95BD-4F54-9122-8418D2D5F8BD}.Debug.ActiveCfg = Debug|Win32
+		{55A76B25-95BD-4F54-9122-8418D2D5F8BD}.Debug.Build.0 = Debug|Win32
+		{55A76B25-95BD-4F54-9122-8418D2D5F8BD}.Release.ActiveCfg = Release|Win32
+		{55A76B25-95BD-4F54-9122-8418D2D5F8BD}.Release.Build.0 = Release|Win32
+		{25364C96-DA21-4ED5-AABD-BD3EFAB6357B}.Debug.ActiveCfg = Debug|Win32
+		{25364C96-DA21-4ED5-AABD-BD3EFAB6357B}.Debug.Build.0 = Debug|Win32
+		{25364C96-DA21-4ED5-AABD-BD3EFAB6357B}.Release.ActiveCfg = Release|Win32
+		{25364C96-DA21-4ED5-AABD-BD3EFAB6357B}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

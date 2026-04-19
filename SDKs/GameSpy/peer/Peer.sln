@@ -1,0 +1,72 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "peerc", "peerc\peerc.vcproj", "{67830B22-E992-45F4-B1A0-768E7D1F17CC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeerLobby", "PeerLobby\PeerLobby.vcproj", "{A42D144D-87D8-4E0A-B91E-1E34D2622119}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PeerTest", "PeerTest\PeerTest.vcproj", "{4B95C508-48A3-43A1-9901-00D7AADDC025}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectUniqueName0 = peerc\\peerc.vcproj
+		SccProjectName0 = $/Gamespy/GOA/Peer/peerc
+		SccLocalPath0 = peerc
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = PeerLobby\\PeerLobby.vcproj
+		SccProjectName1 = $/Gamespy/GOA/Peer/PeerLobby
+		SccLocalPath1 = PeerLobby
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = PeerTest\\PeerTest.vcproj
+		SccProjectName2 = $/Gamespy/GOA/Peer/PeerTest
+		SccLocalPath2 = PeerTest
+		CanCheckoutShared = false
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {AF813B84-6740-4AF4-A3EA-6A91C8096FAA}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{67830B22-E992-45F4-B1A0-768E7D1F17CC}.Debug.ActiveCfg = Debug|Win32
+		{67830B22-E992-45F4-B1A0-768E7D1F17CC}.Debug.Build.0 = Debug|Win32
+		{67830B22-E992-45F4-B1A0-768E7D1F17CC}.Release.ActiveCfg = Release|Win32
+		{67830B22-E992-45F4-B1A0-768E7D1F17CC}.Release.Build.0 = Release|Win32
+		{67830B22-E992-45F4-B1A0-768E7D1F17CC}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{67830B22-E992-45F4-B1A0-768E7D1F17CC}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{67830B22-E992-45F4-B1A0-768E7D1F17CC}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{67830B22-E992-45F4-B1A0-768E7D1F17CC}.Unicode Release.Build.0 = Unicode Release|Win32
+		{A42D144D-87D8-4E0A-B91E-1E34D2622119}.Debug.ActiveCfg = Debug|Win32
+		{A42D144D-87D8-4E0A-B91E-1E34D2622119}.Debug.Build.0 = Debug|Win32
+		{A42D144D-87D8-4E0A-B91E-1E34D2622119}.Release.ActiveCfg = Release|Win32
+		{A42D144D-87D8-4E0A-B91E-1E34D2622119}.Release.Build.0 = Release|Win32
+		{A42D144D-87D8-4E0A-B91E-1E34D2622119}.Unicode Debug.ActiveCfg = Debug|Win32
+		{A42D144D-87D8-4E0A-B91E-1E34D2622119}.Unicode Debug.Build.0 = Debug|Win32
+		{A42D144D-87D8-4E0A-B91E-1E34D2622119}.Unicode Release.ActiveCfg = Release|Win32
+		{A42D144D-87D8-4E0A-B91E-1E34D2622119}.Unicode Release.Build.0 = Release|Win32
+		{4B95C508-48A3-43A1-9901-00D7AADDC025}.Debug.ActiveCfg = Debug|Win32
+		{4B95C508-48A3-43A1-9901-00D7AADDC025}.Debug.Build.0 = Debug|Win32
+		{4B95C508-48A3-43A1-9901-00D7AADDC025}.Release.ActiveCfg = Release|Win32
+		{4B95C508-48A3-43A1-9901-00D7AADDC025}.Release.Build.0 = Release|Win32
+		{4B95C508-48A3-43A1-9901-00D7AADDC025}.Unicode Debug.ActiveCfg = Debug|Win32
+		{4B95C508-48A3-43A1-9901-00D7AADDC025}.Unicode Debug.Build.0 = Debug|Win32
+		{4B95C508-48A3-43A1-9901-00D7AADDC025}.Unicode Release.ActiveCfg = Release|Win32
+		{4B95C508-48A3-43A1-9901-00D7AADDC025}.Unicode Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		changelog.txt = changelog.txt
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

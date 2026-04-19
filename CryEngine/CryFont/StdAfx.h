@@ -6,6 +6,8 @@
 #if !defined(AFX_STDAFX_H__6E7C4805_F57C_4D50_81A7_7745B3776538__INCLUDED_)
 #define AFX_STDAFX_H__6E7C4805_F57C_4D50_81A7_7745B3776538__INCLUDED_
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS  //silence <hash_map> is deprecated warning  // new implementation
+
 #if _MSC_VER > 1000
 #pragma once
 #endif // _MSC_VER > 1000

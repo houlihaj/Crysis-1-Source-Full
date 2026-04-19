@@ -1,0 +1,30 @@
+-o Release_SNSystems\gstatsps2prodg.elf
+-L "C:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Lib"
+.\Release_SNSystems\ps2common.obj
+.\Release_SNSystems\statstest.obj
+.\Release_SNSystems\gbucket.obj
+.\Release_SNSystems\gstats.obj
+.\Release_SNSystems\darray.obj
+.\Release_SNSystems\gsAssert.obj
+.\Release_SNSystems\gsAvailable.obj
+.\Release_SNSystems\gsDebug.obj
+.\Release_SNSystems\gsMemory.obj
+.\Release_SNSystems\gsPlatform.obj
+.\Release_SNSystems\gsPlatformSocket.obj
+.\Release_SNSystems\gsPlatformThread.obj
+.\Release_SNSystems\gsPlatformUtil.obj
+.\Release_SNSystems\hashtable.obj
+.\Release_SNSystems\md5c.obj
+crt0.o
+sneetcp.a
+libcdvd.a
+libsn.a
+libgraph.a
+libdma.a
+libdev.a
+libpad.a
+libpkt.a
+libvu0.a
+-lm
+-nostartfiles
+-T c:\usr\local\sce\ee\lib\app.cmd

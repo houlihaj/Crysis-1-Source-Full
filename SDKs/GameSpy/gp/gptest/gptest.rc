@@ -1,0 +1,367 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\gptest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\gptest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GPTEST_DIALOG DIALOGEX 0, 0, 352, 517
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "gptest"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EMAIL,64,40,111,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICK,64,52,111,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,64,64,111,12,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Connect",IDC_CONNECT,26,107,32,10
+    PUSHBUTTON      "Disconnect",IDC_DISCONNECT,114,107,41,10
+    CONTROL         "Blocking",IDC_BLOCKING,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,136,132,41,8
+    PUSHBUTTON      "Check User",IDC_CHECK,26,132,42,10
+    PUSHBUTTON      "New User",IDC_NEWUSER,68,132,36,10
+    PUSHBUTTON      "Update",IDC_UPDATE,106,132,28,10
+    PUSHBUTTON      "Delete",IDC_DELETEPRO,193,15,30,10
+    PUSHBUTTON      "New:",IDC_NEWPRO,233,15,30,10
+    EDITTEXT        IDC_NEWNICK,268,15,50,12,ES_AUTOHSCROLL
+    CONTROL         "R",IDC_REPLACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    322,15,20,10
+    EDITTEXT        IDC_SNICK,234,39,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SFIRSTNAME,234,65,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SLASTNAME,234,78,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SEMAIL,234,91,104,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SICQUIN,234,104,104,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Search",IDC_SEARCH,193,121,28,14
+    PUSHBUTTON      "Valid Email?",IDC_VALIDATE,226,121,43,14
+    PUSHBUTTON      "Nicks",IDC_NICKS,274,121,23,14
+    LISTBOX         IDC_RESULTS,193,149,145,91,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_REASON,240,243,45,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send Request",IDC_SENDREQUEST,288,243,50,12
+    EDITTEXT        IDC_SEARCH_SERVER,241,256,97,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STATUS,243,284,65,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STATUSSTRING,243,298,65,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOCATIONSTRING,243,314,65,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "  Set Status",IDC_SET,313,284,25,40,BS_CENTER | 
+                    BS_MULTILINE
+    CONTROL         "nick",IDC_RNICK,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    193,338,30,10
+    CONTROL         "name",IDC_RNAME,"Button",BS_AUTORADIOBUTTON,223,338,30,
+                    10
+    CONTROL         "e-mail",IDC_REMAIL,"Button",BS_AUTORADIOBUTTON,253,338,
+                    30,10
+    PUSHBUTTON      "Report",IDC_REPORT,298,338,40,10,WS_GROUP
+    CONTROL         "Auto",IDC_SAUTO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    193,364,30,10
+    CONTROL         "1",IDC_S1,"Button",BS_AUTORADIOBUTTON,223,364,20,10
+    CONTROL         "2",IDC_S2,"Button",BS_AUTORADIOBUTTON,243,364,20,10
+    CONTROL         "3",IDC_S3,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,263,
+                    364,20,10
+    CONTROL         "4",IDC_S4,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,283,
+                    364,20,10
+    CONTROL         "5",IDC_S5,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,303,
+                    364,20,10
+    CONTROL         "6",IDC_S6,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,323,
+                    364,17,10
+    CONTROL         "Local",IDC_S7,"Button",BS_AUTORADIOBUTTON,193,373,33,10
+    CONTROL         "Other:",IDC_SOTHER,"Button",BS_AUTORADIOBUTTON,225,373,
+                    30,10
+    EDITTEXT        IDC_OTHER_SERVER,256,373,82,12,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_PATH,218,399,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,218,415,80,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send",IDC_SEND_FILES,303,399,35,25
+    LISTBOX         IDC_BUDDIES,10,161,58,151,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_IFIRSTNAME,96,160,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ILASTNAME,130,160,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INICK,116,188,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_IEMAIL,116,203,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_IICQUIN,116,217,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_IHOMEPAGE,116,233,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IBIRTHMONTH,106,248,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IBIRTHDAY,126,248,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IBIRTHYEAR,146,248,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ISEX,116,263,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ICOUNTRYCODE,116,278,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IZIPCODE,116,293,60,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Set Info",IDC_SETINFO,26,398,36,21
+    CONTROL         "homepage",IDC_IPMHOMEPAGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,74,383,50,10
+    CONTROL         "zipcode",IDC_IPMZIPCODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,134,374,40,10
+    CONTROL         "countrycode",IDC_IPMCOUNTRYCODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,74,374,52,10
+    CONTROL         "birthday",IDC_IPMBIRTHDAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,134,383,40,10
+    CONTROL         "sex",IDC_IPMSEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    134,394,25,10
+    CONTROL         "e-mail",IDC_IPMEMAIL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,134,404,35,10
+    EDITTEXT        IDC_IADDRESS,116,353,60,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_MESSAGE,39,424,86,12,ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "Send",IDC_SEND,130,424,20,12
+    PUSHBUTTON      "Delete",IDC_DELETE,24,313,44,12
+    PUSHBUTTON      "Delete All",IDC_DELETEALL,24,326,44,12,WS_GROUP
+    PUSHBUTTON      "Refresh",IDC_REFRESH,24,339,44,12
+    CONTROL         "cache",IDC_INFO_CACHE,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,26,353,35,10
+    PUSHBUTTON      "Set Invitable",IDC_SET_INVITABLE,26,449,48,12
+    EDITTEXT        IDC_SET_INVITABLE_IDS,118,449,57,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "Find Players",IDC_FIND_PLAYERS,26,463,48,12
+    EDITTEXT        IDC_FIND_PLAYERS_ID,118,463,57,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    PUSHBUTTON      "Invite Player",IDC_INVITE_PLAYER,26,477,48,12
+    EDITTEXT        IDC_INVITE_PLAYER_ID,118,477,57,12,ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    EDITTEXT        IDC_CODE,218,441,120,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_STRING,218,457,120,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "e-mail:",IDC_STATIC,24,40,21,8
+    LTEXT           "password:",IDC_STATIC,24,64,33,8
+    LTEXT           "nick:",IDC_STATIC,24,52,16,8
+    GROUPBOX        "Login",IDC_STATIC,10,5,170,143
+    GROUPBOX        "Buddies",IDC_STATIC,5,151,175,288
+    GROUPBOX        "Status",IDC_STATIC,188,274,155,55
+    LTEXT           "status:",IDC_STATIC,193,284,21,8
+    LTEXT           "locationString:",IDC_STATIC,193,314,46,8
+    LTEXT           "statusString:",IDC_STATIC,193,298,41,8
+    LTEXT           "birthday:",IDC_STATIC,70,248,30,8
+    LTEXT           "name:",IDC_STATIC,70,160,20,8
+    LTEXT           "countrycode:",IDC_STATIC,70,278,43,8
+    LTEXT           "e-mail:",IDC_STATIC,70,203,23,8
+    LTEXT           "nick:",IDC_STATIC,70,188,20,8
+    LTEXT           "homepage:",IDC_STATIC,70,233,35,8
+    LTEXT           "icquin:",IDC_STATIC,70,217,23,8
+    LTEXT           "zipcode:",IDC_STATIC,70,293,27,8
+    LTEXT           "sex:",IDC_STATIC,70,263,14,8
+    LTEXT           "address:",IDC_STATIC,70,353,27,8
+    LTEXT           "message:",IDC_STATIC,7,424,29,8
+    GROUPBOX        "Search",IDC_STATIC,188,30,155,241
+    LTEXT           "e-mail:",IDC_STATIC,193,91,21,8
+    LTEXT           "nick:",IDC_STATIC,193,39,16,8
+    LTEXT           "first name:",IDC_STATIC,193,65,34,8
+    LTEXT           "last name:",IDC_STATIC,193,78,33,8
+    LTEXT           "icq uin:",IDC_STATIC,193,104,24,8
+    LTEXT           "RESULTS:",IDC_STATIC,193,139,40,8
+    GROUPBOX        "Error",IDC_STATIC,188,430,155,45
+    LTEXT           "code:",IDC_STATIC,194,441,18,8
+    LTEXT           "string:",IDC_STATIC,194,457,21,8
+    LTEXT           "reason:",IDC_STATIC,193,243,24,8
+    GROUPBOX        "Identify by",IDC_STATIC,188,329,100,25
+    CONTROL         "/",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,120,248,8,8
+    CONTROL         "/",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,140,248,8,8
+    GROUPBOX        "Profiles",IDC_STATIC,188,5,155,25
+    GROUPBOX        "Inviting",IDC_STATIC,5,439,175,54
+    LTEXT           "Product IDs:",IDC_STATIC,78,450,40,8
+    LTEXT           "Product ID:",IDC_STATIC,78,465,37,8
+    LTEXT           "Product ID:",IDC_STATIC,78,479,37,8
+    GROUPBOX        "Profiles",IDC_STATIC,293,329,50,25
+    GROUPBOX        "Server",IDC_STATIC,188,354,155,35
+    GROUPBOX        "Send Files",IDC_STATIC,188,389,155,40
+    LTEXT           "Path:",IDC_STATIC,193,399,18,8
+    LTEXT           "Name:",IDC_STATIC,193,415,22,8
+    LTEXT           "search server:",IDC_STATIC,193,256,47,8
+    CONTROL         "Firewall",IDC_FIREWALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,136,121,41,8
+    PUSHBUTTON      "All",IDC_PUBLICMASK_ALL,74,398,22,14
+    PUSHBUTTON      "None",IDC_PUBLICMASK_NONE,102,398,22,14
+    EDITTEXT        IDC_ILONGITUDE,116,308,60,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "longitude:",IDC_STATIC,70,308,35,8
+    EDITTEXT        IDC_ILATITUDE,116,323,60,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "latitude:",IDC_STATIC,70,323,25,8
+    EDITTEXT        IDC_IPLACE,116,337,60,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "place:",IDC_STATIC,70,337,23,8
+    GROUPBOX        "publicmask",IDC_STATIC,70,364,105,55
+    PUSHBUTTON      "Revoke Buddy Auth",IDC_REVOKE,26,367,36,27,BS_MULTILINE
+    EDITTEXT        IDC_SUNIQUENICK,234,52,104,12,ES_AUTOHSCROLL
+    LTEXT           "unique nick:",IDC_STATIC,193,52,40,8
+    EDITTEXT        IDC_UNIQUENICK,64,76,111,12,ES_AUTOHSCROLL
+    LTEXT           "uniquenick:",IDC_STATIC,24,76,38,8
+    EDITTEXT        IDC_IUNIQUENICK,116,174,60,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "uniquenick:",IDC_STATIC,70,174,38,8
+    PUSHBUTTON      "Suggest",IDC_SUGGEST,302,121,31,14
+    PUSHBUTTON      "ConnectUnique",IDC_CONNECTUNIQUE,58,107,54,10
+    PUSHBUTTON      "ConnectPreAuth",IDC_CONNECTPREAUTH,26,119,57,10
+    EDITTEXT        IDC_AUTHTOKEN,84,118,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PARTNERCHALLENGE,110,118,26,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAMESPACE,64,13,31,12,ES_AUTOHSCROLL
+    LTEXT           "namespace:",IDC_STATIC,22,13,40,8
+    PUSHBUTTON      "Initialize",IDC_INITIALIZE,64,26,42,12
+    PUSHBUTTON      "Destroy",IDC_DESTROY,107,26,42,12
+    PUSHBUTTON      "UTM",IDC_UTM,155,424,20,12
+    EDITTEXT        IDC_PARTNERID,134,13,41,12,ES_AUTOHSCROLL
+    LTEXT           "partnerid:",IDC_STATIC,102,13,30,8
+    EDITTEXT        IDC_PRODUCTID,63,91,111,12,ES_AUTOHSCROLL
+    LTEXT           "productid:",IDC_STATIC,23,91,32,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "gptest MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "gptest\0"
+            VALUE "LegalCopyright", "Copyright (C) 1999\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "gptest.EXE\0"
+            VALUE "ProductName", "gptest Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_GPTEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 345
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 510
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\gptest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

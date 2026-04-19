@@ -13,6 +13,8 @@
 #pragma once
 
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS  //silence <hash_map> is deprecated warning  // new implementation
+
 #define CRY_API
 
 #ifdef _DEBUG

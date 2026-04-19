@@ -1,0 +1,11 @@
+-g
+-xassembler-with-cpp
+-DSN_TARGET_PS2
+-DINSOCK
+-I.
+-Ic:\usr\local\sce\ee\include\libeenet
+-IC:\usr\local\sce\ee\include
+-IC:\usr\local\sce\common\include
+-I"C:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\include"
+-c C:\usr\local\sce\ee\lib\crt0.s
+-o Release_Insock\crt0.obj

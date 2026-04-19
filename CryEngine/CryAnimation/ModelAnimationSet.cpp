@@ -227,7 +227,8 @@ int CAnimationSet::LoadCAF(const char * szFilePath, float fScale, int nAnimID, c
 		path.MakeLower();
 
 		uint32 crc = g_pCrc32Gen->GetCRC32Lowercase(path.c_str());
-		m_FullPathAnimationsMap.insert(std::make_pair<uint32, int32>(crc,nGlobalAnimID));
+		// m_FullPathAnimationsMap.insert(std::make_pair<uint32, int32>(crc,nGlobalAnimID));  // as found
+		m_FullPathAnimationsMap.insert(std::pair<uint32, int32>(crc,nGlobalAnimID));
 
 		selfValidate();
 

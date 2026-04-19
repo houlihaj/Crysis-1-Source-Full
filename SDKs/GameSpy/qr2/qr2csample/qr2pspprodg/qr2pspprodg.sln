@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qr2pspprodg", "qr2pspprodg.vcproj", "{1963F851-A8FF-4063-8573-3889C78F1BD9}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {A8F046B6-7E3C-45BE-8601-88DE977F82A4}
+		SccProjectUniqueName1 = qr2pspprodg.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		PSP Debug = PSP Debug
+		PSP Debug Opt = PSP Debug Opt
+		PSP Release = PSP Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1963F851-A8FF-4063-8573-3889C78F1BD9}.PSP Debug.ActiveCfg = PSP Debug|Win32
+		{1963F851-A8FF-4063-8573-3889C78F1BD9}.PSP Debug.Build.0 = PSP Debug|Win32
+		{1963F851-A8FF-4063-8573-3889C78F1BD9}.PSP Debug Opt.ActiveCfg = PSP Debug Opt|Win32
+		{1963F851-A8FF-4063-8573-3889C78F1BD9}.PSP Debug Opt.Build.0 = PSP Debug Opt|Win32
+		{1963F851-A8FF-4063-8573-3889C78F1BD9}.PSP Release.ActiveCfg = PSP Release|Win32
+		{1963F851-A8FF-4063-8573-3889C78F1BD9}.PSP Release.Build.0 = PSP Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

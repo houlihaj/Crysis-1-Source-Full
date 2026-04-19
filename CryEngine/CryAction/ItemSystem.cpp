@@ -7,7 +7,7 @@
   
  -------------------------------------------------------------------------
   History:
-  - 29:9:2004   18:02 : Created by Márcio Martins
+  - 29:9:2004   18:02 : Created by Mï¿½rcio Martins
 
 *************************************************************************/
 #include "StdAfx.h"
@@ -422,7 +422,8 @@ bool CItemSystem::ScanXML(XmlNodeRef &root, const char *xmlFile)
 	{
 		CItemParamsNode *params = new CItemParamsNode();
 		params->ConvertFromXML(root);
-		desc.configurations.insert(std::make_pair<string, CItemParamsNode *>(configName, params));
+		// desc.configurations.insert(std::make_pair<string, CItemParamsNode *>(configName, params));  // as found
+		desc.configurations.insert(std::pair<string, CItemParamsNode *>(configName, params));
 	}
 
 	return true;

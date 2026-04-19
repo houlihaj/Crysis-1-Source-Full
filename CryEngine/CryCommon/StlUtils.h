@@ -14,8 +14,11 @@
 #define _STL_UTILS_HEADER_
 
 #include <algorithm>
+#include <functional>  // std::binary_function
 #include <map>
 #include <vector>
+
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS  // silence <hash_map> is deprecated warning  // new implementation
 
 #define USE_HASH_MAP
 

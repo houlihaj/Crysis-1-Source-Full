@@ -1,0 +1,69 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "querytest", "querytest\querytest.vcproj", "{496BCFAD-C259-4B63-B084-59EAEE570802}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sbctest", "sbctest\sbctest.vcproj", "{992EF71C-95A5-4D52-B809-BE79BB6BD953}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sbmfcsample", "sbmfcsample\sbmfcsample.vcproj", "{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectUniqueName0 = querytest\\querytest.vcproj
+		SccProjectName0 = \u0022$/Gamespy/GOA/serverbrowsing/querytest\u0022,\u0020XYTCAAAA
+		SccLocalPath0 = querytest
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = sbctest\\sbctest.vcproj
+		SccProjectName1 = $/Gamespy/GOA/serverbrowsing/sbctest
+		SccLocalPath1 = sbctest
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = sbmfcsample\\sbmfcsample.vcproj
+		SccProjectName2 = \u0022$/Gamespy/GOA/serverbrowsing/sbmfcsample\u0022,\u0020DDVCAAAA
+		SccLocalPath2 = sbmfcsample
+		CanCheckoutShared = false
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {1D4D6D52-9BD0-4A11-A803-8D6778A66438}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{496BCFAD-C259-4B63-B084-59EAEE570802}.Debug.ActiveCfg = Debug|Win32
+		{496BCFAD-C259-4B63-B084-59EAEE570802}.Debug.Build.0 = Debug|Win32
+		{496BCFAD-C259-4B63-B084-59EAEE570802}.Release.ActiveCfg = Release|Win32
+		{496BCFAD-C259-4B63-B084-59EAEE570802}.Release.Build.0 = Release|Win32
+		{496BCFAD-C259-4B63-B084-59EAEE570802}.Unicode Debug.ActiveCfg = Debug|Win32
+		{496BCFAD-C259-4B63-B084-59EAEE570802}.Unicode Debug.Build.0 = Debug|Win32
+		{496BCFAD-C259-4B63-B084-59EAEE570802}.Unicode Release.ActiveCfg = Release|Win32
+		{496BCFAD-C259-4B63-B084-59EAEE570802}.Unicode Release.Build.0 = Release|Win32
+		{992EF71C-95A5-4D52-B809-BE79BB6BD953}.Debug.ActiveCfg = Debug|Win32
+		{992EF71C-95A5-4D52-B809-BE79BB6BD953}.Debug.Build.0 = Debug|Win32
+		{992EF71C-95A5-4D52-B809-BE79BB6BD953}.Release.ActiveCfg = Release|Win32
+		{992EF71C-95A5-4D52-B809-BE79BB6BD953}.Release.Build.0 = Release|Win32
+		{992EF71C-95A5-4D52-B809-BE79BB6BD953}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{992EF71C-95A5-4D52-B809-BE79BB6BD953}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{992EF71C-95A5-4D52-B809-BE79BB6BD953}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{992EF71C-95A5-4D52-B809-BE79BB6BD953}.Unicode Release.Build.0 = Unicode Release|Win32
+		{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}.Debug.ActiveCfg = Debug|Win32
+		{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}.Debug.Build.0 = Debug|Win32
+		{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}.Release.ActiveCfg = Release|Win32
+		{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}.Release.Build.0 = Release|Win32
+		{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}.Unicode Debug.ActiveCfg = Debug|Win32
+		{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}.Unicode Debug.Build.0 = Debug|Win32
+		{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}.Unicode Release.ActiveCfg = Release|Win32
+		{C9FD77D7-9F99-45E1-BAF6-1A30E62313E6}.Unicode Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

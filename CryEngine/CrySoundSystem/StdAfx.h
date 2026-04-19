@@ -154,6 +154,7 @@
 #include <vector>
 #include <set>
 #include <algorithm>
+#include <memory>  // std::auto_ptr  // new implementation
 
 #include <ILog.h>
 #include <IConsole.h>

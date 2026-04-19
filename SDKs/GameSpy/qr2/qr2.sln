@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qr2csample", "qr2csample\qr2csample.vcproj", "{31E706BC-104B-4045-BD0A-A0FC552CDCEF}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccProjectUniqueName0 = qr2csample\\qr2csample.vcproj
+		SccProjectName0 = $/Gamespy/GOA/qr2/qr2csample
+		SccLocalPath0 = qr2csample
+		CanCheckoutShared = false
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {368F46CE-F404-4BCC-92F6-D0841E787786}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{31E706BC-104B-4045-BD0A-A0FC552CDCEF}.Debug.ActiveCfg = Debug|Win32
+		{31E706BC-104B-4045-BD0A-A0FC552CDCEF}.Debug.Build.0 = Debug|Win32
+		{31E706BC-104B-4045-BD0A-A0FC552CDCEF}.Release.ActiveCfg = Release|Win32
+		{31E706BC-104B-4045-BD0A-A0FC552CDCEF}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

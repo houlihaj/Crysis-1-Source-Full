@@ -1,0 +1,127 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by gptest.rc
+//
+#define IDD_GPTEST_DIALOG               102
+#define IDP_SOCKETS_INIT_FAILED         103
+#define IDR_MAINFRAME                   128
+#define IDC_EMAIL                       1000
+#define IDC_NICK                        1001
+#define IDC_PASSWORD                    1002
+#define IDC_CONNECT                     1003
+#define IDC_DISCONNECT                  1004
+#define IDC_BUDDIES                     1005
+#define IDC_STATUS                      1006
+#define IDC_STATUSSTRING                1007
+#define IDC_LOCATIONSTRING              1008
+#define IDC_SET                         1009
+#define IDC_UPDATE                      1010
+#define IDC_IFIRSTNAME                  1011
+#define IDC_INICK                       1012
+#define IDC_IEMAIL                      1013
+#define IDC_IICQUIN                     1014
+#define IDC_IHOMEPAGE                   1015
+#define IDC_IBIRTHMONTH                 1016
+#define IDC_ISEX                        1017
+#define IDC_ICOUNTRYCODE                1018
+#define IDC_IZIPCODE                    1019
+#define IDC_CHECK                       1020
+#define IDC_IADDRESS                    1021
+#define IDC_ISTATUS                     1022
+#define IDC_ILONGITUDE                  1022
+#define IDC_MESSAGE                     1023
+#define IDC_SEND                        1024
+#define IDC_REFRESH                     1025
+#define IDC_SEMAIL                      1026
+#define IDC_SNICK                       1027
+#define IDC_SFIRSTNAME                  1028
+#define IDC_SLASTNAME                   1029
+#define IDC_SICQUIN                     1030
+#define IDC_SEARCH                      1031
+#define IDC_RESULTS                     1032
+#define IDC_MPROFILE                    1033
+#define IDC_AUTHTOKEN                   1033
+#define IDC_NEWUSER                     1034
+#define IDC_MNAME                       1035
+#define IDC_PARTNERCHALLENGE            1035
+#define IDC_SENDREQUEST                 1036
+#define IDC_MEMAIL                      1037
+#define IDC_INITIALIZE                  1037
+#define IDC_REASON                      1038
+#define IDC_CLEAR                       1039
+#define IDC_DESTROY                     1039
+#define IDC_CODE                        1040
+#define IDC_STRING                      1041
+#define IDC_DELETE                      1042
+#define IDC_RNICK                       1043
+#define IDC_RNAME                       1044
+#define IDC_REMAIL                      1045
+#define IDC_INFO_CACHE                  1046
+#define IDC_ISTATUSSTRING               1047
+#define IDC_SET_INVITABLE               1047
+#define IDC_BLOCKING                    1048
+#define IDC_ILOCATION                   1049
+#define IDC_FIND_PLAYERS                1049
+#define IDC_SETINFO                     1050
+#define IDC_ILASTNAME                   1051
+#define IDC_IBIRTHDAY                   1052
+#define IDC_IBIRTHYEAR                  1053
+#define IDC_IPMHOMEPAGE                 1054
+#define IDC_IPMZIPCODE                  1055
+#define IDC_IPMCOUNTRYCODE              1056
+#define IDC_IPMBIRTHDAY                 1057
+#define IDC_IPMSEX                      1058
+#define IDC_DELETEPRO                   1059
+#define IDC_NEWNICK                     1060
+#define IDC_NEWPRO                      1061
+#define IDC_REPLACE                     1062
+#define IDC_SEARCH_SERVER               1063
+#define IDC_VALIDATE                    1064
+#define IDC_DELETEALL                   1065
+#define IDC_NICKS                       1066
+#define IDC_INVITE_PLAYER               1067
+#define IDC_IPMEMAIL                    1068
+#define IDC_FIREWALL                    1069
+#define IDC_ILATITUDE                   1070
+#define IDC_SET_INVITABLE_IDS           1071
+#define IDC_FIND_PLAYERS_ID             1072
+#define IDC_INVITE_PLAYER_ID            1073
+#define IDC_REPORT                      1074
+#define IDC_SAUTO                       1075
+#define IDC_S1                          1076
+#define IDC_S2                          1077
+#define IDC_S3                          1078
+#define IDC_S4                          1079
+#define IDC_SOTHER                      1080
+#define IDC_OTHER_SERVER                1081
+#define IDC_S5                          1082
+#define IDC_S6                          1083
+#define IDC_SEND_FILES                  1084
+#define IDC_PATH                        1085
+#define IDC_NAME                        1086
+#define IDC_S7                          1087
+#define IDC_IPLACE                      1088
+#define IDC_PUBLICMASK_ALL              1089
+#define IDC_PUBLICMASK_NONE             1090
+#define IDC_REVOKE                      1091
+#define IDC_SUNIQUENICK                 1092
+#define IDC_UNIQUENICK                  1093
+#define IDC_NAMESPACE                   1094
+#define IDC_IUNIQUENICK                 1095
+#define IDC_SUGGEST                     1096
+#define IDC_CONNECTUNIQUE               1097
+#define IDC_CONNECTPREAUTH              1098
+#define IDC_UTM                         1099
+#define IDC_PARTNERID                   1100
+#define IDC_PRODUCTID                   1101
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        131
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1092
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

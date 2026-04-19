@@ -1,0 +1,12 @@
+-fdevstudio
+-DSN_TARGET_PS2
+-DSN_SYSTEMS
+-Wall
+-Werror
+-O2
+-I.
+-IC:\usr\local\sce\ee\include
+-IC:\usr\local\sce\common\include
+-I"C:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\include"
+-c C:\Gamespy\GOA\natneg\NATify.c
+-o Release_SNSystems\NATify.obj

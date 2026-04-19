@@ -582,7 +582,8 @@ bool CLoaderDBA::ReadController900 (IChunkFile::ChunkDesc *pChunkDesc  )
 		pData += strSize;
 
 
-		m_pDatabaseInfo->m_AnimationCRCMap.insert(std::make_pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));
+		// m_pDatabaseInfo->m_AnimationCRCMap.insert(std::make_pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));  // as found
+		m_pDatabaseInfo->m_AnimationCRCMap.insert(std::pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));
 
 		CStoredSkinningInfo info;
 
@@ -1012,7 +1013,8 @@ uint32 GetKeyTimesFormatSizeOf(uint32 format);
 		pData += strSize;
 
 
-		m_pDatabaseInfo->m_AnimationCRCMap.insert(std::make_pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));
+		// m_pDatabaseInfo->m_AnimationCRCMap.insert(std::make_pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));  // as found
+		m_pDatabaseInfo->m_AnimationCRCMap.insert(std::pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));
 
 		CStoredSkinningInfo info;
 
@@ -1412,7 +1414,8 @@ bool CLoaderDBA::ReadController904 (IChunkFile::ChunkDesc *pChunkDesc  )
 		pData += strSize;
 
 
-		m_pDatabaseInfo->m_AnimationCRCMap.insert(std::make_pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));
+		// m_pDatabaseInfo->m_AnimationCRCMap.insert(std::make_pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));  // as found
+		m_pDatabaseInfo->m_AnimationCRCMap.insert(std::pair<uint32, uint32>(g_pCrc32Gen->GetCRC32(tmp), i));
 
 		CStoredSkinningInfo info;
 

@@ -21,6 +21,7 @@
 #include <list>
 #include <map>
 #include <algorithm>
+#include <functional>  // std::binary_function  // new implementation
 
 #include <Cry_Math.h>
 #include <IXml.h>

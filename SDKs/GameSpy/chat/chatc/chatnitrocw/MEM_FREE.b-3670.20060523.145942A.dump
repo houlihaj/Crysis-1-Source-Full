@@ -1,0 +1,352 @@
+Crash report for MEM_FREE (.20060523.145942A)
+
+Unhandled exception 0xc0000005 caught at 0x10015991
+(The memory at address 0x043c86f4 could not be written.)
+
+IDE Version: 5.7.61866
+
+OS Version: Microsoft Windows 2000 Professional  (5.0.2195)
+
+Please send this crash log to <cw_bug@metrowerks.com>.
+Append the list of installed plugins saved from the dialog
+accessible through Help/About Metrowerks Codewarrior/Installed Products.
+
+Stack trace:
+	0x10015991 (IDE_MSL_DLL90_x86.dll:0x10015991) (EBP:0x0259e108)
+	0x004a5970 (IDE.exe:0x004a5970) (EBP:0x0259e164)
+	0x5580349b (PluginLib4.dll:0x5580349b) (EBP:0x0259e17c)
+	0x0422cf9b (MEM_FREE:0x08459f36) (EBP:0x00000000)
+
+Module list:
+	C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\PluginLib4.dll (load: 0x55800000, preferred: 0x55800000)
+		version 5.7.0.61866
+	C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\IDE.exe (load: 0x00400000, preferred: 0x00400000)
+		version 5.7.0.61866
+	C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\IDE_MSL_DLL90_x86.dll (load: 0x10000000, preferred: 0x10000000)
+		version 5.7.0.61866
+
+Register Dump:
+	EAX:0x0000004e EDX:0x043c86f4 ECX:0x043c8774 EBX:0x0259dd18
+	ESI:0x037698f9 EDI:0x043c86f4 EBP:0x0259e108 ESP:0x0259e100
+	EIP:0x10015991 EFLAGS:0x00010283
+	CS:0x001b SS:0x0023 DS:0x0023 ES:0x0023
+	FS:0x003b GS:0x0000
+
+Stack Dump:
+
+
+Product info:
+CodeWarrior Development Studio for NINTENDO DS 1.2 Service Pack 3
+
+Components:
+|                          Name|             Version|        File|     Product|              Mod Date| File Size
+------------------------------------------------------------------------------------------------------------------------------------------------------
+|                  ASINTPPC.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    643072| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\ASINTPPC.dll
+|                    CmdIDE.exe|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     42496| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\CmdIDE.exe
+|                 CWSrcTree.exe|         1.0 Build 6|     1.0.0.6|     1.0.0.6|   5/19/2005, 11:22 AM|    273920| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\CWSrcTree.exe
+|                     ELFIO.dll|     No Version Info|     0.0.0.0|     0.0.0.0|   5/19/2005, 11:22 AM|    110592| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\ELFIO.dll
+|                       IDE.exe|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|  10350592| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\IDE.exe
+|              IDENewDialog.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    206584| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\IDENewDialog.dll
+|               IDE_MFC60cw.dll|         6.00.8665.0|  6.0.8665.0|     6.0.4.0|   10/18/2005, 9:24 AM|   1662976| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\IDE_MFC60cw.dll
+|         IDE_MSL_DLL80_x86.dll|          5.6.0.1459|  5.6.0.1459|  5.6.0.1459|   5/19/2005, 11:22 AM|    241664| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\IDE_MSL_DLL80_x86.dll
+|         IDE_MSL_DLL90_x86.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    303104| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\IDE_MSL_DLL90_x86.dll
+|         InstallHelperKeys.exe|     No Version Info|     0.0.0.0|     0.0.0.0|    7/6/2005, 10:34 AM|     78336| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\InstallHelperKeys.exe
+|                    lmgr8c.dll|     No Version Info|     0.0.0.0|     0.0.0.0|    7/6/2005, 10:34 AM|    851968| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\lmgr8c.dll
+|                 MWCore5_0.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    241664| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\MWCore5_0.dll
+|                  MWCRTL60.DLL|     No Version Info|     0.0.0.0|     0.0.0.0|   5/19/2005, 11:22 AM|    160768| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\MWCRTL60.DLL
+|                MWRADUtils.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    266240| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\MWRADUtils.dll
+|                  Mwregsvr.exe|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     36864| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Mwregsvr.exe
+|            MWRegSvrWinApp.exe|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     36864| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\MWRegSvrWinApp.exe
+|                 PluginLib.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    122880| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\PluginLib.dll
+|                PluginLib2.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    122880| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\PluginLib2.dll
+|                PluginLib3.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    122880| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\PluginLib3.dll
+|                PluginLib4.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     86016| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\PluginLib4.dll
+|                PluginLib5.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     86016| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\PluginLib5.dll
+|                PluginLib6.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     86016| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\PluginLib6.dll
+|             CommandWindow.dll|         5.7.0.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    925696| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\CommandWindow.dll
+|         CPPCodeCompletion.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    827392| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\CPPCodeCompletion.dll
+|          LoadSaveFill_ARM.dll|    1.5.0 build 0001|     1.5.0.1|     1.5.0.1|  11/29/2005, 11:23 AM|    171520| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\LoadSaveFill_ARM.dll
+|                  LogPoint.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     57344| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\LogPoint.dll
+|           ObjectInspector.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    339968| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\ObjectInspector.dll
+|                PausePoint.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     98304| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\PausePoint.dll
+|               ScriptPoint.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    118784| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\ScriptPoint.dll
+|                 SkipPoint.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     53248| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\SkipPoint.dll
+|                SoundPoint.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     57344| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\SoundPoint.dll
+|          TraceDataStorage.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    126976| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\TraceDataStorage.dll
+|         VariableFormatter.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     49152| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\COM\VariableFormatter.dll
+|   BatchRunnerPreprocessor.dll|       1.0.0 Build 5|     1.0.0.5|     1.0.0.5|   5/23/2005, 11:05 AM|     69632| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\compiler\BatchRunnerPreprocessor.dll
+|      binarycompiler_nitro.dll|             1.0.0.4|     1.0.0.4|     1.0.0.4|   5/19/2005, 10:39 AM|    128000| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\compiler\binarycompiler_nitro.dll
+|               ELFImporter.dll|4.0 Engineering Build |     4.0.0.0|     4.0.0.0|   5/23/2005, 11:05 AM|     39936| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\compiler\ELFImporter.dll
+|          MW Assembler ARM.dll|      1.0 build 0019|    1.0.0.19|    1.0.0.19|   5/19/2005, 10:39 AM|    258560| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\compiler\MW Assembler ARM.dll
+|              MW C-C++ ARM.dll|      2.0 build 0084|    2.0.0.84|    2.0.0.84|   10/28/2005, 2:06 PM|   1619456| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\compiler\MW C-C++ ARM.dll
+|                 ARMPlugin.dll|          2.0.0.5332|  2.0.0.5332|  2.0.0.5332|  11/29/2005, 11:16 AM|    593920| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\debugger\ARMPlugin.dll
+|           DisassemblerARM.dll|          2.0.0.5306|  2.0.0.5306|  2.0.0.5306|   11/3/2005, 12:47 AM|     58880| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\debugger\DisassemblerARM.dll
+|           Dwarf2Symbolics.DLL|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    217088| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\debugger\Dwarf2Symbolics.DLL
+|       ARMNitroEmuProtocol.dll|     1.0.0 FC#251129| 1.0.0.51129| 1.0.0.51129|  11/29/2005, 11:18 AM|    123904| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\debugger\protocols\ARMNitroEmuProtocol.dll
+|       ARMNitroTegProtocol.dll|     1.0.0 FC#251129| 1.0.0.51129| 1.0.0.51129|  11/29/2005, 11:19 AM|    208896| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\debugger\protocols\ARMNitroTegProtocol.dll
+|             cpp_no_char_const|     No Version Info|     0.0.0.0|     0.0.0.0|   5/19/2005, 11:42 AM|      9781| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\Editor\cpp_no_char_const
+|                 ARMLinker.dll|      2.0 Build 0077|    2.0.0.77|    2.0.0.77|   10/17/2005, 9:31 PM|    352256| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\linker\ARMLinker.dll
+|     BatchRunnerPostLinker.dll|       2.0.0 Build 8|     2.0.0.8|     2.0.0.8|   5/19/2005, 10:39 AM|     41984| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\linker\BatchRunnerPostLinker.dll
+|      BatchRunnerPrelinker.dll|       1.0.0 Build 6|     1.0.0.6|     1.0.0.6|   5/19/2005, 10:39 AM|     41984| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\linker\BatchRunnerPrelinker.dll
+|        LCFPrelinker_NITRO.DLL|    1.1.0 build 0006|     1.1.0.6|     1.1.0.6|   5/19/2005, 10:39 AM|    218624| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\linker\LCFPrelinker_NITRO.DLL
+|    NitroMakeromPostlinker.dll|    1.2.0 build 0010|    1.2.0.10|    1.2.0.10|   5/16/2005, 11:13 AM|     82432| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\linker\NitroMakeromPostlinker.dll
+|       PARMGlobalOptimizer.dll|             5.7.0.0|     5.7.0.0|     5.7.0.0|   6/10/2005, 11:01 AM|     32256| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PARMGlobalOptimizer.dll
+|                PARMTarget.dll|          2.0.0.5332|  2.0.0.5332|  2.0.0.5332|  11/29/2005, 11:22 AM|     60416| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PARMTarget.dll
+|             PAssemblerARM.dll|                 2.1|     2.1.0.0|     2.1.0.0|   6/10/2005, 11:01 AM|     50176| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PAssemblerARM.dll
+|               PBackendARM.dll|                 2.0|     2.0.0.0|     2.0.0.0|   6/10/2005, 11:01 AM|     31232| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PBackendARM.dll
+|    PBatchRunnerPostLinker.dll|       2.0.0 Build 6|     2.0.0.6|     2.0.0.6|   6/10/2005, 11:01 AM|     45568| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PBatchRunnerPostLinker.dll
+|     PBatchRunnerPrelinker.dll|       1.0.0 Build 5|     1.0.0.5|     1.0.0.5|   6/10/2005, 11:01 AM|     31232| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PBatchRunnerPrelinker.dll
+|  PBatchRunnerPreprocessor.dll|       1.0.0 Build 3|     1.0.0.3|     1.0.0.3|   6/10/2005, 11:01 AM|     31232| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PBatchRunnerPreprocessor.dll
+|           PBinaryCompiler.dll|             1.0.0.2|     1.0.0.2|     1.0.0.2|   5/19/2005, 10:39 AM|     36352| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PBinaryCompiler.dll
+|          PDisassemblerELF.dll|       1.2.0 Build 3|     1.2.0.3|     1.2.0.3|   6/10/2005, 11:01 AM|     46592| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PDisassemblerELF.dll
+|                PFrontEndC.dll|             5.7.0.0|     5.7.0.0|     5.7.0.0|   6/10/2005, 11:01 AM|     77824| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PFrontEndC.dll
+|                PLinkerARM.dll|                 2.0|     2.0.0.0|     2.0.0.0|   6/10/2005, 11:01 AM|     64000| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PLinkerARM.dll
+|                    pMWCVS.dll|         1.3.0.61866| 1.3.0.61866| 1.3.0.61866|   10/18/2005, 9:24 AM|     65536| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\pMWCVS.dll
+|               PNintendoCG.dll|                 1.1|     1.1.0.0|     1.1.0.0|   6/10/2005, 11:01 AM|     29696| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PNintendoCG.dll
+|               PNitroDebug.dll|     1.0.0 FC#251129| 1.0.0.51129| 1.0.0.51129|  11/29/2005, 11:22 AM|     45056| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PNitroDebug.dll
+|   PNitroMakeromPostlinker.dll|     1.2.0 build 000|    1.2.0.10|    1.2.0.10|   5/16/2005, 11:13 AM|     55296| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PNitroMakeromPostlinker.dll
+|       PPrelinkerLCF_NITRO.dll|    1.1.0 build 0005|     1.1.0.5|     1.1.0.5|   5/19/2005, 10:39 AM|     40448| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PPrelinkerLCF_NITRO.dll
+|            PPreprocessorC.dll|             5.7.0.0|     5.7.0.0|     5.7.0.0|   6/10/2005, 11:01 AM|     73728| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PPreprocessorC.dll
+|               PProjectARM.dll|                 2.0|     2.0.0.0|     2.0.0.0|   6/10/2005, 11:01 AM|     40448| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PProjectARM.dll
+|       PRConnNitroEmulator.dll|     1.0.0 FC#251129| 1.0.0.51129| 1.0.0.51129|  11/29/2005, 11:22 AM|     28672| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PRConnNitroEmulator.dll
+|            PRConnNitroUSB.dll|     1.0.0 FC#251129| 1.0.0.51129| 1.0.0.51129|  11/29/2005, 11:22 AM|     28672| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PRConnNitroUSB.dll
+|      PSourceFolderMapping.dll|             5.7.0.0|     5.7.0.0|     5.7.0.0|   6/10/2005, 11:01 AM|     53248| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PSourceFolderMapping.dll
+|                 PWarningC.dll|             5.7.0.0|     5.7.0.0|     5.7.0.0|   6/10/2005, 11:01 AM|     69632| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\preference panel\PWarningC.dll
+|                   Catalog.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    438272| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\support\Catalog.dll
+|            CPlusSourceGen.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    278528| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\support\CPlusSourceGen.dll
+|       mwARMTargetSettings.dll|        1.1.0 Build |     1.1.0.0|     1.1.0.0|   5/19/2005, 11:22 AM|     19964| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\support\mwARMTargetSettings.dll
+|                 MWComBase.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     65536| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\support\MWComBase.dll
+|              MWComHelpers.DLL|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    462848| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\support\MWComHelpers.DLL
+|                MWRadModel.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|    585728| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\support\MWRadModel.dll
+|           est_cw_debugger.dll|             0.5.0.1|     0.5.0.1|     0.5.0.1|   5/19/2005, 11:22 AM|    155648| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\support\Nitro\IS\est_cw_debugger.dll
+|                     ISNDD.dll|    0, 22, 510, 2400|0.22.510.2400|0.22.510.2400|  10/26/2005, 11:49 PM|    843776| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\support\Nitro\IS\ISNDD.dll
+|                     mwcvs.dll|         1.3.0.61866| 1.3.0.61866| 1.3.0.61866|   10/18/2005, 9:24 AM|    233472| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\Plugins\version control\mwcvs.dll
+|       ARMStatWizResources.dll|  MW_VERSION_STR_VAL|     2.0.0.0|     2.0.0.0|   5/19/2005, 11:22 AM|      5632| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\resource\ARMStatWizResources.dll
+|            CPlusResources.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     24576| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\resource\CPlusResources.dll
+|     IDEAuxiliaryResources.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     36864| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\resource\IDEAuxiliaryResources.dll
+|              IDEResources.dll|           5.7.61866| 5.7.0.61866| 5.7.0.61866|   10/18/2005, 9:24 AM|     53248| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\resource\IDEResources.dll
+|                 RunHelper.exe|1, 0, 0, 0 Build 643|     1.0.0.0|     1.0.0.0|   5/19/2005, 11:22 AM|     14848| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\RunHelper.exe
+|                     SHW32.DLL|                    |     4.0.1.0|     4.0.1.0|    7/6/2005, 10:34 AM|    112688| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\SHW32.DLL
+|                  sunvmhub.dll|     No Version Info|     0.0.0.0|     0.0.0.0|    7/6/2005, 10:34 AM|     50688| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\sunvmhub.dll
+|                     tcl83.dll|               8.3.1|     8.3.2.1|     8.3.2.1|    7/6/2005, 10:34 AM|    619520| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\tcl83.dll
+|                  toolconf.dll|           1.2.0.837|   1.2.0.837|     1.2.0.0|   5/19/2005, 11:22 AM|     32768| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\toolconf.dll
+|              xerces-2_2_0.dll|             2, 2, 0|     2.2.0.0|     2.2.0.0|   10/18/2005, 9:24 AM|   2248704| C:\Program Files\Metrowerks\CW for NINTENDO DS V1.2\Bin\xerces-2_2_0.dll
+
++--------------------------------+
+| Black-box Recorder Information |
++--------------------------------+
+IDE start time: 14:57:23.482
+IDE crash time: 14:59:41.510
+IDE life time:  00:02:18
+
+Group : Keydowns
+
+Group : CompilerLinker
+	[14:59:41.479, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\nitro\touch.c
+	[14:59:40.838, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\nitro\screen.c
+	[14:59:40.166, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\nitro\menu.c
+	[14:59:39.323, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\nitro\key.c
+	[14:59:38.479, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\nitro\gsTimerNitro.c
+	[14:59:37.838, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\nitro\font.c
+	[14:59:37.823, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\nitro\backup.c
+	[14:59:37.120, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\gsStringUtil.c
+	[14:59:36.323, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\gsPlatformUtil.c
+	[14:59:35.495, tid=4372] request = kChoiceCompile; sourcefile = C:\Gamespy\GOA\common\gsPlatformThread.c
+
+Group : Context Menu
+	[14:59:39.323, tid=6472] custom context menu item: groupID = 1179677800, itemIndex = 0
+
+Group : Menu
+	[14:59:28.948, tid=6472] menu item: cmd_RemoveBinaries
+	[14:57:33.951, tid=6472] menu item: cmd_Close
+	[14:57:32.841, tid=6472] menu item: cmd_Close
+	[14:57:27.045, tid=6472] menu item: cmd_Close
+
+Group : Mouse Clicks
+	[14:59:37.791, tid=6472] mouse click, right, point=(96, 566)
+	[14:59:37.213, tid=6472] mouse click, left, point=(96, 566)
+	[14:59:30.401, tid=6472] mouse click, left, point=(247, 14)
+	[14:59:28.823, tid=6472] mouse click, left, point=(30, 11)
+	[14:59:22.401, tid=6472] mouse click, left, point=(26, 9)
+	[14:59:20.386, tid=6472] mouse click, left, point=(35, 11)
+	[14:59:07.058, tid=6472] mouse click, left, point=(15, 11)
+	[14:58:43.121, tid=6472] mouse click, left, point=(35, 11)
+	[14:58:40.621, tid=6472] mouse click, left, point=(38, 2)
+	[14:58:39.668, tid=6472] mouse click, left, point=(34, 8)
+
+Group : Pref Panel
+	[14:59:22.714, tid=6472] reqTermPanel, panel=Access Paths
+	[14:59:22.714, tid=6472] reqTermDialog, panel=Access Paths
+	[14:59:22.682, tid=6472] reqValidate, panel=Access Paths
+	[14:59:22.682, tid=6472] reqGetData, panel=Access Paths
+	[14:59:22.682, tid=6472] reqItemHit, panel=Access Paths
+	[14:59:22.511, tid=6472] reqUpdateProject, panel=Custom Keywords
+	[14:59:22.511, tid=6472] reqUpdateProject, panel=Analyzer Connections
+	[14:59:22.511, tid=6472] reqUpdateProject, panel=Other Executables
+	[14:59:22.511, tid=6472] reqUpdateProject, panel=Remote Debugging
+	[14:59:22.511, tid=6472] reqWriteSettings, panel=ARM Debugger Settings
+
+Group : Projects
+	[14:57:51.560, tid=6472] opened C:\Gamespy\GOA\Chat\chatc\chatnitrocw\chatnitrocw.mcp
+	[14:57:33.951, tid=6472] closed C:\Gamespy\GOATools\Builder\work\repository\GOA\Chat\chatc\chatnitrocw\chatnitrocw.mcp
+	[14:57:32.841, tid=6472] closed C:\Gamespy\GOATools\Builder\work\repository\GOA\ghttp\ghttpc\ghttpnitrocw\ghttpnitrocw.mcp
+	[14:57:25.123, tid=6472] opened C:\Gamespy\GOATools\Builder\work\repository\GOA\ghttp\ghttpc\ghttpnitrocw\ghttpnitrocw.mcp
+	[14:57:24.170, tid=6472] opened C:\Gamespy\GOATools\Builder\work\repository\GOA\Chat\chatc\chatnitrocw\chatnitrocw.mcp
+
+Group : Debug Launches
+
+Group : Dispatched Msgs
+	[14:59:41.494, tid=6472] msgTargetEntryBuildStarted, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgTargetEntryBuildStarted, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgTargetEntryBuildStarted, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgTargetEntryBuildDone, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgTargetEntryBuildDone, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgTargetEntryBuildDone, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgUpdateBrowserHighlighting
+	[14:59:41.494, tid=6472] msgCatalogUpdated, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgCatalogUpdated, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgCatalogUpdated, project=chatnitrocw.mcp
+	[14:59:41.494, tid=6472] msgTargetFileInfoChanged
+	[14:59:41.494, tid=6472] msgTargetFileInfoChanged
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\iw2wcm.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\so2soc.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\wcm.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\soc.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\soc_errcode.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\ssl.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\socl.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\cps.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitroWiFi\socket.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\env\env_system.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\env.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\mb\mb_fake_child.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\mb\mb_child.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\mb\mb_gameinfo.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\mb\mb.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\mb.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\ext\ext_keycontrol.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\ext\ext_scrntest.h
+	[14:59:41.494, tid=6472] msgClearStatusMessage
+	[14:59:41.494, tid=6472] msgShowStatusMessage, text=Searching: nitro\ext.h
+
+Group : Actions
+	[14:59:29.370, tid=6472] RemoveBinariesAction, project=chatnitrocw.mcp, target ID=3, compact=false
+	[14:59:29.213, tid=6472] RemoveBinariesAction, project=chatnitrocw.mcp, target ID=2, compact=false
+	[14:59:29.104, tid=6472] RemoveBinariesAction, project=chatnitrocw.mcp, target ID=1, compact=false
+	[14:59:22.729, tid=6472] TextDocumentAction, action=syncInfoForProject
+	[14:59:22.729, tid=6472] TextDocumentAction, action=syncInfoForProject, project=chatnitrocw.mcp
+	[14:59:22.729, tid=6472] EnableBrowserAction, project=chatnitrocw.mcp
+	[14:59:21.448, tid=6472] TextDocumentAction, action=syncInfoForProject
+	[14:59:21.448, tid=6472] TextDocumentAction, action=syncInfoForProject, project=chatnitrocw.mcp
+	[14:59:21.448, tid=6472] EnableBrowserAction, project=chatnitrocw.mcp
+	[14:59:18.807, tid=6472] CWNavResponseAction
+	[14:59:18.792, tid=6472] PanelItemHitAction
+	[14:59:01.667, tid=6472] TargetSettingsDocumentAction, target=Nitro TS Debug, project=C:\Gamespy\GOA\Chat\chatc\chatnitrocw\chatnitrocw.mcp
+	[14:59:01.605, tid=6472] UnlockAction, file=C:\Gamespy\GOA\Chat\chatc\chatnitrocw\chatnitrocw.mcp
+	[14:59:01.433, tid=6472] CWNavResponseAction
+	[14:58:58.761, tid=6472] PanelItemHitAction
+	[14:58:40.746, tid=6472] PanelItemHitAction
+	[14:58:39.793, tid=6472] PanelItemHitAction
+	[14:58:36.762, tid=6472] TextDocumentAction, action=syncInfoForProject
+	[14:58:36.762, tid=6472] TextDocumentAction, action=syncInfoForProject, project=chatnitrocw.mcp
+	[14:58:32.309, tid=6472] PanelItemHitAction
+	[14:58:27.653, tid=6472] TextDocumentAction, action=syncInfoForProject
+	[14:58:27.653, tid=6472] TextDocumentAction, action=syncInfoForProject, project=chatnitrocw.mcp
+	[14:58:13.575, tid=6472] TextDocumentAction, action=syncInfoForProject
+	[14:58:13.575, tid=6472] TextDocumentAction, action=syncInfoForProject, project=chatnitrocw.mcp
+	[14:58:10.731, tid=6472] TextDocumentAction, action=syncInfoForProject
+	[14:58:10.731, tid=6472] TextDocumentAction, action=syncInfoForProject, project=chatnitrocw.mcp
+	[14:58:04.200, tid=6472] PanelItemHitAction
+	[14:57:51.653, tid=6472] EnableMenusAction
+	[14:57:51.653, tid=6472] TextDocumentAction, action=syncInfoForProject
+	[14:57:51.653, tid=6472] FireProjectDocumentOpenedAction, project=C:\Gamespy\GOA\Chat\chatc\chatnitrocw\chatnitrocw.mcp
+	[14:57:51.653, tid=6472] TextDocumentAction, action=syncInfoForProject
+	[14:57:51.653, tid=6472] TextDocumentAction, action=syncInfoForProject, project=chatnitrocw.mcp
+	[14:57:51.653, tid=6472] SetSelectedProjectPanelAction, project=chatnitrocw.mcp
+	[14:57:51.653, tid=6472] FireProjectVisibleAction, project=chatnitrocw.mcp, target ID=0
+	[14:57:51.653, tid=6472] FireProjectOpenedAction, project=chatnitrocw.mcp, target ID=0
+	[14:57:51.638, tid=6472] CacheSubprojectsAction, project=chatnitrocw.mcp, target ID=3
+	[14:57:51.638, tid=6472] EnableBrowserAction, project=chatnitrocw.mcp
+	[14:57:51.622, tid=6472] CacheSubprojectsAction, project=chatnitrocw.mcp, target ID=2
+	[14:57:51.622, tid=6472] EnableBrowserAction, project=chatnitrocw.mcp
+	[14:57:51.591, tid=6472] CacheSubprojectsAction, project=chatnitrocw.mcp, target ID=1
+	[14:57:51.591, tid=6472] EnableBrowserAction, project=chatnitrocw.mcp
+	[14:57:51.560, tid=6472] CWNavResponseAction
+	[14:57:34.185, tid=6472] ReleaseSubprojectsAction
+	[14:57:34.185, tid=6472] ReleaseSubprojectsAction
+	[14:57:34.185, tid=6472] ReleaseSubprojectsAction
+	[14:57:33.951, tid=6472] TextDocumentAction, action=projectClosed, project=chatnitrocw.mcp
+	[14:57:33.951, tid=6472] FireProjectDocumentClosedAction
+	[14:57:33.091, tid=6472] ReleaseSubprojectsAction
+	[14:57:33.091, tid=6472] ReleaseSubprojectsAction
+	[14:57:33.091, tid=6472] ReleaseSubprojectsAction
+
+*** Most Recent Activity Summary ***
+[14:59:41.494] | Dispatched Msgs | 6472 | msgTargetEntryBuildStarted, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgTargetEntryBuildStarted, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgTargetEntryBuildStarted, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgTargetEntryBuildDone, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgTargetEntryBuildDone, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgTargetEntryBuildDone, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgUpdateBrowserHighlighting
+[14:59:41.494] | Dispatched Msgs | 6472 | msgCatalogUpdated, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgCatalogUpdated, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgCatalogUpdated, project=chatnitrocw.mcp
+[14:59:41.494] | Dispatched Msgs | 6472 | msgTargetFileInfoChanged
+[14:59:41.494] | Dispatched Msgs | 6472 | msgTargetFileInfoChanged
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\iw2wcm.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\so2soc.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\wcm.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\soc.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\soc_errcode.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\ssl.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\socl.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\cps.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitroWiFi\socket.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\env\env_system.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\env.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\mb\mb_fake_child.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\mb\mb_child.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\mb\mb_gameinfo.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\mb\mb.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\mb.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\ext\ext_keycontrol.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\ext\ext_scrntest.h
+[14:59:41.494] | Dispatched Msgs | 6472 | msgClearStatusMessage
+[14:59:41.494] | Dispatched Msgs | 6472 | msgShowStatusMessage, text=Searching: nitro\ext.h

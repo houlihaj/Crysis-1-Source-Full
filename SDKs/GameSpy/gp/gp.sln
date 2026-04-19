@@ -1,0 +1,69 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gpstress", "gpstress\gpstress.vcproj", "{ADC08350-16C5-4822-A04A-1AD5133CF64D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gptest", "gptest\gptest.vcproj", "{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "gptestc", "gptestc\gptestc.vcproj", "{36F25843-777E-492D-B420-3D43953AB26B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectUniqueName0 = gpstress\\gpstress.vcproj
+		SccProjectName0 = \u0022$/Gamespy/GOA/GP/gpstress\u0022,\u0020TGWAAAAA
+		SccLocalPath0 = gpstress
+		CanCheckoutShared = false
+		SccProjectUniqueName1 = gptest\\gptest.vcproj
+		SccProjectName1 = \u0022$/Gamespy/GOA/GP/gptest\u0022,\u0020WFHAAAAA
+		SccLocalPath1 = gptest
+		CanCheckoutShared = false
+		SccProjectUniqueName2 = gptestc\\gptestc.vcproj
+		SccProjectName2 = \u0022$/Gamespy/GOA/GP/gptestc\u0022,\u0020ZHJAAAAA
+		SccLocalPath2 = gptestc
+		CanCheckoutShared = false
+		SccLocalPath3 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {2C9F1467-D9E0-47B2-9646-AAF9E219C953}
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+		Unicode Debug = Unicode Debug
+		Unicode Release = Unicode Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{ADC08350-16C5-4822-A04A-1AD5133CF64D}.Debug.ActiveCfg = Debug|Win32
+		{ADC08350-16C5-4822-A04A-1AD5133CF64D}.Debug.Build.0 = Debug|Win32
+		{ADC08350-16C5-4822-A04A-1AD5133CF64D}.Release.ActiveCfg = Release|Win32
+		{ADC08350-16C5-4822-A04A-1AD5133CF64D}.Release.Build.0 = Release|Win32
+		{ADC08350-16C5-4822-A04A-1AD5133CF64D}.Unicode Debug.ActiveCfg = Debug|Win32
+		{ADC08350-16C5-4822-A04A-1AD5133CF64D}.Unicode Debug.Build.0 = Debug|Win32
+		{ADC08350-16C5-4822-A04A-1AD5133CF64D}.Unicode Release.ActiveCfg = Release|Win32
+		{ADC08350-16C5-4822-A04A-1AD5133CF64D}.Unicode Release.Build.0 = Release|Win32
+		{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}.Debug.ActiveCfg = Debug|Win32
+		{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}.Debug.Build.0 = Debug|Win32
+		{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}.Release.ActiveCfg = Release|Win32
+		{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}.Release.Build.0 = Release|Win32
+		{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}.Unicode Debug.ActiveCfg = Debug|Win32
+		{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}.Unicode Debug.Build.0 = Debug|Win32
+		{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}.Unicode Release.ActiveCfg = Release|Win32
+		{E6B3FC4E-7F99-47F1-A57E-55ED2F3863A8}.Unicode Release.Build.0 = Release|Win32
+		{36F25843-777E-492D-B420-3D43953AB26B}.Debug.ActiveCfg = Debug|Win32
+		{36F25843-777E-492D-B420-3D43953AB26B}.Debug.Build.0 = Debug|Win32
+		{36F25843-777E-492D-B420-3D43953AB26B}.Release.ActiveCfg = Release|Win32
+		{36F25843-777E-492D-B420-3D43953AB26B}.Release.Build.0 = Release|Win32
+		{36F25843-777E-492D-B420-3D43953AB26B}.Unicode Debug.ActiveCfg = Unicode Debug|Win32
+		{36F25843-777E-492D-B420-3D43953AB26B}.Unicode Debug.Build.0 = Unicode Debug|Win32
+		{36F25843-777E-492D-B420-3D43953AB26B}.Unicode Release.ActiveCfg = Unicode Release|Win32
+		{36F25843-777E-492D-B420-3D43953AB26B}.Unicode Release.Build.0 = Unicode Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

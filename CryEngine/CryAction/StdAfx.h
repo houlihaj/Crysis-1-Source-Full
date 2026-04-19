@@ -38,6 +38,7 @@
 #include <queue>
 //#include <iterator>
 //#include <limits>
+#include <memory>  // std::auto_ptr  // new implementation
 
 inline void GameWarning(const char * ,...) PRINTF_PARAMS(1, 2);
 

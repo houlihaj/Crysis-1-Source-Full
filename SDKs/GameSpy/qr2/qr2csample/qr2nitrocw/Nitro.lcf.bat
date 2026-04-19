@@ -1,0 +1,1 @@
+"%NITROSDK_ROOT%\tools\bin\makelcf.exe" "C:\Gamespy\GOA\qr2\qr2csample\qr2nitrocw\Nitro.lcf.lsf" "C:\NitroSDK\include\nitro\specfiles\ARM9-TS.lcf.template" "C:\Gamespy\GOA\qr2\qr2csample\qr2nitrocw\Nitro.lcf"

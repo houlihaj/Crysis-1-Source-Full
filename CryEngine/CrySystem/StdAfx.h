@@ -16,6 +16,8 @@
 #ifndef __stdafx_h__
 #define __stdafx_h__
 
+#define _SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS  // silence <hash_map> in deprecated warning  // new implementation
+
 #if _MSC_VER > 1000
 #pragma once
 #endif
@@ -71,11 +73,13 @@
 #include <stack>
 #include <deque>
 #include <algorithm>
+#include <memory>  // std::auto_ptr  // new implementation
 
 #include "platform.h"
 // If not XBOX/GameCube/...
 #ifdef WIN32
 //#include <process.h>
+#include <malloc.h>  // _set_sbh_threshold  // new implementation
 #endif
 
 /////////////////////////////////////////////////////////////////////////////

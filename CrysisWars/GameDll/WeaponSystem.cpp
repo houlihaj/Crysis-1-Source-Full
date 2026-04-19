@@ -7,7 +7,7 @@ $DateTime$
 
 -------------------------------------------------------------------------
 History:
-- 18:10:2005   18:00 : Created by Márcio Martins
+- 18:10:2005   18:00 : Created by Mï¿½rcio Martins
 
 *************************************************************************/
 #include "StdAfx.h"
@@ -552,7 +552,8 @@ bool CWeaponSystem::ScanXML(XmlNodeRef &root, const char *xmlFile)
 		desc.params=pAmmoParams;
 	}
 	else
-		desc.configurations.insert(std::make_pair<string, const SAmmoParams*>(configName, pAmmoParams));
+		// desc.configurations.insert(std::make_pair<string, const SAmmoParams*>(configName, pAmmoParams));  // as found
+		desc.configurations.insert(std::pair<string, const SAmmoParams*>(configName, pAmmoParams));
 
 	if (!strcmpi(className, "Bullet"))
 	{

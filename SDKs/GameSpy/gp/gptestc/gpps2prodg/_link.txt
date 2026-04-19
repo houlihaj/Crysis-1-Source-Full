@@ -1,0 +1,41 @@
+-o Release_Insock\gpps2prodg.elf
+-L "C:\Program Files\Microsoft Visual Studio .NET 2003\SDK\v1.1\Lib"
+.\Release_Insock\gptestc.obj
+.\Release_Insock\ps2common.obj
+.\Release_Insock\gp.obj
+.\Release_Insock\gpi.obj
+.\Release_Insock\gpiBuddy.obj
+.\Release_Insock\gpiBuffer.obj
+.\Release_Insock\gpiCallback.obj
+.\Release_Insock\gpiConnect.obj
+.\Release_Insock\gpiInfo.obj
+.\Release_Insock\gpiOperation.obj
+.\Release_Insock\gpiPeer.obj
+.\Release_Insock\gpiProfile.obj
+.\Release_Insock\gpiSearch.obj
+.\Release_Insock\gpiTransfer.obj
+.\Release_Insock\gpiUnique.obj
+.\Release_Insock\gpiUtility.obj
+.\Release_Insock\darray.obj
+.\Release_Insock\gsAssert.obj
+.\Release_Insock\gsAvailable.obj
+.\Release_Insock\gsDebug.obj
+.\Release_Insock\gsMemory.obj
+.\Release_Insock\gsPlatform.obj
+.\Release_Insock\gsPlatformSocket.obj
+.\Release_Insock\gsPlatformThread.obj
+.\Release_Insock\gsPlatformUtil.obj
+.\Release_Insock\gsStringUtil.obj
+.\Release_Insock\hashtable.obj
+.\Release_Insock\md5c.obj
+crt0.o
+libinsck.a
+libnet.a
+libmrpc.a
+libkernl.a
+libcdvd.a
+libnetif.a
+netcnfif.a
+-lm
+-nostartfiles
+-T c:\usr\local\sce\ee\lib\app.cmd

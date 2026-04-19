@@ -31,7 +31,10 @@
 #undef _WIN32_WINNT
 #define _WIN32_WINNT 0x400
 #endif
-#include <winsock2.h>
+// https://stackoverflow.com/questions/10967516/where-is-connectex-defined
+// https://stackoverflow.com/questions/41733041/how-to-get-connectex-pointer
+#include <winsock2.h>   // must be included before mswsock.h
+#include <mswsock.h>  // LPFN_CONNECTEX  // new implementation
 #endif
 
 #ifdef LINUX

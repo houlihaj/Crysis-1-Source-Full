@@ -472,7 +472,8 @@ IDebugHistory* CDebugHistoryManager::CreateHistory(const char* id, const char* n
 	if (history == NULL)
 	{
 		history = new CDebugHistory(name, 100);
-		m_histories.insert(std::make_pair<MapKey, MapValue>(id, history));
+		// m_histories.insert(std::make_pair<MapKey, MapValue>(id, history));  // as found
+		m_histories.insert(std::pair<MapKey, MapValue>(id, history));
 	}
 
 	return history;
