@@ -157,6 +157,30 @@
 #if _MSC_VER == 1400
 #define _XTPLIB_VISUALSTUIDO_VERSION "vc80"
 #endif
+#if _MSC_VER == 1500  // Xtreme Toolkit Pro 19.3.0
+#define _XTPLIB_VISUALSTUDIO_VERSION "vc90"
+#endif
+#if _MSC_VER == 1600  // Xtreme Toolkit Pro 19.3.0
+#define _XTPLIB_VISUALSTUDIO_VERSION "vc100"
+#endif
+#if _MSC_VER == 1700  // Xtreme Toolkit Pro 19.3.0
+#define _XTPLIB_VISUALSTUDIO_VERSION "vc110"
+#endif
+#if _MSC_VER == 1800  // Xtreme Toolkit Pro 19.3.0
+#define _XTPLIB_VISUALSTUDIO_VERSION "vc120"
+#endif
+#if _MSC_VER == 1900  // Xtreme Toolkit Pro 19.3.0
+#define _XTPLIB_VISUALSTUDIO_VERSION "vc140"
+#endif
+#if (1910 <= _MSC_VER) && (_MSC_VER < 1920)  // Xtreme Toolkit Pro 19.3.0
+#define _XTPLIB_VISUALSTUDIO_VERSION "vc150"
+#endif
+#if (1920 <= _MSC_VER) && (_MSC_VER < 1930)  // new implementation
+#define _XTPLIB_VISUALSTUDIO_VERSION "vc160"
+#endif
+#if (1930 <= _MSC_VER) && (_MSC_VER < 1950)  // new implementation
+#define _XTPLIB_VISUALSTUIDO_VERSION "vc170"
+#endif
 
 #ifndef _XTPLIB_VISUALSTUIDO_VERSION
 #error "Unknown Visual Studio version"

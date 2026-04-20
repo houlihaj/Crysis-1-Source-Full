@@ -37,6 +37,14 @@
 // sure that you are not storing any iterators to this class.
 // *************************************************************************
 //
+// The class varies from the std::set API in that two of the erase methods
+// methods are not of void return type but return an iterator - this is
+// required in practice because they invalidate iterators, as noted above.
+//
+// * iterator erase(iterator where);
+// * iterator erase(iterator first, iterator last);
+//
+//
 // Performance Notes:
 //
 // This class uses the empty base optimization hack to allow comparison
@@ -56,7 +64,8 @@
 //
 //--------------------------------------------------------------------------
 
-template <typename K, typename V, typename T = std::less<K>, typename A = std::allocator<std::pair <const K, V> > >
+// template <typename K, typename V, typename T = std::less<K>, typename A = std::allocator<std::pair <const K, V> > >  // as found
+template <typename K, typename V, typename T = std::less<K>, typename A = std::allocator<std::pair <K, V> > >  // as found in Lumberyard source
 class VectorMap : private T // Empty base optimization
 {
 public:
@@ -68,7 +77,8 @@ public:
 
 	typedef T key_compare;
 
-	class FirstLess : public std::binary_function<value_type, value_type, bool>
+	// class FirstLess : public std::binary_function<value_type, value_type, bool>  // as found
+	class FirstLess  // as found in Lumberyard
 	{
 	public:
 		FirstLess(const key_compare& comp): m_comp(comp) {}
@@ -91,7 +101,8 @@ public:
 	typedef const value_type& const_reference;
 	typedef value_type* pointer;
 	typedef const value_type* const_pointer;
-	typedef typename allocator_type::size_type size_type;
+	// typedef typename allocator_type::size_type size_type;  // as found
+	typedef typename std::allocator_traits<allocator_type>::size_type size_type;  // as found in Lumberyard source
 
 	VectorMap();
 	explicit VectorMap(const key_compare& comp);
@@ -105,15 +116,17 @@ public:
 	const_iterator begin() const;
 	size_type capacity() const;
 	void clear();
+	void clearAndFreeMemory();  // as found in Lumberyard source
 	size_type count(const key_type& key) const;
 	bool empty() const;
 	iterator end();
 	const_iterator end() const;
 	std::pair<iterator, iterator> equal_range(const key_type& key);
 	std::pair<const_iterator, const_iterator> equal_range(const key_type& key) const;
-	iterator erase(iterator where);
-	iterator erase(iterator first, iterator last);
+	iterator erase(iterator where);                 // See documentation above
+	iterator erase(iterator first, iterator last);  // See documentation above
 	void erase(const key_type& key);
+	template <typename Predicate> void erase_if(const Predicate& predicate);  // as found in Lumberyard source
 	iterator find(const key_type& key);
 	const_iterator find(const key_type& key) const;
 	allocator_type get_allocator() const;
@@ -135,6 +148,12 @@ public:
 	const_iterator upper_bound(const key_type& key) const;
 	mapped_type& operator[](const key_type& key);
 
+	// As found in Lumberyard source
+	template<typename Sizer>
+	void GetMemoryUsage(Sizer* pSizer) const
+	{
+		pSizer->AddObject(m_entries);
+	}
 private:
 	container_type m_entries;
 };
@@ -216,6 +235,13 @@ void VectorMap<K, V, T, A>::clear()
 	m_entries.resize(0);
 }
 
+// As found in Lumberyard source
+template <typename K, typename V, typename T, typename A>
+void VectorMap<K, V, T, A>::clearAndFreeMemory()
+{
+	stl::free_container(m_entries);
+}
+
 template <typename K, typename V, typename T, typename A>
 typename VectorMap<K, V, T, A>::size_type VectorMap<K, V, T, A>::capacity() const
 {
@@ -274,6 +300,15 @@ template <typename K, typename V, typename T, typename A>
 typename VectorMap<K, V, T, A>::iterator VectorMap<K, V, T, A>::erase(iterator where)
 {
 	return m_entries.erase(where);
+}
+
+// As found in Lumberyard source
+template <typename K, typename V, typename T, typename A>
+template <typename Predicate>
+void VectorMap<K, V, T, A>::erase_if(const Predicate& predicate)
+{
+    m_entries.erase(std::remove_if(m_entries.begin(), m_entries.end(), predicate), m_entries.end());
+    std::sort(m_entries.begin(), m_entries.end(), FirstLess(static_cast<key_compare>(*this)));
 }
 
 template <typename K, typename V, typename T, typename A>

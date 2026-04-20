@@ -731,7 +731,8 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>Winmm.lib;version.lib;d3dx9.lib;d3d9.lib;DXErr9.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <!-- <AdditionalDependencies>Winmm.lib;version.lib;d3dx9.lib;d3d9.lib;DXErr9.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies> -->  // as found
+      <AdditionalDependencies>Winmm.lib;version.lib;d3dx9.lib;d3d9.lib;DXErr.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <OutputFile>$(OutDir)CryRenderD3D9.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>..\..\..\SDKs\DXSDK\Lib\x86;Libraries;..\common\textures\image\NVDXT\release;..\..\..\SDKs\CRIMW\Lib\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>

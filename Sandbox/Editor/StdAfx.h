@@ -27,7 +27,8 @@
 // Modify the following defines if you have to target a platform prior to the ones specified below.
 // Refer to MSDN for the latest info on corresponding values for different platforms.
 #ifndef WINVER				// Allow use of features specific to Windows 95 and Windows NT 4 or later.
-#define WINVER 0x0500 // Include Win98 / 2000 specific functions
+// #define WINVER 0x0500 // Include Win98 / 2000 specific functions  // as found
+#define WINVER 0x0501  // Change this to the appropriate value to target other versions of Windows.  // new implementation
 #endif
 
 #ifndef _WIN32_WINNT		// Allow use of features specific to Windows NT 4 or later.
