@@ -6,6 +6,7 @@
 #include "Typelist.h"
 #include "ISerialize.h"
 #include "CrySizer.h"
+#include <functional>  // std::binary_function
 
 // Description
 // these declarations belong "spiritually" as inner classes to 

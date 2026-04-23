@@ -15,6 +15,7 @@
 #ifndef CRYCOMMON_XMLPARSER_H
 #define CRYCOMMON_XMLPARSER_H
 
+#include <string>  // new implementation
 #include <algorithm>
 
 /////////////////////////////////////////////////////////////////////////

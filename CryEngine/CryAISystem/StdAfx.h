@@ -29,6 +29,7 @@
 #include <list>
 #include <set>
 #include <deque>
+#include <memory>  // std::auto_ptr  // new implementation
 
 // Reference additional interface headers your program requires here (not local headers)
 

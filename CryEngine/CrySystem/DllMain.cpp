@@ -43,7 +43,7 @@ BOOL APIENTRY DllMain( HANDLE hModule,
 	case DLL_PROCESS_DETACH: 
 		break;
 	}
-	int sbh = _set_sbh_threshold(1016);
+	// int sbh = _set_sbh_threshold(1016);  // as found
 	return TRUE;
 }
 #endif

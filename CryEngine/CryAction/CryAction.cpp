@@ -119,7 +119,7 @@
 #endif
 
 #include "TimeDemo/TimeDemoRecorder.h"
-#include "ViewNote.h"
+// #include "ViewNote.h"  // as found; missing in future CryEngine releases
 
 #include "IAnimationGraph.h"
 #include "INetworkService.h"
@@ -2257,8 +2257,8 @@ void CCryAction::InitCommands()
 	
 	pC->AddCommand( "dump_stats",  DumpAnalysisStatsCmd, 0, "Dumps some player statistics");
 
-	// temporary: view note bind
-	pC->AddCommand( "viewnote", ViewNote, 0, "View Note");
+	// // temporary: view note bind
+	// pC->AddCommand( "viewnote", ViewNote, 0, "View Note");  // as found
 
 	// RCON system
 	//pC->AddCommand( "rcon_password", rcon_password, 0, "Sets password for the RCON system" );

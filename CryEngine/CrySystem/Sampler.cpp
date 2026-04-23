@@ -366,10 +366,25 @@ CSymbolDatabase::~CSymbolDatabase()
 {
 }
 
-BOOL WINAPI EnumCallcbackM( PSTR ModuleName,DWORD64 BaseOfDll,PVOID UserContext )
+// // As found
+// BOOL WINAPI EnumCallcbackM( PSTR ModuleName,DWORD64 BaseOfDll,PVOID UserContext )
+// {
+// 	return TRUE;
+// }
+
+// New implementation inspiration from:
+// https://github.com/MergHQ/CRYENGINE/tree/8b63f61c6bb186fbee254b793775856468df47c5
+	#if _MSC_VER >= 1500
+BOOL CALLBACK EnumCallcbackM(PCSTR ModuleName, DWORD64 BaseOfDll, PVOID UserContext)
 {
 	return TRUE;
 }
+	#else
+BOOL WINAPI EnumCallcbackM(PSTR ModuleName, DWORD64 BaseOfDll, PVOID UserContext)
+{
+	return TRUE;
+}
+	#endif
 
 //////////////////////////////////////////////////////////////////////////
 bool CSymbolDatabase::Init()

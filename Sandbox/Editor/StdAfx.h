@@ -57,6 +57,8 @@
 #define _HAS_EXCEPTIONS 1
 //#define NOT_USE_CRY_MEMORY_MANAGER
 #include <platform.h>
+#include <memory>  // std::auto_ptr  // new implementation
+#include <iterator>  // back_inserter  // new implementation
 
 #include "ProjectDefines.h"
 

@@ -974,80 +974,100 @@ FILE *CCryPak::FOpen(const char *pName, const char *szMode,unsigned nFlags2)
 		}
 	}
 
+// New implementation inspiration from (commit 8b63f61):
+// https://github.com/MergHQ/CRYENGINE/tree/8b63f61c6bb186fbee254b793775856468df47c5
 #if defined(LINUX)
-	const int _fmode = 0;
+	// const int _fmode = 0;  // as found
+	unsigned nOSFlags = _O_RDONLY;
 #else
-	const int _fmode = _O_BINARY;
+	// const int _fmode = _O_BINARY;  // as found
+	unsigned nOSFlags = _O_BINARY | _O_RDONLY;
 #endif
-	unsigned nFlags = _fmode|_O_RDONLY;
+	// unsigned nFlags = _fmode|_O_RDONLY;  // as found
 
-	//if (bDirectAccess)
-		//nFlags |= FOPEN_HINT_DIRECT_OPERATION;
+	//if (bDirectAccess)  // as found
+		//nFlags |= FOPEN_HINT_DIRECT_OPERATION;  // as found
 	
 	//Timur, Try direct zip operation always.
-	nFlags |= FOPEN_HINT_DIRECT_OPERATION;
+	// nFlags |= FOPEN_HINT_DIRECT_OPERATION;  // as found
+	nFlags2 |= FOPEN_HINT_DIRECT_OPERATION;
 
 	// check the szMode
 	for (const char* pModeChar = szMode; *pModeChar; ++pModeChar)
 		switch (*pModeChar)
 	{
 		case 'r':
-			nFlags &= ~(_O_WRONLY|_O_RDWR);
+			// nFlags &= ~(_O_WRONLY|_O_RDWR);  // as found
+			nOSFlags &= ~(_O_WRONLY | _O_RDWR);
 			// read mode is the only mode we can open the file in
 			break;
 		case 'w':
-			nFlags |= _O_WRONLY;
+			// nFlags |= _O_WRONLY;  // as found
+			nOSFlags |= _O_WRONLY;
 			break;
 		case 'a':
-			nFlags |= _O_RDWR;
+			// nFlags |= _O_RDWR;  // as found
+			nOSFlags |= _O_RDWR;
 			break;
 		case '+':
-			nFlags |= _O_RDWR;
+			// nFlags |= _O_RDWR;  // as found
+			nOSFlags |= _O_RDWR;
 			break;
 
 		case 'b':
-			nFlags &= ~_O_TEXT;
-			nFlags |= _O_BINARY;
+			// nFlags &= ~_O_TEXT;  // as found
+			nOSFlags &= ~_O_TEXT;
+			// nFlags |= _O_BINARY;  // as found
+			nOSFlags |= _O_BINARY;
 			break;
 		case 't':
-			nFlags &= ~_O_BINARY;
-			nFlags |= _O_TEXT;
+			// nFlags &= ~_O_BINARY;  // as found
+			nOSFlags &= ~_O_BINARY;
+			// nFlags |= _O_TEXT;  // as found
+			nOSFlags |= _O_TEXT;
 			break;
 
 		case 'c':
 		case 'C':
-			nFlags |= CZipPseudoFile::_O_COMMIT_FLUSH_MODE;
+			// nFlags |= CZipPseudoFile::_O_COMMIT_FLUSH_MODE;  // as found
+			nOSFlags |= (uint32)CZipPseudoFile::_O_COMMIT_FLUSH_MODE;
 			break;
 		case 'n':
 		case 'N':
-			nFlags &= ~CZipPseudoFile::_O_COMMIT_FLUSH_MODE;
+			// nFlags &= ~CZipPseudoFile::_O_COMMIT_FLUSH_MODE;  // as found
+			nOSFlags &= ~CZipPseudoFile::_O_COMMIT_FLUSH_MODE;
 			break;
 
 		case 'S':
-			nFlags |= _O_SEQUENTIAL;
+			// nFlags |= _O_SEQUENTIAL;  // as found
+			nOSFlags |= _O_SEQUENTIAL;
 			break;
 
 		case 'R':
-			nFlags |= _O_RANDOM;
+			// nFlags |= _O_RANDOM;  // as found
+			nOSFlags |= _O_RANDOM;
 			break;
 
 		case 'T':
-			nFlags |= _O_SHORT_LIVED;
+			// nFlags |= _O_SHORT_LIVED;  // as found
+			nOSFlags |= _O_SHORT_LIVED;
 			break;
 
 		case 'D':
-			nFlags |= _O_TEMPORARY;
+			// nFlags |= _O_TEMPORARY;  // as found
+			nOSFlags |= _O_TEMPORARY;
 			break;
 
 		case 'x':
 		case 'X':
-			nFlags2 |= FOPEN_HINT_DIRECT_OPERATION;
+			nFlags2 |= FOPEN_HINT_DIRECT_OPERATION;  // as found
 			break;
 	}
 
 	const char *szFullPath = AdjustFileName(pName, szFullPathBuf, nAdjustFlags);
 
-	if (nFlags & (_O_WRONLY|_O_RDWR))
+	// if (nFlags & (_O_WRONLY|_O_RDWR))  // as found
+	if (nOSFlags & (_O_WRONLY | _O_RDWR))
 	{
 		// we need to open the file for writing, but we failed to do so.
 		// the only reason that can be is that there are no directories for that file.
@@ -1101,8 +1121,12 @@ FILE *CCryPak::FOpen(const char *pName, const char *szMode,unsigned nFlags2)
 	}
 
 	if (pFileData != NULL && (nFlags2 & FOPEN_HINT_DIRECT_OPERATION))
-		nFlags |= CZipPseudoFile::_O_DIRECT_OPERATION;
-	m_arrOpenFiles[nFile].Construct (pFileData, nFlags);
+	{
+		// nFlags |= CZipPseudoFile::_O_DIRECT_OPERATION;  // as found
+		nOSFlags |= CZipPseudoFile::_O_DIRECT_OPERATION;
+	}
+	// m_arrOpenFiles[nFile].Construct (pFileData, nFlags);  // as found
+	m_arrOpenFiles[nFile].Construct(pFileData, nOSFlags);
 
 	FILE *ret = (FILE*)(nFile + g_nPseudoFileIdxOffset);
 

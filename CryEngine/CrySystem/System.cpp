@@ -129,7 +129,10 @@ CSystem::CSystem()
 #ifdef WIN32	
 	m_hInst = NULL;
 	m_hWnd = NULL;
+	// int sbh = _set_sbh_threshold(1016);  // as found
+	#if _MSC_VER < 1000
 	int sbh = _set_sbh_threshold(1016);
+	#endif
 #endif
 
 	//////////////////////////////////////////////////////////////////////////

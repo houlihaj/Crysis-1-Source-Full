@@ -7,7 +7,8 @@
 //         single logical table and ensure they stay in sync with
 //         each other.
 //-----------------------------------------------------------------
-#if (defined(SCHEMA_STRINGS)) || (! defined(TMSCHEMA_H))
+// #if (defined(SCHEMA_STRINGS)) || (! defined(TMSCHEMA_H))  // as found
+#if (defined(SCHEMA_STRINGS)) || (!defined(TMSCHEMA_H) && !defined(__VSSYM32_H__))  // Xtreme Toolkit Pro 13.1
 //-----------------------------------------------------------------
 #define TMSCHEMA_H
 //-----------------------------------------------------------------
